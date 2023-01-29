@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Den</title>
-    <link>/en/tags/</link>
+    <link>blog.yehaohui.com/en/tags/</link>
     <description>Recent content in Tags on Den</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Mar 2018 16:01:23 +0800</lastBuildDate><atom:link href="/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Mar 2018 16:01:23 +0800</lastBuildDate><atom:link href="blog.yehaohui.com/en/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>preview</title>
-      <link>/en/tag/preview/</link>
+      <link>blog.yehaohui.com/en/tag/preview/</link>
       <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>/en/tag/preview/</guid>
+      <guid>blog.yehaohui.com/en/tag/preview/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shortcodes</title>
-      <link>/en/tag/shortcodes/</link>
+      <link>blog.yehaohui.com/en/tag/shortcodes/</link>
       <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>/en/tag/shortcodes/</guid>
+      <guid>blog.yehaohui.com/en/tag/shortcodes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tutorial</title>
-      <link>/en/tag/tutorial/</link>
+      <link>blog.yehaohui.com/en/tag/tutorial/</link>
       <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>/en/tag/tutorial/</guid>
+      <guid>blog.yehaohui.com/en/tag/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>images</title>
-      <link>/en/tag/images/</link>
+      <link>blog.yehaohui.com/en/tag/images/</link>
       <pubDate>Mon, 05 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>/en/tag/images/</guid>
+      <guid>blog.yehaohui.com/en/tag/images/</guid>
       <description></description>
     </item>
     
     <item>
       <title>notes</title>
-      <link>/en/tag/notes/</link>
+      <link>blog.yehaohui.com/en/tag/notes/</link>
       <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>/en/tag/notes/</guid>
+      <guid>blog.yehaohui.com/en/tag/notes/</guid>
       <description></description>
     </item>
     
