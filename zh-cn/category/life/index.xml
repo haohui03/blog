@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>life on Yehh</title>
+    <link>https://blog.yehaohui.com/zh-cn/category/life/</link>
+    <description>Recent content in life on Yehh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 02 Mar 2023 16:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/category/life/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>大二下 1-2周</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/03/02/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-1-2%E5%91%A8/</link>
+      <pubDate>Thu, 02 Mar 2023 16:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/03/02/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-1-2%E5%91%A8/</guid>
+      <description>概览 第一周主要是复习和考试，要考的科目有Java，计概，还有雅思英语。这几门课都不难，浅浅复习都足以解决考试。 有意思的是：Java考试的时候</description>
+    </item>
+    
+    <item>
+      <title>2022  年终总结</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/02/15/category/2022_review/</link>
+      <pubDate>Wed, 15 Feb 2023 16:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/02/15/category/2022_review/</guid>
+      <description>2022 年终总结 学业&amp;amp;科研 学业 目前rank:19/270+ 一些课程: DB(数据库系统):93 Network(计算机网络):92 OS(操作系</description>
+    </item>
+    
+  </channel>
+</rss>

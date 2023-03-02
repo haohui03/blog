@@ -6,11 +6,20 @@
     <description>Recent content in Categories on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 15 Feb 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Mar 2023 16:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>life</title>
+      <link>https://blog.yehaohui.com/zh-cn/category/life/</link>
+      <pubDate>Thu, 02 Mar 2023 16:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/category/life/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>code</title>
       <link>https://blog.yehaohui.com/zh-cn/category/code/</link>
-      <pubDate>Wed, 15 Feb 2023 13:01:23 +0800</pubDate>
+      <pubDate>Wed, 01 Mar 2023 08:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/category/code/</guid>
       <description></description>
@@ -22,15 +31,6 @@
       <pubDate>Mon, 05 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/category/demos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Notes</title>
-      <link>https://blog.yehaohui.com/zh-cn/category/notes/</link>
-      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/category/notes/</guid>
       <description></description>
     </item>
     

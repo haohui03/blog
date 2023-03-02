@@ -6,77 +6,149 @@
     <description>Recent content in Posts on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 15 Feb 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Mar 2023 16:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>大二下 1-2周</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/03/02/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-1-2%E5%91%A8/</link>
+      <pubDate>Thu, 02 Mar 2023 16:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/03/02/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-1-2%E5%91%A8/</guid>
+      <description>概览 第一周主要是复习和考试，要考的科目有Java，计概，还有雅思英语。这几门课都不难，浅浅复习都足以解决考试。 有意思的是：Java考试的时候</description>
+    </item>
+    
+    <item>
+      <title>回溯[上]</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/03/01/category/leetcode_day10/</link>
+      <pubDate>Wed, 01 Mar 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/03/01/category/leetcode_day10/</guid>
+      <description>回溯 思想 回溯其实就是穷举的一种方式，但是这种穷举可以把之前举过的信息保存(传递)给后面使用。 适用范围 组合问题：N个数里面按一定规则找出k个数</description>
+    </item>
+    
+    <item>
+      <title>二叉树（下）</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/02/28/category/leetcode_day9/</link>
+      <pubDate>Tue, 28 Feb 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/02/28/category/leetcode_day9/</guid>
+      <description>二叉树(下) 二叉搜索树 二叉搜索树的话最重要就是中序遍历，普通的中序遍历用stack存值，然后用pointer遍历，每次pop的时候存入然后p</description>
+    </item>
+    
+    <item>
+      <title>net/rpc</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/02/25/category/net/rpc/</link>
+      <pubDate>Sat, 25 Feb 2023 09:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/02/25/category/net/rpc/</guid>
+      <description>glance at net/rpc 简介: 远程过程调用 (Remote Procedure Call，RPC) 是一种计算机通信协议。允许运行在一台计算机的程序调用另一个地址空间的子程序（一般是开放网络中的</description>
+    </item>
+    
+    <item>
+      <title>二叉树（中）</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/02/23/category/leetcode_day8/</link>
+      <pubDate>Thu, 23 Feb 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/02/23/category/leetcode_day8/</guid>
+      <description>二叉树(中) 层序遍历 和广度优先差不多 需要注意的是：要判断这层什么时候结束 我的方法是通过置一个nil作为结束，其实可以一趟一趟地看，先获取qu</description>
+    </item>
+    
+    <item>
+      <title>二叉树（上）</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/02/22/category/leetcode_day7/</link>
+      <pubDate>Wed, 22 Feb 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/02/22/category/leetcode_day7/</guid>
+      <description>二叉树(上) 二叉树的递归遍历: 这里帮助大家确定下来递归算法的三个要素。每次写递归，都按照这三要素来写，可以保证大家写出正确的递归算法！ 确定递</description>
+    </item>
+    
+    <item>
+      <title>栈与队列</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/02/17/category/leetcode_day6/</link>
+      <pubDate>Fri, 17 Feb 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/02/17/category/leetcode_day6/</guid>
+      <description>栈与队列 用栈实现队列 用两个栈实现队列 比较简单，就是一个输入一个输出。可以理解为负负得正(先进后出*2=先进先出) 用队列实现栈 用队列实现栈 这个</description>
+    </item>
+    
+    <item>
+      <title>2022  年终总结</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/02/15/category/2022_review/</link>
+      <pubDate>Wed, 15 Feb 2023 16:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/02/15/category/2022_review/</guid>
+      <description>2022 年终总结 学业&amp;amp;科研 学业 目前rank:19/270+ 一些课程: DB(数据库系统):93 Network(计算机网络):92 OS(操作系</description>
+    </item>
+    
     <item>
       <title>字符串</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/02/15/leetcode_day5/</link>
+      <link>https://blog.yehaohui.com/zh-cn/2023/02/15/category/leetcode_day5/</link>
       <pubDate>Wed, 15 Feb 2023 13:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/02/15/leetcode_day5/</guid>
-      <description>字符串</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/02/15/category/leetcode_day5/</guid>
+      <description>字符串 剑指offer 5 请实现一个函数，把字符串 s 中的每个空格替换成&amp;quot;%20&amp;quot;。 题目不难 要注意首先拓展长度,必须遍历,无论</description>
     </item>
     
     <item>
       <title>哈希表</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/02/12/leetcode_day3/</link>
+      <link>https://blog.yehaohui.com/zh-cn/2023/02/12/category/leetcode_day4/</link>
       <pubDate>Sun, 12 Feb 2023 13:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/02/12/leetcode_day3/</guid>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/02/12/category/leetcode_day4/</guid>
       <description>哈希表 哈希碰撞的两个解决方法: 拉链法 线性探测 常见的哈希表: 数组 set map 有关红黑树，见红黑树深入剖析及Java实现 RBTree的定义 RBTree的</description>
     </item>
     
     <item>
       <title>链表(下)</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/02/09/leetcode_day3/</link>
+      <link>https://blog.yehaohui.com/zh-cn/2023/02/09/category/leetcode_day3/</link>
       <pubDate>Thu, 09 Feb 2023 13:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/02/09/leetcode_day3/</guid>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/02/09/category/leetcode_day3/</guid>
       <description>链表(下) leetcode 206. 简单一遍过 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。 /** * Definition for singly-linked list. * type ListNode struct { * Val int * Next *ListNode * } */ func reverseList(head *ListNode) *ListNode { if head==nil || head.Next==nil{ return</description>
     </item>
     
     <item>
       <title>模拟，链表(上)</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/02/07/leetcode_day2/</link>
+      <link>https://blog.yehaohui.com/zh-cn/2023/02/07/category/leetcode_day2/</link>
       <pubDate>Tue, 07 Feb 2023 13:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/02/07/leetcode_day2/</guid>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/02/07/category/leetcode_day2/</guid>
       <description>模拟，链表(上) 模拟 以leetcode 59.螺旋矩阵为例: 相信很多同学刚开始做这种题目的时候，上来就是一波判断猛如虎。 结果运行的时候各种问题</description>
     </item>
     
     <item>
       <title>二分查找，双指针，滑动窗口</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/02/05/leetcode_day1/</link>
+      <link>https://blog.yehaohui.com/zh-cn/2023/02/05/category/leetcode_day1/</link>
       <pubDate>Sun, 05 Feb 2023 16:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/02/05/leetcode_day1/</guid>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/02/05/category/leetcode_day1/</guid>
       <description>23-02-05 刷题记录 基本是跟着代码随想录刷的，day1刷了二分查找，滑窗还有双指针。记录一下当时的思路。 二分查找 二分查找突出的是一个熟练，针对已有的两</description>
     </item>
     
     <item>
       <title>標頭圖片</title>
-      <link>https://blog.yehaohui.com/zh-cn/2018/03/05/%E6%A8%99%E9%A0%AD%E5%9C%96%E7%89%87/</link>
+      <link>https://blog.yehaohui.com/zh-cn/2018/03/05/category/%E6%A8%99%E9%A0%AD%E5%9C%96%E7%89%87/</link>
       <pubDate>Mon, 05 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2018/03/05/%E6%A8%99%E9%A0%AD%E5%9C%96%E7%89%87/</guid>
+      <guid>https://blog.yehaohui.com/zh-cn/2018/03/05/category/%E6%A8%99%E9%A0%AD%E5%9C%96%E7%89%87/</guid>
       <description>這是一個簡單的筆記。</description>
     </item>
     
     <item>
-      <title>筆記 2</title>
-      <link>https://blog.yehaohui.com/zh-cn/2018/03/04/%E7%AD%86%E8%A8%98-2/</link>
-      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
+      <title></title>
+      <link>https://blog.yehaohui.com/zh-cn/1/01/01/category/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2018/03/04/%E7%AD%86%E8%A8%98-2/</guid>
-      <description>這是一個簡單的筆記。</description>
+      <guid>https://blog.yehaohui.com/zh-cn/1/01/01/category/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>筆記 1</title>
-      <link>https://blog.yehaohui.com/zh-cn/2018/03/03/%E7%AD%86%E8%A8%98-1/</link>
-      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
+      <title></title>
+      <link>https://blog.yehaohui.com/zh-cn/1/01/01/category/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2018/03/03/%E7%AD%86%E8%A8%98-1/</guid>
-      <description>這是一個簡單的筆記。</description>
+      <guid>https://blog.yehaohui.com/zh-cn/1/01/01/category/</guid>
+      <description></description>
     </item>
     
   </channel>
