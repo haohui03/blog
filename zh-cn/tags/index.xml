@@ -6,11 +6,11 @@
     <description>Recent content in Tags on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 02 Mar 2023 16:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 May 2023 10:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>life</title>
       <link>https://blog.yehaohui.com/zh-cn/tag/life/</link>
-      <pubDate>Thu, 02 Mar 2023 16:01:23 +0800</pubDate>
+      <pubDate>Sat, 27 May 2023 10:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/tag/life/</guid>
       <description></description>
@@ -19,7 +19,7 @@
     <item>
       <title>record</title>
       <link>https://blog.yehaohui.com/zh-cn/tag/record/</link>
-      <pubDate>Thu, 02 Mar 2023 16:01:23 +0800</pubDate>
+      <pubDate>Sat, 27 May 2023 10:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/tag/record/</guid>
       <description></description>
@@ -28,7 +28,7 @@
     <item>
       <title>algorithm</title>
       <link>https://blog.yehaohui.com/zh-cn/tag/algorithm/</link>
-      <pubDate>Wed, 01 Mar 2023 08:01:23 +0800</pubDate>
+      <pubDate>Sat, 27 May 2023 08:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/tag/algorithm/</guid>
       <description></description>
@@ -37,7 +37,7 @@
     <item>
       <title>jobs</title>
       <link>https://blog.yehaohui.com/zh-cn/tag/jobs/</link>
-      <pubDate>Wed, 01 Mar 2023 08:01:23 +0800</pubDate>
+      <pubDate>Sat, 27 May 2023 08:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/tag/jobs/</guid>
       <description></description>
@@ -46,9 +46,27 @@
     <item>
       <title>leetcode</title>
       <link>https://blog.yehaohui.com/zh-cn/tag/leetcode/</link>
-      <pubDate>Wed, 01 Mar 2023 08:01:23 +0800</pubDate>
+      <pubDate>Sat, 27 May 2023 08:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/tag/leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>distributed systerm</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/distributed-systerm/</link>
+      <pubDate>Wed, 08 Mar 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/tag/distributed-systerm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mit6.824</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/mit6.824/</link>
+      <pubDate>Wed, 08 Mar 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/tag/mit6.824/</guid>
       <description></description>
     </item>
     

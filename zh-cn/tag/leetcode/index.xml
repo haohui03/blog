@@ -6,7 +6,34 @@
     <description>Recent content in leetcode on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 01 Mar 2023 08:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 May 2023 08:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>动态规划</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/05/27/category/leetcode_day13/</link>
+      <pubDate>Sat, 27 May 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/05/27/category/leetcode_day13/</guid>
+      <description>发现好久没有写刷题记录了(博客也好久没有更新了) leetcode 135 分发糖果</description>
+    </item>
+    
+    <item>
+      <title>贪心(2)</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/04/23/category/leetcode_day12/</link>
+      <pubDate>Sun, 23 Apr 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/04/23/category/leetcode_day12/</guid>
+      <description>贪心算法(2) leetcode 135 分发糖果 这题我本来根据题目意思，三个三个来看一步一步来赋值，但是还是不对。原因在于:上一个山，你从左边上山是不知道山顶距离</description>
+    </item>
+    
+    <item>
+      <title>贪心</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/03/27/category/leetcode_day11/</link>
+      <pubDate>Mon, 27 Mar 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/03/27/category/leetcode_day11/</guid>
+      <description>贪心算法 摆动序列 如果连续数字之间的差严格地在正数和负数之间交替，则数字序列称为 摆动序列 。第一个差（如果存在的话）可能是正数或负数。仅有一个元</description>
+    </item>
+    
     <item>
       <title>回溯[上]</title>
       <link>https://blog.yehaohui.com/zh-cn/2023/03/01/category/leetcode_day10/</link>

@@ -6,7 +6,61 @@
     <description>Recent content in Posts on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 02 Mar 2023 16:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 May 2023 10:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>大二下 13-14周</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/05/27/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-13-14%E5%91%A8/</link>
+      <pubDate>Sat, 27 May 2023 10:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/05/27/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-13-14%E5%91%A8/</guid>
+      <description>《你比从前快乐》 不知不觉就到了13周！！！ 概览 总得来说，这两个月过得不咸不淡。力扣力扣没刷多少八股八股也没做多少，公开课lab也没做完。算是</description>
+    </item>
+    
+    <item>
+      <title>动态规划</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/05/27/category/leetcode_day13/</link>
+      <pubDate>Sat, 27 May 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/05/27/category/leetcode_day13/</guid>
+      <description>发现好久没有写刷题记录了(博客也好久没有更新了) leetcode 135 分发糖果</description>
+    </item>
+    
+    <item>
+      <title>贪心(2)</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/04/23/category/leetcode_day12/</link>
+      <pubDate>Sun, 23 Apr 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/04/23/category/leetcode_day12/</guid>
+      <description>贪心算法(2) leetcode 135 分发糖果 这题我本来根据题目意思，三个三个来看一步一步来赋值，但是还是不对。原因在于:上一个山，你从左边上山是不知道山顶距离</description>
+    </item>
+    
+    <item>
+      <title>贪心</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/03/27/category/leetcode_day11/</link>
+      <pubDate>Mon, 27 Mar 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/03/27/category/leetcode_day11/</guid>
+      <description>贪心算法 摆动序列 如果连续数字之间的差严格地在正数和负数之间交替，则数字序列称为 摆动序列 。第一个差（如果存在的话）可能是正数或负数。仅有一个元</description>
+    </item>
+    
+    <item>
+      <title>Raft implementation</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/03/08/category/raft_implementation/</link>
+      <pubDate>Wed, 08 Mar 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/03/08/category/raft_implementation/</guid>
+      <description>本文记录一下搭建MiT6.824 lab2 Raft的实现过程 Raft的原理见: 一些有用的links:</description>
+    </item>
+    
+    <item>
+      <title>大二下 3-4周</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/03/05/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-3-4%E5%91%A8/</link>
+      <pubDate>Sun, 05 Mar 2023 16:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/03/05/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-3-4%E5%91%A8/</guid>
+      <description>平淡的两周 这段时间心里总是很急躁，可能是外界(身边的负能量)也可能是自己的原因。希望借周记和自己对话的机会让自己平静下来。 Polyv 前几个月报名的保</description>
+    </item>
+    
     <item>
       <title>大二下 1-2周</title>
       <link>https://blog.yehaohui.com/zh-cn/2023/03/02/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-1-2%E5%91%A8/</link>
@@ -131,24 +185,6 @@
       
       <guid>https://blog.yehaohui.com/zh-cn/2018/03/05/category/%E6%A8%99%E9%A0%AD%E5%9C%96%E7%89%87/</guid>
       <description>這是一個簡單的筆記。</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://blog.yehaohui.com/zh-cn/1/01/01/category/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/1/01/01/category/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://blog.yehaohui.com/zh-cn/1/01/01/category/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/1/01/01/category/</guid>
-      <description></description>
     </item>
     
   </channel>

@@ -6,7 +6,7 @@
     <description>Recent content on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 02 Mar 2023 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 27 May 2023 10:01:23 +0800</lastBuildDate>
     
     <atom:link href="https://blog.yehaohui.com/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,12 +19,199 @@
       <guid>https://blog.yehaohui.com/zh-cn/about/</guid>
       <description>Hi! 我是叶浩辉 华南理工大学 软件学院二年级本科生, 兴趣集中在Computer Vision 和 Trustworthy Machine Learning。 希望不断学习，不断进步，通过深度阅读提升思</description>
       <content:encoded><![CDATA[<h2 id="hi-我是叶浩辉httpsblogyehaohuicom">Hi! 我是<a href="https://blog.yehaohui.com/">叶浩辉</a></h2>
-<p><a href="https://www.scut.edu.cn/new/">华南理工大学</a> 软件学院二年级本科生, 兴趣集中在Computer Vision 和 Trustworthy Machine Learning。</p>
+<p><a href="https://www.scut.edu.cn/new/">华南理工大学</a> 软件学院二年级本科生, <del>兴趣集中在Computer Vision 和 Trustworthy Machine Learning。</del></p>
 <p>希望不断学习，不断进步，通过深度阅读提升思考能力。</p>
 <h2 id="关于本站">关于本站</h2>
 <blockquote>
 <p>本站灵感来自<a href="https://www.pseudoyu.com/zh/">pseudoyou</a>,真诚、自省的文字和开源的精神是我建站的目标。</p>
 </blockquote>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>大二下 13-14周</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/05/27/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-13-14%E5%91%A8/</link>
+      <pubDate>Sat, 27 May 2023 10:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/05/27/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-13-14%E5%91%A8/</guid>
+      <description>《你比从前快乐》 不知不觉就到了13周！！！ 概览 总得来说，这两个月过得不咸不淡。力扣力扣没刷多少八股八股也没做多少，公开课lab也没做完。算是</description>
+      <content:encoded><![CDATA[<figure >
+    <audio controls preload="metadata">
+        
+        <source src="/audios/happier%20than%20past.mp3" type="audio/mpeg">
+    </audio>
+    <i><figcaption>《你比从前快乐》</figcaption></i>
+</figure>
+<h1 id="不知不觉就到了13周">不知不觉就到了13周！！！</h1>
+<h2 id="概览">概览</h2>
+<p>总得来说，这两个月过得不咸不淡。力扣力扣没刷多少八股八股也没做多少，公开课lab也没做完。算是各有涉猎但是还是没有完成。</p>
+<p>离开科研后生活似乎也没有我想得轻松，完成课业再做点自己的事情已经有点让我喘不过气。</p>
+<h3 id="学业">学业</h3>
+<p>这学期课其实不算多:
+<img src="https://s2.loli.net/2023/05/27/GOrELnhM59TmPQv.png" alt="kebiao.png">
+而且课程基本上是大一的课，难度不算大，基本上上课认真听讲基本都没问题。近一个月的时间主要是花在了C++实训上。</p>
+<p>C++实训是做一个俄罗斯方块，用Qt完成，本来还以为要学很多东西。但是郭老师找到了一个南大的大作业里面用到的技术基本足够解决这次的问题了，我把他的看懂抄抄改改就完成基本要求了。</p>
+<h3 id="生活">生活</h3>
+<p>最近总是感觉生活很紧绷，对未来很焦虑。以前觉得成绩好能保研就好了，现在发现保研也就那么回事。以前觉得找一份体面的工作很简单，虽然说是受限于形式，但是不可否认的是越来越难了。而且就算能找到大厂工作又怎么样呢？996的工作不过从研究生这个粪坑跳入另一个粪坑罢了。</p>
+<h3 id="relation">relation</h3>
+<p>无(XXXXXXXXXXX)
+开启一段新的relation实在是太难了。</p>
+<h3 id="运动与健康">运动与健康</h3>
+<p>值得一提的是开始健身了，但是最近出现一个问题就是每次健完之后晚上就睡不着。而且最近睡觉都会有胀气，比较难入睡。</p>
+<h3 id="阅读与思考">阅读与思考</h3>
+<p>最近没有新读什么书，重读《挪威的森林》还是不禁感慨渡边20岁就已经经历过这么多事情了，而我21岁却还像在温室里读书学习，做什么都畏手畏脚。是啊，相比18岁我到底学到了什么。</p>
+<p>重读《潮骚》，那是多美的一个世界啊。三岛由纪夫的桃花源真是令人向往。只要读一页就能闻到咸咸的海风，质朴的男孩，天真的爱情。一下子就置身上世纪90年代的古朴海边村落，那是多好一个世界啊。
+下次抄录几句话上来。</p>
+<p>希望21岁的这剩下的日子里能越来越好。</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>动态规划</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/05/27/category/leetcode_day13/</link>
+      <pubDate>Sat, 27 May 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/05/27/category/leetcode_day13/</guid>
+      <description>发现好久没有写刷题记录了(博客也好久没有更新了) leetcode 135 分发糖果</description>
+      <content:encoded><![CDATA[<h1 id="发现好久没有写刷题记录了博客也好久没有更新了">发现好久没有写刷题记录了(博客也好久没有更新了)</h1>
+<p><a href="https://leetcode.cn/problems/candy/">leetcode 135 分发糖果</a></p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>贪心(2)</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/04/23/category/leetcode_day12/</link>
+      <pubDate>Sun, 23 Apr 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/04/23/category/leetcode_day12/</guid>
+      <description>贪心算法(2) leetcode 135 分发糖果 这题我本来根据题目意思，三个三个来看一步一步来赋值，但是还是不对。原因在于:上一个山，你从左边上山是不知道山顶距离</description>
+      <content:encoded><![CDATA[<h2 id="贪心算法2">贪心算法(2)</h2>
+<p><a href="https://leetcode.cn/problems/candy/">leetcode 135 分发糖果</a></p>
+<p>这题我本来根据题目意思，三个三个来看一步一步来赋值，但是还是不对。原因在于:上一个山，你从左边上山是不知道山顶距离右边的山底多高，只有都走一遍才知道山顶相对于谁来说最高。</p>
+<p>根据代码随想录写了一版:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">candy</span><span class="p">(</span><span class="nx">ratings</span> <span class="p">[]</span><span class="kt">int</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">sum</span><span class="o">:=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">record</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">([]</span><span class="kt">int</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="nx">ratings</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="nx">i</span><span class="o">:=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="p">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="nx">ratings</span><span class="p">);</span><span class="nx">i</span><span class="o">++</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">record</span><span class="p">[</span><span class="nx">i</span><span class="p">]=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="nx">i</span><span class="o">:=</span><span class="mi">1</span><span class="p">;</span><span class="nx">i</span><span class="p">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="nx">ratings</span><span class="p">);</span><span class="nx">i</span><span class="o">++</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nx">ratings</span><span class="p">[</span><span class="nx">i</span><span class="p">]&gt;</span><span class="nx">ratings</span><span class="p">[</span><span class="nx">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">record</span><span class="p">[</span><span class="nx">i</span><span class="p">]=</span><span class="nx">record</span><span class="p">[</span><span class="nx">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">i</span><span class="o">:=</span><span class="nb">len</span><span class="p">(</span><span class="nx">ratings</span><span class="p">)</span><span class="o">-</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">;</span><span class="nx">i</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">--</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">sum</span><span class="o">+=</span><span class="nx">record</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nx">ratings</span><span class="p">[</span><span class="nx">i</span><span class="p">]&gt;</span><span class="nx">ratings</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">record</span><span class="p">[</span><span class="nx">i</span><span class="p">]=</span><span class="nf">max</span><span class="p">(</span><span class="nx">record</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="nx">record</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">sum</span><span class="o">+=</span><span class="nx">record</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">sum</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">max</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span> <span class="kt">int</span><span class="p">)</span><span class="kt">int</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nx">a</span><span class="p">&gt;</span><span class="nx">b</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">a</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">b</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>贪心</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/03/27/category/leetcode_day11/</link>
+      <pubDate>Mon, 27 Mar 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/03/27/category/leetcode_day11/</guid>
+      <description>贪心算法 摆动序列 如果连续数字之间的差严格地在正数和负数之间交替，则数字序列称为 摆动序列 。第一个差（如果存在的话）可能是正数或负数。仅有一个元</description>
+      <content:encoded><![CDATA[<h2 id="贪心算法">贪心算法</h2>
+<h4 id="摆动序列httpsleetcodecnproblemswiggle-subsequence"><a href="https://leetcode.cn/problems/wiggle-subsequence/">摆动序列</a></h4>
+<p>如果连续数字之间的差严格地在正数和负数之间交替，则数字序列称为 摆动序列 。第一个差（如果存在的话）可能是正数或负数。仅有一个元素或者含两个不等元素的序列也视作摆动序列。</p>
+<p>例如， <code>[1, 7, 4, 9, 2, 5]</code> 是一个 摆动序列 ，因为差值 <code>(6, -3, 5, -7, 3)</code> 是正负交替出现的。</p>
+<p>相反，<code>[1, 4, 7, 2, 5]</code> 和 <code>[1, 7, 4, 5, 5]</code> 不是摆动序列，第一个序列是因为它的前两个差值都是正数，第二个序列是因为它的最后一个差值为零。
+子序列 可以通过从原始序列中删除一些（也可以不删除）元素来获得，剩下的元素保持其原始顺序。</p>
+<p>给你一个整数数组 nums ，返回 nums 中作为 摆动序列 的 最长子序列的长度 。</p>
+<blockquote>
+<p>不得不说我这个实现实在是太优美</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">wiggleMaxLength</span><span class="p">(</span><span class="nx">nums</span> <span class="p">[]</span><span class="kt">int</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nx">nums</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">length</span><span class="o">:=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">left</span> <span class="o">:=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">middle</span><span class="o">:=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">right</span> <span class="o">:=</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="nx">right</span><span class="p">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="nx">nums</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nx">nums</span><span class="p">[</span><span class="nx">middle</span><span class="p">]</span><span class="o">-</span><span class="nx">nums</span><span class="p">[</span><span class="nx">left</span><span class="p">])</span><span class="o">*</span><span class="p">(</span><span class="nx">nums</span><span class="p">[</span><span class="nx">right</span><span class="p">]</span><span class="o">-</span><span class="nx">nums</span><span class="p">[</span><span class="nx">middle</span><span class="p">])&lt;</span><span class="mi">0</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">right</span><span class="o">++</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">middle</span><span class="p">=</span><span class="nx">right</span><span class="o">-</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">left</span><span class="p">=</span><span class="nx">middle</span><span class="o">-</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">length</span><span class="o">++</span>
+</span></span><span class="line"><span class="cl">            <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">middle</span><span class="o">++</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">right</span><span class="o">++</span>    
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nx">nums</span><span class="p">[</span><span class="nx">left</span><span class="p">]</span><span class="o">==</span><span class="nx">nums</span><span class="p">[</span><span class="nx">middle</span><span class="p">]{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">length</span><span class="o">+</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">length</span><span class="o">+</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><ol>
+<li>充分理解题目摆动序列的思想: 判断摆动至少需要三个数字，一旦不符合就把中间的删除(具体操作是middle和right右移，left不动)</li>
+<li>贪心思想: 把连续增加的剔除掉，剩下的就都是连续的。</li>
+<li>滑动窗口思想: 窗口大小是三，每次移动右边，只有条件满足才移动左边的。这样每次窗口左边移动都是判断最左边是不是满足条件的。 而且在移动左侧的时候不要思维定势，每次加一，移动会要跳过剔除的，所以直接移动到middle左边。</li>
+</ol>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Raft implementation</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/03/08/category/raft_implementation/</link>
+      <pubDate>Wed, 08 Mar 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/03/08/category/raft_implementation/</guid>
+      <description>本文记录一下搭建MiT6.824 lab2 Raft的实现过程 Raft的原理见: 一些有用的links:</description>
+      <content:encoded><![CDATA[<h2 id="本文记录一下搭建mit6824-lab2-raft的实现过程">本文记录一下搭建MiT6.824 lab2 Raft的实现过程</h2>
+<p>Raft的原理见:</p>
+<p>一些有用的links:</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>大二下 3-4周</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/03/05/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-3-4%E5%91%A8/</link>
+      <pubDate>Sun, 05 Mar 2023 16:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/03/05/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-3-4%E5%91%A8/</guid>
+      <description>平淡的两周 这段时间心里总是很急躁，可能是外界(身边的负能量)也可能是自己的原因。希望借周记和自己对话的机会让自己平静下来。 Polyv 前几个月报名的保</description>
+      <content:encoded><![CDATA[<h2 id="平淡的两周">平淡的两周</h2>
+<p>这段时间心里总是很急躁，可能是外界(身边的负能量)也可能是自己的原因。希望借周记和自己对话的机会让自己平静下来。</p>
+<h2 id="polyv">Polyv</h2>
+<p>前几个月报名的保利威直播+比赛在第四周的周六答辩，经过秋科和郭老师的临阵磨枪算是能交出一份答辩。但是郭老师答辩的问答部分表现得微微怯场了一点，加上后面几个答辩都很不错，我认为我们只能拿个优胜奖了。没想到最后竟然能拿个三等奖。</p>
+<p>其实我是觉得比较愧疚的，当时想搞科研所以这边没有怎么帮上忙。</p>
+<p><img src="https://s2.loli.net/2023/03/20/1FxZQ84a2j9zKcX.jpg" alt="33d9a024d9e59d19001d9e1fae417df.jpg"></p>
+<h2 id="mit6824">mit6.824</h2>
+<p>这算是这两周的重点，比较多时间都花在了lab2和lab3上。lab2目前是bug-free，lab3还在努力。同时lab2和raft的博文也提上日程了。</p>
+<h2 id="记一次相遇">记一次相遇</h2>
+<p>去小姨家那天的晚上，走到c9的时候遇到了聂昀和小贤。小贤倒是见过几次，聂昀的话见得比较少。围着c10，c9逛了一圈又一圈，也许是蕴含着对过去生活的怀念，聊到初中的同学时心里总是兴奋不已。</p>
+<p>男生的话题无非是最近有没谈女朋友，以前的女同学怎么样，分享知道的逆天事迹。话题本身没多大意思，我也不是很在乎。相遇的魔力在我们身边流转，初三的同学在几乎没有联系的高中以及两年大学后再次获得来之不易的闲聊机会。</p>
+<h2 id="birthday">birthday</h2>
+<p>差点忘记了生日的事情，算是一个平淡的生日吧。</p>
+<p>郭老师送的礼物，算是近年来比较喜欢的礼物了。
+<img src="https://s2.loli.net/2023/03/20/xoYEIRqekmHjKfO.jpg" alt="f1bfa4865411039f5be0fa013789c9a.jpg"></p>
+<p>还有秋科的蛋糕，祥睿的饼干。</p>
+<h2 id="输入">输入</h2>
+<p>无。。。
+希望能看看书。</p>
 ]]></content:encoded>
     </item>
     
@@ -58,6 +245,21 @@
 <p><img src="https://s2.loli.net/2023/03/02/FTCMVYv9GBse4qm.jpg" alt="微信图片_20230302232713.jpg"></p>
 <p><img src="https://s2.loli.net/2023/03/02/G1fZqCJdPoLKTnc.jpg" alt="微信图片_20230302232708.jpg"></p>
 <p><img src="https://s2.loli.net/2023/03/02/E7vn1UhMNepSmZt.jpg" alt="微信图片_20230302232701.jpg"></p>
+<ul>
+<li>接着周日又去了小姨家，陪他们逛了下广州的高中,让琪琪看看高中，确立一下目标。</li>
+</ul>
+<blockquote>
+<p>图片正在来的路上</p>
+</blockquote>
+<p>八十六中:听说是办学20来年，直到最近黄冈来的欧阳校长上任之后成绩才比较有起色。22年的话大约有30个985，60个600+这样。算不上特别顶尖的学校，但是就“加工”能力而言在生源较差的基础上能取得这样的成绩作为学校来说不能算失败。</p>
+<p>有点感悟就是，在大城市读书所谓的好的教育资源到底指的是什么？</p>
+<p>好的高中(/初中)？ 从我的视角看，大城市有好高中，但不一定是你有好高中。对于顶尖的资源来说，大城市的竞争也大，而同时在小县城，就拿我来说，成绩好你依然可以获得好的资源，至少上升的渠道并没有完全阻断。而对于上了高中之后的高考，大城市的补习班确实琳琅满目，就补习的效果而言我认为只要是你人是想学的，并且钱到位了，效果是肯定有的。但是在小地方，很多家庭并不一定能支撑补习班的费用，学习的过程可能会走一些弯路，但是毕竟是自己走过来的，对于学习方法什么的会逐渐形成自己的一套体系。无法论孰优孰劣，毕竟在考试这件事上，个体差异占主导因素。(回过头来看，这一段似乎有点既得利益者的看法。如果看中下段的学生的话，两个地方的资源是天差地别的)</p>
+<p>或者我们把格局打开，不局限于高考。</p>
+<p>好的教育资源在于什么？</p>
+<blockquote>
+<p><em>TODO&hellip;</em></p>
+</blockquote>
+<h3 id="heading"></h3>
 <h2 id="输入">输入</h2>
 <h3 id="书">书</h3>
 <p>《被讨厌的勇气》: 娓娓道来阿德勒心理学，教你如何活得不那么累。30%</p>
@@ -162,6 +364,358 @@
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
 </span></span></code></pre></div><p><img src="https://img-blog.csdnimg.cn/20210130194335207.png" alt=""></p>
+<h3 id="组合">组合</h3>
+<h4 id="组合总和httpsleetcodecnproblemscombination-sum"><a href="https://leetcode.cn/problems/combination-sum/">组合总和</a></h4>
+<h4 id="组合总和iihttpsleetcodecnproblemscombination-sum-ii"><a href="https://leetcode.cn/problems/combination-sum-ii/">组合总和II</a></h4>
+<h4 id="216组合总和iiihttpsleetcodecnproblemscombination-sum-iii"><a href="https://leetcode.cn/problems/combination-sum-iii/">216.组合总和III</a></h4>
+<h4 id="17电话号码的字母组合httpsleetcodecnproblemsletter-combinations-of-a-phone-number"><a href="https://leetcode.cn/problems/letter-combinations-of-a-phone-number/">17.电话号码的字母组合</a></h4>
+<h3 id="分割">分割</h3>
+<h4 id="分割回文字符串httpsleetcodecnproblemspalindrome-partitioning"><a href="https://leetcode.cn/problems/palindrome-partitioning/">分割回文字符串</a></h4>
+<h4 id="93复原ip地址httpsleetcodecnproblemsrestore-ip-addresses"><a href="https://leetcode.cn/problems/restore-ip-addresses/">93.复原IP地址</a></h4>
+<p>这几题用上面的方法都是比较简单的。</p>
+<h3 id="子集">子集</h3>
+<blockquote>
+<p>代码随想录总结得比较好:
+求子集问题和77.组合 和131.分割回文串 又不一样了。</p>
+</blockquote>
+<blockquote>
+<p>如果把 子集问题、组合问题、分割问题都抽象为一棵树的话，那么组合问题和分割问题都是收集树的叶子节点，而子集问题是找树的所有节点！</p>
+</blockquote>
+<blockquote>
+<p>其实子集也是一种组合问题，因为它的集合是无序的，子集{1,2} 和 子集{2,1}是一样的。</p>
+</blockquote>
+<blockquote>
+<p>那么既然是无序，取过的元素不会重复取，写回溯算法的时候，for就要从startIndex开始，而不是从0开始！</p>
+</blockquote>
+<blockquote>
+<p>有同学问了，什么时候for可以从0开始呢？</p>
+</blockquote>
+<blockquote>
+<p>求排列问题的时候，就要从0开始，因为集合是有序的，{1, 2} 和{2, 1}是两个集合，排列问题我们后续的文章就会讲到的。</p>
+</blockquote>
+<p>具体的区别在于，组合和分割是在终止的时候把这次的添加到集合，而集合问题是每次开始前都添加到集合也就是所有的节点不止叶子节点。</p>
+<p>之前我的写法是添加递归一遍，不添加递归一遍，所以会很多重复。(很别扭)</p>
+<blockquote>
+<p><em>比较重要的一道题</em></p>
+</blockquote>
+<h4 id="90子集iihttpsleetcodecnproblemssubsets-ii"><a href="https://leetcode.cn/problems/subsets-ii/">90.子集II</a></h4>
+<p>重要的点在于“数层剪枝”</p>
+<p>首先讲讲<a href="https://leetcode.cn/problems/combination-sum-ii/">40.组合总和II</a></p>
+<blockquote>
+<p>给定一个数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。</p>
+</blockquote>
+<blockquote>
+<p>candidates 中的每个数字在每个组合中只能使用一次。</p>
+</blockquote>
+<blockquote>
+<p>说明： 所有数字（包括目标数）都是正整数。解集不能包含重复的组合。</p>
+</blockquote>
+<p>这里面也是树层剪枝
+<img src="https://img-blog.csdnimg.cn/20201123202736384.png" alt=""></p>
+<p>我的方法是对排序后在层间的for循环时先找到相同的最后一个,然后再跳过。其实是一样的只是之前没有总结成方法论。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">for</span> <span class="nx">i</span><span class="o">:=</span><span class="nx">index</span><span class="p">;</span><span class="nx">i</span><span class="p">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="nx">candidates</span><span class="p">);</span><span class="nx">i</span><span class="o">++</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="nx">subAns</span><span class="p">=</span><span class="nb">append</span><span class="p">(</span><span class="nx">subAns</span><span class="p">,</span><span class="nx">candidates</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">sum</span><span class="o">+=</span><span class="nx">candidates</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">combination</span><span class="p">(</span><span class="nx">candidates</span><span class="p">,</span><span class="nx">target</span><span class="p">,</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">subAns</span><span class="p">=</span><span class="nx">subAns</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="nx">subAns</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">sum</span><span class="o">-=</span><span class="nx">candidates</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="nx">i</span><span class="o">!=</span><span class="nb">len</span><span class="p">(</span><span class="nx">candidates</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">candidates</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">==</span><span class="nx">candidates</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">i</span><span class="o">++</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><p>现在总结一下，树层剪枝其实是因为，同样深度的同一个值的情况其实已经被第一次遇到的那个节点的子树包括了。所以只需要第一个子树的情况就可以。</p>
+<p>回到<a href="https://leetcode.cn/problems/subsets-ii/">90. 子集 II</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">res</span>  <span class="p">[][]</span><span class="kt">int</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">subRes</span> <span class="p">[]</span><span class="kt">int</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">subsetsWithDup</span><span class="p">(</span><span class="nx">nums</span> <span class="p">[]</span><span class="kt">int</span><span class="p">)</span> <span class="p">[][]</span><span class="kt">int</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">res</span><span class="p">=[][]</span><span class="kt">int</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">subRes</span><span class="p">=[]</span><span class="kt">int</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">sort</span><span class="p">.</span><span class="nf">Sort</span><span class="p">(</span><span class="nx">sort</span><span class="p">.</span><span class="nf">IntSlice</span><span class="p">(</span><span class="nx">nums</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">sub</span><span class="p">(</span><span class="nx">nums</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">res</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">sub</span><span class="p">(</span><span class="nx">nums</span> <span class="p">[]</span><span class="kt">int</span><span class="p">,</span> <span class="nx">index</span> <span class="kt">int</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nx">index</span><span class="o">==</span><span class="nb">len</span><span class="p">(</span><span class="nx">nums</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">slice</span><span class="o">:=</span><span class="nb">make</span><span class="p">([]</span><span class="kt">int</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="nx">subRes</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">copy</span><span class="p">(</span><span class="nx">slice</span><span class="p">,</span><span class="nx">subRes</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">res</span><span class="p">=</span><span class="nb">append</span><span class="p">(</span><span class="nx">res</span><span class="p">,</span><span class="nx">slice</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">i</span><span class="o">:=</span><span class="nx">index</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">;</span><span class="nx">i</span><span class="p">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="nx">nums</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="o">&amp;&amp;</span><span class="nx">nums</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">==</span><span class="nx">nums</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span><span class="nx">i</span><span class="o">++</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">    <span class="nx">length</span><span class="o">:=</span><span class="nx">i</span><span class="o">-</span><span class="nx">index</span><span class="o">+</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// fmt.Println(length)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// fmt.Println(&#34;===&#34;,subRes)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">for</span> <span class="nx">length</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="nx">k</span><span class="o">:=</span><span class="mi">0</span><span class="p">;</span><span class="nx">k</span><span class="p">&lt;</span><span class="nx">length</span><span class="p">;</span><span class="nx">k</span><span class="o">++</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">subRes</span><span class="p">=</span><span class="nb">append</span><span class="p">(</span><span class="nx">subRes</span><span class="p">,</span><span class="nx">nums</span><span class="p">[</span><span class="nx">index</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// fmt.Println(subRes)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nf">sub</span><span class="p">(</span><span class="nx">nums</span><span class="p">,</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">subRes</span><span class="p">=</span><span class="nx">subRes</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="nx">subRes</span><span class="p">)</span><span class="o">-</span><span class="nx">length</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">length</span><span class="o">--</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>我使用length记录，同样的数字的长度然后递减再递归只能说重复太多，没有理解到子集。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">result</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">path</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">backtracking</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">nums</span><span class="p">,</span> <span class="kt">int</span> <span class="n">startIndex</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">used</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">result</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">path</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">startIndex</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// used[i - 1] == true，说明同一树枝candidates[i - 1]使用过
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="c1">// used[i - 1] == false，说明同一树层candidates[i - 1]使用过
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="c1">// 而我们要对同一树层使用过的元素进行跳过
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">used</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">continue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="n">path</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">used</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">backtracking</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">used</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">used</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">path</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">subsetsWithDup</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">nums</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">result</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">path</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="n">used</span><span class="p">(</span><span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span> <span class="nb">false</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sort</span><span class="p">(</span><span class="n">nums</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">nums</span><span class="p">.</span><span class="n">end</span><span class="p">());</span> <span class="c1">// 去重需要排序
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">backtracking</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">used</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>这是好的做法</p>
+<h4 id="491-递增子序列httpsleetcodecnproblemsnon-decreasing-subsequences"><a href="https://leetcode.cn/problems/non-decreasing-subsequences/">491. 递增子序列</a></h4>
+<p>这题算是比较难</p>
+<blockquote>
+<p>给你一个整数数组 nums ，找出并返回所有该数组中不同的递增子序列，递增子序列中 至少有两个元素 。你可以按 任意顺序 返回答案。</p>
+</blockquote>
+<blockquote>
+<p>数组中可能含有重复元素，如出现两个整数相等，也可以视作递增序列的一种特殊情况。</p>
+</blockquote>
+<p>我一开始用层间剪枝的方法，必须要用一个hash map或者数组来保存同一层中见过的其他数字。
+这是因为他这里是不能排序的，很难知道是否见过了相同的。</p>
+<p>力扣官方题解有个比较好的去重思路。其实总的来说这类重复问题其实都是说，有n个重复的数字，在你的集合中你要用n，n-1,n-2&hellip;.1个来进行递归。</p>
+<p>之前代码随想录是把这种选择单放到一个树的深度来考虑。</p>
+<p>这里官方题解是把他n个放到第一个棵子树，n-1放到第二颗。。。</p>
+<p>这样就必须让子树中相同数值都选中，</p>
+<blockquote>
+<p>那如何保证没有重复呢？我们需要给「不选择」做一个限定条件，只有当当前的元素不等于上一个选择的元素的时候，才考虑不选择当前元素，直接递归后面的元素。因为如果有两个相同的元素，我们会考虑这样四种情况：</p>
+</blockquote>
+<blockquote>
+<ul>
+<li>前者被选择，后者被选择</li>
+<li>前者被选择，后者不被选择</li>
+<li>前者不被选择，后者被选择</li>
+<li>前者不被选择，后者不被选择
+其中第二种情况和第三种情况其实是等价的，我们这样限制之后，舍弃了第二种，保留了第三种，于是达到了去重的目的。</li>
+</ul>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">var</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">temp</span> <span class="p">[]</span><span class="kt">int</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ans</span> <span class="p">[][]</span><span class="kt">int</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">func</span> <span class="n">findSubsequences</span><span class="p">(</span><span class="n">nums</span> <span class="p">[]</span><span class="kt">int</span><span class="p">)</span> <span class="p">[][]</span><span class="kt">int</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ans</span> <span class="o">=</span> <span class="p">[][]</span><span class="kt">int</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dfs</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">math</span><span class="p">.</span><span class="n">MinInt32</span><span class="p">,</span> <span class="n">nums</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">ans</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">func</span> <span class="nf">dfs</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="n">last</span> <span class="kt">int</span><span class="p">,</span> <span class="n">nums</span> <span class="p">[]</span><span class="kt">int</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">cur</span> <span class="o">==</span> <span class="n">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">len</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">2</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nl">t</span> <span class="p">:</span><span class="o">=</span> <span class="n">make</span><span class="p">([]</span><span class="kt">int</span><span class="p">,</span> <span class="n">len</span><span class="p">(</span><span class="n">temp</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="n">copy</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">temp</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ans</span> <span class="o">=</span> <span class="n">append</span><span class="p">(</span><span class="n">ans</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">nums</span><span class="p">[</span><span class="n">cur</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">last</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">temp</span> <span class="o">=</span> <span class="n">append</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="n">nums</span><span class="p">[</span><span class="n">cur</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dfs</span><span class="p">(</span><span class="n">cur</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">nums</span><span class="p">[</span><span class="n">cur</span><span class="p">],</span> <span class="n">nums</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="o">:</span><span class="n">len</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">nums</span><span class="p">[</span><span class="n">cur</span><span class="p">]</span> <span class="o">!=</span> <span class="n">last</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dfs</span><span class="p">(</span><span class="n">cur</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">nums</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>注意他这里选的方法是和我之前那个一样，一个函数里面push的递归一次，不push的递归一次。模拟选和不选</p>
+<h4 id="全排列httpsleetcodecnproblemspermutations"><a href="https://leetcode.cn/problems/permutations/">全排列</a></h4>
+<p>排列和组合比较像，同样是取叶子节点。不同点在于：全排列的i是从0开始选没有被选过的。
+这样的话需要一个数组记录是否被选过。
+而不需要额外空间的方法是，每次选了之后做一个划分，划分后变成两部分，一部分是已经被选过，一部分是还没有被选。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">res</span> <span class="p">[][]</span><span class="kt">int</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">subRes</span> <span class="p">[]</span><span class="kt">int</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">permute</span><span class="p">(</span><span class="nx">nums</span> <span class="p">[]</span><span class="kt">int</span><span class="p">)</span> <span class="p">[][]</span><span class="kt">int</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">res</span><span class="p">=[][]</span><span class="kt">int</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">subRes</span><span class="p">=[]</span><span class="kt">int</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">subFunc</span><span class="p">(</span><span class="nx">nums</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">res</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">subFunc</span><span class="p">(</span><span class="nx">nums</span> <span class="p">[]</span><span class="kt">int</span><span class="p">,</span><span class="nx">startIndex</span> <span class="kt">int</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nx">subRes</span><span class="p">)</span><span class="o">==</span><span class="nb">len</span><span class="p">(</span><span class="nx">nums</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">slice</span><span class="o">:=</span><span class="nb">make</span><span class="p">([]</span><span class="kt">int</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="nx">subRes</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">copy</span><span class="p">(</span><span class="nx">slice</span><span class="p">,</span><span class="nx">subRes</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">res</span><span class="p">=</span><span class="nb">append</span><span class="p">(</span><span class="nx">res</span><span class="p">,</span><span class="nx">slice</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="nx">i</span><span class="o">:=</span><span class="nx">startIndex</span><span class="p">;</span><span class="nx">i</span><span class="p">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="nx">nums</span><span class="p">);</span><span class="nx">i</span><span class="o">++</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">subRes</span><span class="p">=</span><span class="nb">append</span><span class="p">(</span><span class="nx">subRes</span><span class="p">,</span><span class="nx">nums</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">nums</span><span class="p">[</span><span class="nx">startIndex</span><span class="p">],</span><span class="nx">nums</span><span class="p">[</span><span class="nx">i</span><span class="p">]=</span><span class="nx">nums</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span><span class="nx">nums</span><span class="p">[</span><span class="nx">startIndex</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">subFunc</span><span class="p">(</span><span class="nx">nums</span><span class="p">,</span><span class="nx">startIndex</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">nums</span><span class="p">[</span><span class="nx">startIndex</span><span class="p">],</span><span class="nx">nums</span><span class="p">[</span><span class="nx">i</span><span class="p">]=</span><span class="nx">nums</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span><span class="nx">nums</span><span class="p">[</span><span class="nx">startIndex</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">subRes</span><span class="p">=</span><span class="nx">subRes</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="nx">subRes</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h4 id="47-全排列"><a href="">47. 全排列</a></h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">res</span> <span class="p">[][]</span><span class="kt">int</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">subRes</span> <span class="p">[]</span><span class="kt">int</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">permuteUnique</span><span class="p">(</span><span class="nx">nums</span> <span class="p">[]</span><span class="kt">int</span><span class="p">)</span> <span class="p">[][]</span><span class="kt">int</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">state</span> <span class="o">:=</span><span class="nb">make</span><span class="p">([]</span><span class="kt">int</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="nx">nums</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">res</span><span class="p">=[][]</span><span class="kt">int</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">subRes</span><span class="p">=[]</span><span class="kt">int</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">sort</span><span class="p">.</span><span class="nf">Sort</span><span class="p">(</span><span class="nx">sort</span><span class="p">.</span><span class="nf">IntSlice</span><span class="p">(</span><span class="nx">nums</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">permute</span><span class="p">(</span><span class="nx">nums</span><span class="p">,</span><span class="nx">state</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">res</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">permute</span><span class="p">(</span><span class="nx">nums</span> <span class="p">[]</span><span class="kt">int</span><span class="p">,</span><span class="nx">state</span> <span class="p">[]</span><span class="kt">int</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nx">subRes</span><span class="p">)</span><span class="o">==</span><span class="nb">len</span><span class="p">(</span><span class="nx">nums</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">slice</span><span class="o">:=</span><span class="nb">make</span><span class="p">([]</span><span class="kt">int</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="nx">nums</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">copy</span><span class="p">(</span><span class="nx">slice</span><span class="p">,</span><span class="nx">subRes</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">res</span><span class="p">=</span><span class="nb">append</span><span class="p">(</span><span class="nx">res</span><span class="p">,</span><span class="nx">slice</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="nx">i</span><span class="o">:=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="p">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="nx">nums</span><span class="p">);</span><span class="nx">i</span><span class="o">++</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">       
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">!=</span><span class="mi">0</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">subRes</span><span class="p">=</span><span class="nb">append</span><span class="p">(</span><span class="nx">subRes</span><span class="p">,</span><span class="nx">nums</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">permute</span><span class="p">(</span><span class="nx">nums</span><span class="p">,</span><span class="nx">state</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">subRes</span><span class="p">=</span><span class="nx">subRes</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="nx">subRes</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">state</span><span class="p">[</span><span class="nx">i</span><span class="p">]=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="nx">i</span><span class="p">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="nx">nums</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="o">&amp;&amp;</span><span class="nx">nums</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">==</span><span class="nx">nums</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">i</span><span class="o">++</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>注意，一开始我把</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">for</span> <span class="nx">i</span><span class="p">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="nx">nums</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="o">&amp;&amp;</span><span class="nx">nums</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">==</span><span class="nx">nums</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">i</span><span class="o">++</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>写在前面是不行的
+写在前面的写法是和前面的比较而不是和后面的比较
+写在前面的写法</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">continue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h4 id="332-重新安排行程httpsleetcodecnproblemsreconstruct-itinerary"><a href="https://leetcode.cn/problems/reconstruct-itinerary/">332. 重新安排行程</a></h4>
+<p>这题是能写出来，但是有点曲折。</p>
+<p>先贴代码:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span>  <span class="nx">res</span> <span class="p">[]</span><span class="kt">string</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">subRes</span> <span class="p">[]</span><span class="kt">string</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">findItinerary</span><span class="p">(</span><span class="nx">tickets</span> <span class="p">[][]</span><span class="kt">string</span><span class="p">)</span> <span class="p">[]</span><span class="kt">string</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">list</span><span class="p">,</span><span class="nx">table</span><span class="o">:=</span><span class="nf">makeList</span><span class="p">(</span><span class="nx">tickets</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">subRes</span><span class="p">=[]</span><span class="kt">string</span><span class="p">{</span><span class="s">&#34;JFK&#34;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">res</span><span class="p">=[]</span><span class="kt">string</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">target</span><span class="o">:=</span><span class="s">&#34;JFK&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">find</span><span class="p">(</span><span class="nx">list</span><span class="p">,</span><span class="nx">table</span><span class="p">,</span><span class="nx">target</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="nx">tickets</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">res</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">find</span><span class="p">(</span><span class="nx">list</span> <span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">][]</span><span class="kt">string</span> <span class="p">,</span><span class="nx">table</span> <span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">][]</span><span class="kt">bool</span> <span class="p">,</span> <span class="nx">target</span> <span class="kt">string</span><span class="p">,</span><span class="nx">length</span> <span class="kt">int</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nx">subRes</span><span class="p">)</span><span class="o">==</span><span class="nx">length</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">slice</span><span class="o">:=</span><span class="nb">make</span><span class="p">([]</span><span class="kt">string</span><span class="p">,</span><span class="nx">length</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">copy</span><span class="p">(</span><span class="nx">slice</span><span class="p">,</span><span class="nx">subRes</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">res</span><span class="p">=</span><span class="nx">slice</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="nx">i</span><span class="p">,</span><span class="nx">s</span><span class="o">:=</span><span class="k">range</span><span class="p">(</span><span class="nx">list</span><span class="p">[</span><span class="nx">target</span><span class="p">]){</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nx">table</span><span class="p">[</span><span class="nx">target</span><span class="p">][</span><span class="nx">i</span><span class="p">]</span><span class="o">==</span><span class="kc">false</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">subRes</span><span class="p">=</span><span class="nb">append</span><span class="p">(</span><span class="nx">subRes</span><span class="p">,</span><span class="nx">list</span><span class="p">[</span><span class="nx">target</span><span class="p">][</span><span class="nx">i</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">table</span><span class="p">[</span><span class="nx">target</span><span class="p">][</span><span class="nx">i</span><span class="p">]=</span><span class="kc">true</span>
+</span></span><span class="line"><span class="cl">            <span class="nf">find</span><span class="p">(</span><span class="nx">list</span><span class="p">,</span><span class="nx">table</span><span class="p">,</span><span class="nx">s</span><span class="p">,</span><span class="nx">length</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">subRes</span><span class="p">=</span><span class="nx">subRes</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="nx">subRes</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">table</span><span class="p">[</span><span class="nx">target</span><span class="p">][</span><span class="nx">i</span><span class="p">]=</span><span class="kc">false</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nx">res</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">makeList</span><span class="p">(</span><span class="nx">tickets</span> <span class="p">[][]</span><span class="kt">string</span><span class="p">)</span> <span class="p">(</span><span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">][]</span><span class="kt">string</span><span class="p">,</span><span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">][]</span><span class="kt">bool</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">list</span><span class="o">:=</span><span class="nb">make</span><span class="p">(</span><span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">][]</span><span class="kt">string</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="nx">_</span><span class="p">,</span><span class="nx">v</span><span class="o">:=</span><span class="k">range</span><span class="p">(</span><span class="nx">tickets</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nx">_</span><span class="p">,</span><span class="nx">ok</span><span class="o">:=</span><span class="nx">list</span><span class="p">[</span><span class="nx">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]];</span><span class="nx">ok</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">list</span><span class="p">[</span><span class="nx">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]]=</span><span class="nb">append</span><span class="p">(</span><span class="nx">list</span><span class="p">[</span><span class="nx">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span><span class="nx">v</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">            <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">list</span><span class="p">[</span><span class="nx">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]]=[]</span><span class="kt">string</span><span class="p">{</span><span class="nx">v</span><span class="p">[</span><span class="mi">1</span><span class="p">]}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">table</span> <span class="o">:=</span><span class="nb">make</span><span class="p">(</span><span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">][]</span><span class="kt">bool</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="nx">k</span><span class="p">,</span><span class="nx">_</span><span class="o">:=</span><span class="k">range</span><span class="p">(</span><span class="nx">list</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">sort</span><span class="p">.</span><span class="nf">Sort</span><span class="p">(</span><span class="nx">sort</span><span class="p">.</span><span class="nf">StringSlice</span><span class="p">(</span><span class="nx">list</span><span class="p">[</span><span class="nx">k</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">table</span><span class="p">[</span><span class="nx">k</span><span class="p">]=</span><span class="nb">make</span><span class="p">([]</span><span class="kt">bool</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="nx">list</span><span class="p">[</span><span class="nx">k</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">list</span><span class="p">,</span><span class="nx">table</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>比较好的做法:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// unordered_map&lt;出发机场, map&lt;到达机场, 航班次数&gt;&gt; targets
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">string</span><span class="p">,</span> <span class="n">map</span><span class="o">&lt;</span><span class="n">string</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">targets</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">backtracking</span><span class="p">(</span><span class="kt">int</span> <span class="n">ticketNum</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;&amp;</span> <span class="n">result</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">result</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">==</span> <span class="n">ticketNum</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="n">pair</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">string</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="nl">target</span> <span class="p">:</span> <span class="n">targets</span><span class="p">[</span><span class="n">result</span><span class="p">[</span><span class="n">result</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">target</span><span class="p">.</span><span class="n">second</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">{</span> <span class="c1">// 记录到达机场是否飞过了
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">result</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">target</span><span class="p">.</span><span class="n">first</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">target</span><span class="p">.</span><span class="n">second</span><span class="o">--</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">backtracking</span><span class="p">(</span><span class="n">ticketNum</span><span class="p">,</span> <span class="n">result</span><span class="p">))</span> <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">result</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="n">target</span><span class="p">.</span><span class="n">second</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">findItinerary</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;&gt;&amp;</span> <span class="n">tickets</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">targets</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">result</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="k">const</span> <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;&amp;</span> <span class="nl">vec</span> <span class="p">:</span> <span class="n">tickets</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">targets</span><span class="p">[</span><span class="n">vec</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="n">vec</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span><span class="o">++</span><span class="p">;</span> <span class="c1">// 记录映射关系
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="n">result</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">&#34;JFK&#34;</span><span class="p">);</span> <span class="c1">// 起始机场
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">backtracking</span><span class="p">(</span><span class="n">tickets</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span> <span class="n">result</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>学到的几点:</p>
+<ul>
+<li>当只需要遍历找到某一个叶子节点时，可以设置递归函数的返回值，一旦条件满足就返回标志，这样就可以向上不断返回。</li>
+</ul>
 ]]></content:encoded>
     </item>
     
@@ -2365,47 +2919,6 @@ my version</p>
 <li>76.最小覆盖子串</li>
 </ul>
 ]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>標頭圖片</title>
-      <link>https://blog.yehaohui.com/zh-cn/2018/03/05/category/%E6%A8%99%E9%A0%AD%E5%9C%96%E7%89%87/</link>
-      <pubDate>Mon, 05 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2018/03/05/category/%E6%A8%99%E9%A0%AD%E5%9C%96%E7%89%87/</guid>
-      <description>這是一個簡單的筆記。</description>
-      <content:encoded><![CDATA[<p>這是一個簡單的筆記。</p>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://blog.yehaohui.com/zh-cn/links/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/links/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://blog.yehaohui.com/zh-cn/1/01/01/category/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/1/01/01/category/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://blog.yehaohui.com/zh-cn/1/01/01/category/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/1/01/01/category/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
   </channel>

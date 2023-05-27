@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mit6.824 on Yehh</title>
+    <link>https://blog.yehaohui.com/zh-cn/tag/mit6.824/</link>
+    <description>Recent content in mit6.824 on Yehh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 08 Mar 2023 08:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/mit6.824/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raft implementation</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/03/08/category/raft_implementation/</link>
+      <pubDate>Wed, 08 Mar 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/03/08/category/raft_implementation/</guid>
+      <description>本文记录一下搭建MiT6.824 lab2 Raft的实现过程 Raft的原理见: 一些有用的links:</description>
+    </item>
+    
+  </channel>
+</rss>
