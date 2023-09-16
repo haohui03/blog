@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Containerd on Yehh</title>
+    <link>https://blog.yehaohui.com/zh-cn/tag/containerd/</link>
+    <description>Recent content in Containerd on Yehh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 23 Aug 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/containerd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>containerd-intro</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/23/category/containerd-intro/</link>
+      <pubDate>Wed, 23 Aug 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/23/category/containerd-intro/</guid>
+      <description>Reference 容器运行时 containerd 学习笔记</description>
+    </item>
+    
+    <item>
+      <title>CNI</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/07/08/category/cni/</link>
+      <pubDate>Sat, 08 Jul 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/07/08/category/cni/</guid>
+      <description>CNI Reference 从零开始入门 K8s：理解 CNI 和 CNI 插件</description>
+    </item>
+    
+  </channel>
+</rss>

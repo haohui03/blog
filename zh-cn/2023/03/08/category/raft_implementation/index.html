@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Raft implementation · Yehh</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="本文记录一下搭建MiT6.824 lab2 Raft的实现过程 Raft的原理见: 一些有用的links:" />
+  <meta name="description" content="本文记录一下搭建MiT6.824 Raft的实现过程 注意本文基于6.824 2020年版。 写下此文主要是为了记录一下自己的实现过程，以及一些遇到" />
 
   <meta name="keywords" content="Hugo, theme, den" />
 
@@ -19,19 +19,19 @@
 
 
 <meta property="og:title" content="Raft implementation" />
-<meta property="og:description" content="本文记录一下搭建MiT6.824 lab2 Raft的实现过程 Raft的原理见: 一些有用的links:" />
+<meta property="og:description" content="本文记录一下搭建MiT6.824 Raft的实现过程 注意本文基于6.824 2020年版。 写下此文主要是为了记录一下自己的实现过程，以及一些遇到" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.yehaohui.com/zh-cn/2023/03/08/category/raft_implementation/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-03-08T08:01:23+08:00" />
 <meta property="article:modified_time" content="2023-03-08T09:27:30+08:00" />
 
 <meta itemprop="name" content="Raft implementation">
-<meta itemprop="description" content="本文记录一下搭建MiT6.824 lab2 Raft的实现过程 Raft的原理见: 一些有用的links:"><meta itemprop="datePublished" content="2023-03-08T08:01:23+08:00" />
+<meta itemprop="description" content="本文记录一下搭建MiT6.824 Raft的实现过程 注意本文基于6.824 2020年版。 写下此文主要是为了记录一下自己的实现过程，以及一些遇到"><meta itemprop="datePublished" content="2023-03-08T08:01:23+08:00" />
 <meta itemprop="dateModified" content="2023-03-08T09:27:30+08:00" />
-<meta itemprop="wordCount" content="46">
+<meta itemprop="wordCount" content="544">
 <meta itemprop="keywords" content="mit6.824,distributed systerm," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Raft implementation"/>
-<meta name="twitter:description" content="本文记录一下搭建MiT6.824 lab2 Raft的实现过程 Raft的原理见: 一些有用的links:"/>
+<meta name="twitter:description" content="本文记录一下搭建MiT6.824 Raft的实现过程 注意本文基于6.824 2020年版。 写下此文主要是为了记录一下自己的实现过程，以及一些遇到"/>
 </head>
 <body>
   
@@ -134,9 +134,61 @@
   <main>
 <div class="container content">
   <article>
-  <h2 id="本文记录一下搭建mit6824-lab2-raft的实现过程">本文记录一下搭建MiT6.824 lab2 Raft的实现过程</h2>
-<p>Raft的原理见:</p>
-<p>一些有用的links:</p>
+  <h2 id="本文记录一下搭建mit6824-raft的实现过程">本文记录一下搭建MiT6.824 Raft的实现过程</h2>
+<p>注意本文基于6.824 2020年版。</p>
+<p>写下此文主要是为了记录一下自己的实现过程，以及一些遇到的问题(不然到时候面试的时候都忘了)。</p>
+<p>写下此文的时间点在完成lab3，但不能完成千次测试，记录的同时尝试优化一下之前的实现。</p>
+<h3 id="raft是什么">Raft是什么</h3>
+<blockquote>
+<p>Raft is a consensus algorithm that is designed to be easy to understand. It&rsquo;s equivalent to Paxos in fault-tolerance and performance. The difference is that it&rsquo;s decomposed into relatively independent subproblems, and it cleanly addresses all major pieces needed for practical systems. We hope Raft will make consensus available to a wider audience, and that this wider audience will be able to develop a variety of higher quality consensus-based systems than are available today.</p>
+</blockquote>
+<h3 id="lab-2a">lab 2A</h3>
+<p>2A主要实现的是选举和心跳机制。
+具体来说需要实现Raft结构体内的 Make Start Getstate方法</p>
+<p>下面介绍一下我的实现：</p>
+<h4 id="raft结构体">Raft结构体</h4>
+<p>基本是按照paper中figure2来实现，其中 lastIncludedIndex和lastIncludedTerm是snapshot中的实现，读者目前可以忽略。
+<img src="https://s2.loli.net/2023/09/15/UuyfzijJnHCeQDP.png" alt="image.png"></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Raft</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Your data here (2A, 2B, 2C).
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="c1">// Look at the paper&#39;s Figure 2 for a description of what
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="c1">// state a Raft server must maintain.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">mu</span>          <span class="nx">sync</span><span class="p">.</span><span class="nx">Mutex</span>          <span class="c1">// Lock to protect shared access to this peer&#39;s state
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">peers</span>       <span class="p">[]</span><span class="o">*</span><span class="nx">labrpc</span><span class="p">.</span><span class="nx">ClientEnd</span> <span class="c1">// RPC end points of all peers
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">persister</span>   <span class="o">*</span><span class="nx">Persister</span>          <span class="c1">// Object to hold this peer&#39;s persisted state
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">me</span>          <span class="kt">int</span>                 <span class="c1">// this peer&#39;s index into peers[]
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">dead</span>        <span class="kt">int32</span>               <span class="c1">// set by Kill()
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">log</span>         <span class="p">[]</span><span class="nx">Entry</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">currentTerm</span> <span class="kt">int</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">votedFor</span>    <span class="kt">int</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="nx">commitIndex</span> <span class="kt">int</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">lastApplied</span> <span class="kt">int</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="nx">state</span>          <span class="kt">int</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">elecTimer</span>      <span class="o">*</span><span class="nx">RandomTimer</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">heartBeatTimer</span> <span class="o">*</span><span class="nx">time</span><span class="p">.</span><span class="nx">Timer</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">//for test
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">applyCh</span> <span class="kd">chan</span> <span class="nx">ApplyMsg</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">//for Leader
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="c1">//Reinitialized after election
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">	<span class="nx">newIndex</span>          <span class="kt">int</span> <span class="c1">//track the newest index used to append log rather than len(log)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">lastIncludedIndex</span> <span class="kt">int</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">lastIncludedTerm</span>  <span class="kt">int</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="nx">nextIndex</span>  <span class="p">[]</span><span class="kt">int</span> <span class="c1">//(initialized to leader last log index + 1)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">matchIndex</span> <span class="p">[]</span><span class="kt">int</span> <span class="c1">//initalized to 0
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="reference">Reference</h2>
+<p><a href="http://nil.csail.mit.edu/6.824/2020/papers/raft-extended.pdf">Raft Paper</a></p>
+<p><a href="https://raft.github.io/">Raft 动画 非常有用</a></p>
+<p><a href="https://blog.eleven.wiki/posts/mit6.824-lab2-raft/">11大佬的博客 画了很多图易于理解</a></p>
+<p><a href="https://pdos.csail.mit.edu/6.824/index.html">mit6.824 2020</a></p>
+<p><a href="https://blog.josejg.com/debugging-pretty/">这门课的助教编写的debug工具，非常非常重要</a></p>
 
   </article>
 

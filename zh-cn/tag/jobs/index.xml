@@ -6,14 +6,41 @@
     <description>Recent content in jobs on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 27 May 2023 08:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/jobs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Aug 2023 08:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/jobs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>leetcode_record2</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/25/category/leetcode_record2/</link>
+      <pubDate>Fri, 25 Aug 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/25/category/leetcode_record2/</guid>
+      <description>力扣记录2 剑指 Offer 51. 数组中的逆序对 我对这题的评价是逆天 class Solution { public: int mergeSort(vector&amp;lt;int&amp;gt;&amp;amp; nums, vector&amp;lt;int&amp;gt;&amp;amp; tmp, int l, int r) { if (l &amp;gt;= r) { return 0; } int mid = (l + r) / 2; int inv_count = mergeSort(nums, tmp, l, mid) + mergeSort(nums, tmp, mid + 1, r);</description>
+    </item>
+    
+    <item>
+      <title>《Go 语言高性能编程》阅读</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/19/category/go-%E8%AF%AD%E8%A8%80%E9%AB%98%E6%80%A7%E8%83%BD%E7%BC%96%E7%A8%8B%E9%98%85%E8%AF%BB/</link>
+      <pubDate>Sat, 19 Aug 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/19/category/go-%E8%AF%AD%E8%A8%80%E9%AB%98%E6%80%A7%E8%83%BD%E7%BC%96%E7%A8%8B%E9%98%85%E8%AF%BB/</guid>
+      <description>这个系列是记录阅读《Go 语言高性能编程》这本书的一些笔记 第一章：Go 语言性能分析 在学生时期，测试很难被重视起来，但是写好测试是程序员的进阶之</description>
+    </item>
+    
+    <item>
+      <title>leetcode_record1</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/13/category/leetcode_record1/</link>
+      <pubDate>Sun, 13 Aug 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/13/category/leetcode_record1/</guid>
+      <description>剑指offer 剑指 Offer 12. 矩阵中的路径 一眼看出是回溯，其实还是挺简单的，但是要主要一开始遍历来找到起点。 剪绳子II 不能用动态规划，只能贪心，但是</description>
+    </item>
+    
     <item>
       <title>动态规划</title>
       <link>https://blog.yehaohui.com/zh-cn/2023/05/27/category/leetcode_day13/</link>
       <pubDate>Sat, 27 May 2023 08:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/05/27/category/leetcode_day13/</guid>
-      <description>发现好久没有写刷题记录了(博客也好久没有更新了) leetcode 135 分发糖果</description>
+      <description>发现好久没有写刷题记录了(博客也好久没有更新了) 718. 最长重复子数组 输入：nums1 = [1,2,3,2,1], nums2 = [3,2,1,4,7] 输出：3 解释：长度最长的公共子数组是 [3,2,1] 。 虽然说一开</description>
     </item>
     
     <item>

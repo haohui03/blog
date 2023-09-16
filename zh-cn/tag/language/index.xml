@@ -6,7 +6,43 @@
     <description>Recent content in language on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 25 Feb 2023 09:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/language/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Aug 2023 09:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/language/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>go-package-overview</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/16/category/net/http/</link>
+      <pubDate>Wed, 16 Aug 2023 09:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/16/category/net/http/</guid>
+      <description>i/o io constants const ( SeekStart = 0 // seek relative to the origin of the file SeekCurrent = 1 // seek relative to the current offset SeekEnd = 2 // seek relative to the end ) 和c++的seekg一样，有三种相对寻找方式 variables 几种错误 //要注意E</description>
+    </item>
+    
+    <item>
+      <title>golang-interview-gmp</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/01/category/golang-interview-gmp/</link>
+      <pubDate>Tue, 01 Aug 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/01/category/golang-interview-gmp/</guid>
+      <description>golang 调度器的由来 如果把并发交给os来完成，首先是CPU的调度消耗，其次进程占用4GB(虚拟内存)，线程占用4MB这些都是比较高的内存占用。 协程</description>
+    </item>
+    
+    <item>
+      <title>context</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/07/11/category/net/http/</link>
+      <pubDate>Tue, 11 Jul 2023 09:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/07/11/category/net/http/</guid>
+      <description>Overview: Package context defines the Context type, which carries deadlines, cancellation signals, and other request-scoped values across API boundaries and between processes. Incoming requests to a server should create a Context, and outgoing calls to servers should accept a Context. The chain of function calls between them must propagate the Context, optionally replacing it with a derived Context created using WithCancel, WithDeadline, WithTimeout, or WithValue. When a Context is canceled,</description>
+    </item>
+    
+    <item>
+      <title>net/http</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/06/19/category/net/http/</link>
+      <pubDate>Mon, 19 Jun 2023 09:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/06/19/category/net/http/</guid>
+      <description>learn http 前置知识: HTTP 1.1 / 2 基于TCP ， HTTP/3 可以基于TCP UDP 和QUIC. HTTP HTTP 报文的常见格式: GET / HTTP/1.1 User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT) Host: draveness.me Accept-Language: en-us Accept-Encoding: gzip, deflate Content-Type: text/html; charset=UTF-8 Content-Length: 138 Connection: Keep-Alive &amp;lt;html&amp;gt; ... &amp;lt;/html&amp;gt; TCP 粘</description>
+    </item>
+    
     <item>
       <title>net/rpc</title>
       <link>https://blog.yehaohui.com/zh-cn/2023/02/25/category/net/rpc/</link>
@@ -14,6 +50,15 @@
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/02/25/category/net/rpc/</guid>
       <description>glance at net/rpc 简介: 远程过程调用 (Remote Procedure Call，RPC) 是一种计算机通信协议。允许运行在一台计算机的程序调用另一个地址空间的子程序（一般是开放网络中的</description>
+    </item>
+    
+    <item>
+      <title>golang-blog</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/02/17/category/golang-blog/</link>
+      <pubDate>Fri, 17 Feb 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/02/17/category/golang-blog/</guid>
+      <description>阅读golang的官方blog做的一些笔记 pipeline fan-in fan-out Multiple functions can read from the same channel until that channel is closed; this is called fan-out. This provides a way to distribute work amongst a group of workers to parallelize CPU use and I/O. A function can read from multiple inputs and proceed until all</description>
     </item>
     
   </channel>

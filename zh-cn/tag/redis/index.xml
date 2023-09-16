@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Redis on Yehh</title>
+    <link>https://blog.yehaohui.com/zh-cn/tag/redis/</link>
+    <description>Recent content in Redis on Yehh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 08 Jul 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/redis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>redis-note1</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/07/08/category/redis-note1/</link>
+      <pubDate>Sat, 08 Jul 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/07/08/category/redis-note1/</guid>
+      <description>Redis笔记1 What is redis Redis: REmote Dictionary Server tools redis-benchmark:性能测试工具。 redis-check-aof：修复有问题的AOF文件 redi</description>
+    </item>
+    
+    <item>
+      <title>redis-note2</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/07/08/category/redis-note2/</link>
+      <pubDate>Sat, 08 Jul 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/07/08/category/redis-note2/</guid>
+      <description>operarion unlink 10types string operation SET GET MSET MGET getrange setrange (INCR key)只有数字才能加减，INCRBY key number。DECR同理 STRLEN， APPEND key value getset list 底层是双端队列，容量是2的</description>
+    </item>
+    
+  </channel>
+</rss>

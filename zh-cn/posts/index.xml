@@ -6,185 +6,185 @@
     <description>Recent content in Posts on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 27 May 2023 10:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Sep 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>大二下 13-14周</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/05/27/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-13-14%E5%91%A8/</link>
-      <pubDate>Sat, 27 May 2023 10:01:23 +0800</pubDate>
+      <title>yehh-wiki</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/09/16/category/yehh-wiki/</link>
+      <pubDate>Sat, 16 Sep 2023 13:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/05/27/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-13-14%E5%91%A8/</guid>
-      <description>《你比从前快乐》 不知不觉就到了13周！！！ 概览 总得来说，这两个月过得不咸不淡。力扣力扣没刷多少八股八股也没做多少，公开课lab也没做完。算是</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/09/16/category/yehh-wiki/</guid>
+      <description>这里记录一些有用的连接 设计一个软件(服务)的原则/最佳实践-12factors golang 有用的库 viper 配置库 fsnotify 跨平台的文件提醒(一般是文件修改的提醒吧)</description>
     </item>
     
     <item>
-      <title>动态规划</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/05/27/category/leetcode_day13/</link>
-      <pubDate>Sat, 27 May 2023 08:01:23 +0800</pubDate>
+      <title>DDIA-note</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/09/14/category/ddia-note/</link>
+      <pubDate>Thu, 14 Sep 2023 08:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/05/27/category/leetcode_day13/</guid>
-      <description>发现好久没有写刷题记录了(博客也好久没有更新了) leetcode 135 分发糖果</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/09/14/category/ddia-note/</guid>
+      <description>Reference DDIA chinese</description>
     </item>
     
     <item>
-      <title>贪心(2)</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/04/23/category/leetcode_day12/</link>
-      <pubDate>Sun, 23 Apr 2023 08:01:23 +0800</pubDate>
+      <title>interview-golang</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/09/13/category/interview-golang/</link>
+      <pubDate>Wed, 13 Sep 2023 13:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/04/23/category/leetcode_day12/</guid>
-      <description>贪心算法(2) leetcode 135 分发糖果 这题我本来根据题目意思，三个三个来看一步一步来赋值，但是还是不对。原因在于:上一个山，你从左边上山是不知道山顶距离</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/09/13/category/interview-golang/</guid>
+      <description>golang问题 init的执行顺序 Golang中变量的分配位置是堆or栈可以看看这个和刘丹冰的 GC[典藏版]Golang三色标记、混合写屏障</description>
     </item>
     
     <item>
-      <title>贪心</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/03/27/category/leetcode_day11/</link>
-      <pubDate>Mon, 27 Mar 2023 08:01:23 +0800</pubDate>
+      <title>高性能Mysql-ch1、2</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/09/12/category/high_perfermance_mysql_ch1_2/</link>
+      <pubDate>Tue, 12 Sep 2023 08:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/03/27/category/leetcode_day11/</guid>
-      <description>贪心算法 摆动序列 如果连续数字之间的差严格地在正数和负数之间交替，则数字序列称为 摆动序列 。第一个差（如果存在的话）可能是正数或负数。仅有一个元</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/09/12/category/high_perfermance_mysql_ch1_2/</guid>
+      <description>高性能Mysql 该系列主要是记录阅读高性能Mysql的一些笔记。 Mysql架构 架构的逻辑视图 连接管理和安全 每个客户端连接都会有一个线程，连接</description>
     </item>
     
     <item>
-      <title>Raft implementation</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/03/08/category/raft_implementation/</link>
-      <pubDate>Wed, 08 Mar 2023 08:01:23 +0800</pubDate>
+      <title>istio-day1</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/27/category/istio-day1/</link>
+      <pubDate>Sun, 27 Aug 2023 13:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/03/08/category/raft_implementation/</guid>
-      <description>本文记录一下搭建MiT6.824 lab2 Raft的实现过程 Raft的原理见: 一些有用的links:</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/27/category/istio-day1/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>大二下 3-4周</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/03/05/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-3-4%E5%91%A8/</link>
-      <pubDate>Sun, 05 Mar 2023 16:01:23 +0800</pubDate>
+      <title>leetcode_record2</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/25/category/leetcode_record2/</link>
+      <pubDate>Fri, 25 Aug 2023 08:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/03/05/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-3-4%E5%91%A8/</guid>
-      <description>平淡的两周 这段时间心里总是很急躁，可能是外界(身边的负能量)也可能是自己的原因。希望借周记和自己对话的机会让自己平静下来。 Polyv 前几个月报名的保</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/25/category/leetcode_record2/</guid>
+      <description>力扣记录2 剑指 Offer 51. 数组中的逆序对 我对这题的评价是逆天 class Solution { public: int mergeSort(vector&amp;lt;int&amp;gt;&amp;amp; nums, vector&amp;lt;int&amp;gt;&amp;amp; tmp, int l, int r) { if (l &amp;gt;= r) { return 0; } int mid = (l + r) / 2; int inv_count = mergeSort(nums, tmp, l, mid) + mergeSort(nums, tmp, mid + 1, r);</description>
     </item>
     
     <item>
-      <title>大二下 1-2周</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/03/02/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-1-2%E5%91%A8/</link>
-      <pubDate>Thu, 02 Mar 2023 16:01:23 +0800</pubDate>
+      <title>containerd-intro</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/23/category/containerd-intro/</link>
+      <pubDate>Wed, 23 Aug 2023 13:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/03/02/category/%E5%A4%A7%E4%BA%8C%E4%B8%8B-1-2%E5%91%A8/</guid>
-      <description>概览 第一周主要是复习和考试，要考的科目有Java，计概，还有雅思英语。这几门课都不难，浅浅复习都足以解决考试。 有意思的是：Java考试的时候</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/23/category/containerd-intro/</guid>
+      <description>Reference 容器运行时 containerd 学习笔记</description>
     </item>
     
     <item>
-      <title>回溯[上]</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/03/01/category/leetcode_day10/</link>
-      <pubDate>Wed, 01 Mar 2023 08:01:23 +0800</pubDate>
+      <title>《Go 语言高性能编程》阅读</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/19/category/go-%E8%AF%AD%E8%A8%80%E9%AB%98%E6%80%A7%E8%83%BD%E7%BC%96%E7%A8%8B%E9%98%85%E8%AF%BB/</link>
+      <pubDate>Sat, 19 Aug 2023 08:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/03/01/category/leetcode_day10/</guid>
-      <description>回溯 思想 回溯其实就是穷举的一种方式，但是这种穷举可以把之前举过的信息保存(传递)给后面使用。 适用范围 组合问题：N个数里面按一定规则找出k个数</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/19/category/go-%E8%AF%AD%E8%A8%80%E9%AB%98%E6%80%A7%E8%83%BD%E7%BC%96%E7%A8%8B%E9%98%85%E8%AF%BB/</guid>
+      <description>这个系列是记录阅读《Go 语言高性能编程》这本书的一些笔记 第一章：Go 语言性能分析 在学生时期，测试很难被重视起来，但是写好测试是程序员的进阶之</description>
     </item>
     
     <item>
-      <title>二叉树（下）</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/02/28/category/leetcode_day9/</link>
-      <pubDate>Tue, 28 Feb 2023 08:01:23 +0800</pubDate>
+      <title>gee-intro</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/19/category/gee-intro/</link>
+      <pubDate>Sat, 19 Aug 2023 08:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/02/28/category/leetcode_day9/</guid>
-      <description>二叉树(下) 二叉搜索树 二叉搜索树的话最重要就是中序遍历，普通的中序遍历用stack存值，然后用pointer遍历，每次pop的时候存入然后p</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/19/category/gee-intro/</guid>
+      <description>gee 本项目模仿极客兔兔的7天项目进行学习 gee-web 简介 这是一个简单的web框架，实现了路由、中间件、静态文件服务、模板渲染等功能。主要是模仿gin框架</description>
     </item>
     
     <item>
-      <title>net/rpc</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/02/25/category/net/rpc/</link>
-      <pubDate>Sat, 25 Feb 2023 09:01:23 +0800</pubDate>
+      <title>gee-intro</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/19/category/gee-intro/</link>
+      <pubDate>Sat, 19 Aug 2023 08:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/02/25/category/net/rpc/</guid>
-      <description>glance at net/rpc 简介: 远程过程调用 (Remote Procedure Call，RPC) 是一种计算机通信协议。允许运行在一台计算机的程序调用另一个地址空间的子程序（一般是开放网络中的</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/19/category/gee-intro/</guid>
+      <description>osproxy</description>
     </item>
     
     <item>
-      <title>二叉树（中）</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/02/23/category/leetcode_day8/</link>
-      <pubDate>Thu, 23 Feb 2023 08:01:23 +0800</pubDate>
+      <title>golang test</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/19/category/golang-test/</link>
+      <pubDate>Sat, 19 Aug 2023 08:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/02/23/category/leetcode_day8/</guid>
-      <description>二叉树(中) 层序遍历 和广度优先差不多 需要注意的是：要判断这层什么时候结束 我的方法是通过置一个nil作为结束，其实可以一趟一趟地看，先获取qu</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/19/category/golang-test/</guid>
+      <description>标准库 testing 标准测试使用go test 来编译运行测试*_test.go文件，这些文件不是go build命令编译的对象。 *_test.go 中，有三种测试 功能测试 每一个测试</description>
     </item>
     
     <item>
-      <title>二叉树（上）</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/02/22/category/leetcode_day7/</link>
-      <pubDate>Wed, 22 Feb 2023 13:01:23 +0800</pubDate>
+      <title>go-package-overview</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/16/category/net/http/</link>
+      <pubDate>Wed, 16 Aug 2023 09:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/02/22/category/leetcode_day7/</guid>
-      <description>二叉树(上) 二叉树的递归遍历: 这里帮助大家确定下来递归算法的三个要素。每次写递归，都按照这三要素来写，可以保证大家写出正确的递归算法！ 确定递</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/16/category/net/http/</guid>
+      <description>i/o io constants const ( SeekStart = 0 // seek relative to the origin of the file SeekCurrent = 1 // seek relative to the current offset SeekEnd = 2 // seek relative to the end ) 和c++的seekg一样，有三种相对寻找方式 variables 几种错误 //要注意E</description>
     </item>
     
     <item>
-      <title>栈与队列</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/02/17/category/leetcode_day6/</link>
-      <pubDate>Fri, 17 Feb 2023 13:01:23 +0800</pubDate>
+      <title>zero-copy</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/16/category/zero-copy/</link>
+      <pubDate>Wed, 16 Aug 2023 09:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/02/17/category/leetcode_day6/</guid>
-      <description>栈与队列 用栈实现队列 用两个栈实现队列 比较简单，就是一个输入一个输出。可以理解为负负得正(先进后出*2=先进先出) 用队列实现栈 用队列实现栈 这个</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/16/category/zero-copy/</guid>
+      <description>linux i/o &amp;amp;&amp;amp; zero-copy reference: Linux I/O 原理和 Zero-copy 技术全面揭秘 深入剖析Linux IO原理和几种零拷贝机制的实现</description>
     </item>
     
     <item>
-      <title>2022  年终总结</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/02/15/category/2022_review/</link>
-      <pubDate>Wed, 15 Feb 2023 16:01:23 +0800</pubDate>
+      <title>golang-detail</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/13/category/golang-detail/</link>
+      <pubDate>Sun, 13 Aug 2023 08:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/02/15/category/2022_review/</guid>
-      <description>2022 年终总结 学业&amp;amp;科研 学业 目前rank:19/270+ 一些课程: DB(数据库系统):93 Network(计算机网络):92 OS(操作系</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/13/category/golang-detail/</guid>
+      <description>空结构体 type EST stuct{ } func main(){ var b EST var c struct{}; fmt.Printf(&amp;#34;b address %P size %d\n&amp;#34;,&amp;amp;b,unsafe.size(b)) fmt.Printf(&amp;#34;c address %P size %d\n&amp;#34;,&amp;amp;c,unsafe.size(c)) //两者地址相同，空间占用都是0 } 自定义的和struct{}是等价 用法set可以用值为空</description>
     </item>
     
     <item>
-      <title>字符串</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/02/15/category/leetcode_day5/</link>
-      <pubDate>Wed, 15 Feb 2023 13:01:23 +0800</pubDate>
+      <title>leetcode_record1</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/13/category/leetcode_record1/</link>
+      <pubDate>Sun, 13 Aug 2023 08:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/02/15/category/leetcode_day5/</guid>
-      <description>字符串 剑指offer 5 请实现一个函数，把字符串 s 中的每个空格替换成&amp;quot;%20&amp;quot;。 题目不难 要注意首先拓展长度,必须遍历,无论</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/13/category/leetcode_record1/</guid>
+      <description>剑指offer 剑指 Offer 12. 矩阵中的路径 一眼看出是回溯，其实还是挺简单的，但是要主要一开始遍历来找到起点。 剪绳子II 不能用动态规划，只能贪心，但是</description>
     </item>
     
     <item>
-      <title>哈希表</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/02/12/category/leetcode_day4/</link>
-      <pubDate>Sun, 12 Feb 2023 13:01:23 +0800</pubDate>
+      <title>rocksdb源码分析（1）</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/05/category/rocksdb1/</link>
+      <pubDate>Sat, 05 Aug 2023 13:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/02/12/category/leetcode_day4/</guid>
-      <description>哈希表 哈希碰撞的两个解决方法: 拉链法 线性探测 常见的哈希表: 数组 set map 有关红黑树，见红黑树深入剖析及Java实现 RBTree的定义 RBTree的</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/05/category/rocksdb1/</guid>
+      <description>rocksdb源码解读(一) 本系列开始对rocksdb源码进行解读，主要是为了更好的理解rocksdb的设计思想，以及对rocksdb的使用</description>
     </item>
     
     <item>
-      <title>链表(下)</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/02/09/category/leetcode_day3/</link>
-      <pubDate>Thu, 09 Feb 2023 13:01:23 +0800</pubDate>
+      <title>rocksdb源码分析（2）</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/05/category/rocksdb2/</link>
+      <pubDate>Sat, 05 Aug 2023 13:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/02/09/category/leetcode_day3/</guid>
-      <description>链表(下) leetcode 206. 简单一遍过 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。 /** * Definition for singly-linked list. * type ListNode struct { * Val int * Next *ListNode * } */ func reverseList(head *ListNode) *ListNode { if head==nil || head.Next==nil{ return</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/05/category/rocksdb2/</guid>
+      <description>columnfamily memtable WAL 格式 创建: rocksdb::DB::Open(options, &amp;ldquo;./db/&amp;rdquo;, &amp;amp;db); db-&amp;gt;Flush(rocksdb::FlushOptions(), handles[1]); 在Write的时候检查WAl大小超过了max_total_wal_size的时候，会创建新的wal。 memtable 写入 slice.h Slice 主要</description>
     </item>
     
     <item>
-      <title>模拟，链表(上)</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/02/07/category/leetcode_day2/</link>
-      <pubDate>Tue, 07 Feb 2023 13:01:23 +0800</pubDate>
+      <title>rocksdb源码分析（3）</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/05/category/rocksdb3/</link>
+      <pubDate>Sat, 05 Aug 2023 13:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/02/07/category/leetcode_day2/</guid>
-      <description>模拟，链表(上) 模拟 以leetcode 59.螺旋矩阵为例: 相信很多同学刚开始做这种题目的时候，上来就是一波判断猛如虎。 结果运行的时候各种问题</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/05/category/rocksdb3/</guid>
+      <description>column family 介绍 是用来做逻辑隔离的，不同的column family可以有不同的配置，比如不同的compaction策略，不同的压缩策略等等。而且不同</description>
     </item>
     
     <item>
-      <title>二分查找，双指针，滑动窗口</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/02/05/category/leetcode_day1/</link>
-      <pubDate>Sun, 05 Feb 2023 16:01:23 +0800</pubDate>
+      <title>golang-interview-gmp</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/01/category/golang-interview-gmp/</link>
+      <pubDate>Tue, 01 Aug 2023 13:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/02/05/category/leetcode_day1/</guid>
-      <description>23-02-05 刷题记录 基本是跟着代码随想录刷的，day1刷了二分查找，滑窗还有双指针。记录一下当时的思路。 二分查找 二分查找突出的是一个熟练，针对已有的两</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/01/category/golang-interview-gmp/</guid>
+      <description>golang 调度器的由来 如果把并发交给os来完成，首先是CPU的调度消耗，其次进程占用4GB(虚拟内存)，线程占用4MB这些都是比较高的内存占用。 协程</description>
     </item>
     
     <item>
-      <title>標頭圖片</title>
-      <link>https://blog.yehaohui.com/zh-cn/2018/03/05/category/%E6%A8%99%E9%A0%AD%E5%9C%96%E7%89%87/</link>
-      <pubDate>Mon, 05 Mar 2018 16:01:23 +0800</pubDate>
+      <title>context</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/07/11/category/net/http/</link>
+      <pubDate>Tue, 11 Jul 2023 09:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2018/03/05/category/%E6%A8%99%E9%A0%AD%E5%9C%96%E7%89%87/</guid>
-      <description>這是一個簡單的筆記。</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/07/11/category/net/http/</guid>
+      <description>Overview: Package context defines the Context type, which carries deadlines, cancellation signals, and other request-scoped values across API boundaries and between processes. Incoming requests to a server should create a Context, and outgoing calls to servers should accept a Context. The chain of function calls between them must propagate the Context, optionally replacing it with a derived Context created using WithCancel, WithDeadline, WithTimeout, or WithValue. When a Context is canceled,</description>
     </item>
     
   </channel>

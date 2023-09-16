@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Yehh</title>
+    <link>https://blog.yehaohui.com/zh-cn/tag/linux/</link>
+    <description>Recent content in linux on Yehh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 16 Aug 2023 09:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>zero-copy</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/08/16/category/zero-copy/</link>
+      <pubDate>Wed, 16 Aug 2023 09:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/08/16/category/zero-copy/</guid>
+      <description>linux i/o &amp;amp;&amp;amp; zero-copy reference: Linux I/O 原理和 Zero-copy 技术全面揭秘 深入剖析Linux IO原理和几种零拷贝机制的实现</description>
+    </item>
+    
+    <item>
+      <title>interview-linux-epoll</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/07/08/category/interview-linux/</link>
+      <pubDate>Sat, 08 Jul 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/07/08/category/interview-linux/</guid>
+      <description>Linux面试题 io多路复用 为什么要使用io多路复用 既能阻塞等待不占用cpu，又能在同一时刻监听多个IO请求。 几个概念 流：流是一个抽象的概念</description>
+    </item>
+    
+    <item>
+      <title>Linux设置</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/07/08/category/linux_setting/</link>
+      <pubDate>Sat, 08 Jul 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/07/08/category/linux_setting/</guid>
+      <description>Linux设置 apt-get 设置代理 修改环境变量 export http_proxy=http://127.0.0.1:7890 sudo apt-get update</description>
+    </item>
+    
+  </channel>
+</rss>
