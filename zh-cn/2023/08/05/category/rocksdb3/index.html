@@ -28,7 +28,7 @@
 <meta itemprop="name" content="rocksdb源码分析（3）">
 <meta itemprop="description" content="column family 介绍 是用来做逻辑隔离的，不同的column family可以有不同的配置，比如不同的compaction策略，不同的压缩策略等等。而且不同"><meta itemprop="datePublished" content="2023-08-05T13:01:23+08:00" />
 <meta itemprop="dateModified" content="2023-08-05T13:27:30+08:00" />
-<meta itemprop="wordCount" content="104">
+<meta itemprop="wordCount" content="1192">
 <meta itemprop="keywords" content="rocksdb,Middleware,infra," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="rocksdb源码分析（3）"/>
 <meta name="twitter:description" content="column family 介绍 是用来做逻辑隔离的，不同的column family可以有不同的配置，比如不同的compaction策略，不同的压缩策略等等。而且不同"/>
@@ -138,6 +138,120 @@
   <h2 id="column-family">column family</h2>
 <h3 id="介绍">介绍</h3>
 <p>是用来做逻辑隔离的，不同的column family可以有不同的配置，比如不同的compaction策略，不同的压缩策略等等。而且不同的column family 对应不同的memtable，但是共享同一个wal文件</p>
+<p>rocksdb根据注释给出的结构示意</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="c1">//       +----------------------+    +----------------------+   +--------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   +---+ ColumnFamilyHandle 1 | +--+ ColumnFamilyHandle 2 |   | DBImpl |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   |   +----------------------+ |  +----------------------+   +----+---+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   | +--------------------------+                                  |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   | |                               +-----------------------------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   | |                               |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   | | +-----------------------------v-------------------------------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   | | |                                                             |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   | | |                      ColumnFamilySet                        |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   | | |                                                             |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   | | +-------------+--------------------------+----------------+---+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   | |               |                          |                |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   | +-------------------------------------+    |                |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   |                 |                     |    |                v
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   |   +-------------v-------------+ +-----v----v---------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   |   |                           | |                    |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   |   |     ColumnFamilyData 1    | | ColumnFamilyData 2 |    ......
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   |   |                           | |                    |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   +---&gt;                           | |                    |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//       |                 +---------+ |                    |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//       |                 | MemTable| |                    |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//       |                 |  List   | |                    |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//       +--------+---+--+-+----+----+ +--------------------++
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                |   |  |      |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                |   |  |      |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                |   |  |      +-----------------------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                |   |  +-----------+                  |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                v   +--------+     |                  |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//       +--------+--------+   |     |                  |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//       |                 |   |     |       +----------v----------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">// +---&gt; |SuperVersion 1.a +-----------------&gt;                     |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//       |                 +------+  |       | MemTableListVersion |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//       +---+-------------+   |  |  |       |                     |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//           |                 |  |  |       +----+------------+---+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//           |      current    |  |  |            |            |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//           |   +-------------+  |  |mem         |            |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//           |   |                |  |            |            |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//         +-v---v-------+    +---v--v---+  +-----v----+  +----v-----+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//         |             |    |          |  |          |  |          |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//         | Version 1.a |    | memtable |  | memtable |  | memtable |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//         |             |    |   1.a    |  |   1.b    |  |   1.c    |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//         +-------------+    |          |  |          |  |          |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                            +----------+  +----------+  +----------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1">// DBImpl keeps a ColumnFamilySet, which references to all column families by
+</span></span></span><span class="line"><span class="cl"><span class="c1">// pointing to respective ColumnFamilyData object of each column family.
+</span></span></span><span class="line"><span class="cl"><span class="c1">// This is how DBImpl can list and operate on all the column families.
+</span></span></span><span class="line"><span class="cl"><span class="c1">// ColumnFamilyHandle also points to ColumnFamilyData directly, so that
+</span></span></span><span class="line"><span class="cl"><span class="c1">// when a user executes a query, it can directly find memtables and Version
+</span></span></span><span class="line"><span class="cl"><span class="c1">// as well as SuperVersion to the column family, without going through
+</span></span></span><span class="line"><span class="cl"><span class="c1">// ColumnFamilySet.
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1">// ColumnFamilySet points to the latest view of the LSM-tree (list of memtables
+</span></span></span><span class="line"><span class="cl"><span class="c1">// and SST files) indirectly, while ongoing operations may hold references
+</span></span></span><span class="line"><span class="cl"><span class="c1">// to a current or an out-of-date SuperVersion, which in turn points to a
+</span></span></span><span class="line"><span class="cl"><span class="c1">// point-in-time view of the LSM-tree. This guarantees the memtables and SST
+</span></span></span><span class="line"><span class="cl"><span class="c1">// files being operated on will not go away, until the SuperVersion is
+</span></span></span><span class="line"><span class="cl"><span class="c1">// unreferenced to 0 and destoryed.
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1">// The following graph illustrates a possible referencing relationships:
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Column       +--------------+      current       +-----------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Family +----&gt;+              +-------------------&gt;+           |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  Data        | SuperVersion +----------+         | Version A |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//              |      3       |   imm    |         |           |
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Iter2 +-----&gt;+              |  +-------v------+  +-----------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//              +-----+--------+  | MemtableList +----------------&gt; Empty
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                    |           |   Version r  |  +-----------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                    |           +--------------+  |           |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                    +------------------+   current| Version B |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//              +--------------+         |   +-----&gt;+           |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//              |              |         |   |      +-----+-----+
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Compaction +&gt;+ SuperVersion +-------------+            ^
+</span></span></span><span class="line"><span class="cl"><span class="c1">//    Job       |      2       +------+  |                |current
+</span></span></span><span class="line"><span class="cl"><span class="c1">//              |              +----+ |  |     mem        |    +------------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//              +--------------+    | |  +---------------------&gt;            |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                                  | +------------------------&gt; MemTable a |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                                  |          mem        |    |            |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//              +--------------+    |                     |    +------------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//              |              +--------------------------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  Iter1 +-----&gt; SuperVersion |    |                          +------------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//              |      1       +------------------------------&gt;+            |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//              |              +-+  |        mem               | MemTable b |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//              +--------------+ |  |                          |            |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                               |  |    +--------------+      +-----^------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                               |  |imm | MemtableList |            |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                               |  +---&gt;+   Version s  +------------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                               |       +--------------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                               |       +--------------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                               |       | MemtableList |
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                               +------&gt;+   Version t  +--------&gt;  Empty
+</span></span></span><span class="line"><span class="cl"><span class="c1">//                                 imm   +--------------+
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1">// In this example, even if the current LSM-tree consists of Version A and
+</span></span></span><span class="line"><span class="cl"><span class="c1">// memtable a, which is also referenced by SuperVersion, two older SuperVersion
+</span></span></span><span class="line"><span class="cl"><span class="c1">// SuperVersion2 and Superversion1 still exist, and are referenced by a
+</span></span></span><span class="line"><span class="cl"><span class="c1">// compaction job and an old iterator Iter1, respectively. SuperVersion2
+</span></span></span><span class="line"><span class="cl"><span class="c1">// contains Version B, memtable a and memtable b; SuperVersion1 contains
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Version B and memtable b (mutable). As a result, Version B and memtable b
+</span></span></span><span class="line"><span class="cl"><span class="c1">// are prevented from being destroyed or deleted.                        
+</span></span></span></code></pre></div><p><img src="https://s2.loli.net/2023/10/20/SdMAN2jPHfuxokL.png" alt="image.png"></p>
+<p>其实细看会发现其实是DBImpl会有一个VersionSet的unique_ptr，然后VersionSet会有一个ColumnFamilySet的unique_ptr</p>
+<ul>
+<li>
+<p>版本(Version)：这个是RocksDB内部概念。一个版本包含某个时间点的所有存活SST文件。一旦一个落盘或者压缩完成，由于存活SST文件发生了变化，一个新的“版本”会被创建。一个旧的“版本”还会被仍在进行的读请求或者压缩工作使用。旧的版本最终会被回收。</p>
+</li>
+<li>
+<p>超级版本(super version)：RocksDB的内部概念。一个超级版本包含一个特定时间的 的 一个SST文件列表（一个“版本”）以及一个存活memtable的列表。不管是压缩还是落盘，抑或是一个memtable切换，都会生成一个新的“超级版本”。一个旧的“超级版本”会被继续用于正在进行的读请求。旧的超级版本最终会在不再需要的时候被回收掉。</p>
+</li>
+</ul>
+<h3 id="reference">reference</h3>
+<p><a href="http://mysql.taobao.org/monthly/2018/06/09/#:~:text=Column%20Family%E4%B8%BB%E8%A6%81%E6%98%AF%E6%8F%90%E4%BE%9B,%E5%88%A0%E9%99%A4%E5%AF%B9%E5%BA%94%E7%9A%84Column%20Family.">columnfamily</a></p>
+<p><a href="https://blog.csdn.net/Z_Stand/article/details/120425532">读流程</a></p>
 
   </article>
 

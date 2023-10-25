@@ -10,41 +10,188 @@
   
   <url>
     <loc>https://blog.yehaohui.com/zh-cn/categories/</loc>
-    <lastmod>2023-09-16T13:27:30+08:00</lastmod>
+    <lastmod>2023-10-23T09:27:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.yehaohui.com/zh-cn/category/code/</loc>
-    <lastmod>2023-09-16T13:27:30+08:00</lastmod>
+    <lastmod>2023-10-23T09:27:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.yehaohui.com/zh-cn/tag/infra/</loc>
-    <lastmod>2023-09-16T13:27:30+08:00</lastmod>
+    <loc>https://blog.yehaohui.com/zh-cn/tag/golang/</loc>
+    <lastmod>2023-10-23T09:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/tag/osproxy/</loc>
+    <lastmod>2023-10-23T09:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/2023/10/23/category/osproxy-core/</loc>
+    <lastmod>2023-10-23T09:27:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.yehaohui.com/zh-cn/posts/</loc>
-    <lastmod>2023-09-16T13:27:30+08:00</lastmod>
+    <lastmod>2023-10-23T09:27:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.yehaohui.com/zh-cn/tag/record/</loc>
-    <lastmod>2023-09-16T13:27:30+08:00</lastmod>
+    <loc>https://blog.yehaohui.com/zh-cn/tag/project/</loc>
+    <lastmod>2023-10-23T09:27:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.yehaohui.com/zh-cn/tags/</loc>
+    <lastmod>2023-10-23T09:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/</loc>
+    <lastmod>2023-10-23T09:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/tag/infra/</loc>
+    <lastmod>2023-10-17T13:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/tag/middleware/</loc>
+    <lastmod>2023-10-17T13:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/tag/rocksdb/</loc>
+    <lastmod>2023-10-17T13:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/2023/10/17/category/rocksdb-principal/</loc>
+    <lastmod>2023-10-17T13:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/tag/docker/</loc>
+    <lastmod>2023-10-15T13:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/2023/10/15/category/docker-images/</loc>
+    <lastmod>2023-10-15T13:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/tag/images/</loc>
+    <lastmod>2023-10-15T13:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/2023/10/08/category/go-redis-note/</loc>
+    <lastmod>2023-10-08T13:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/tag/redis/</loc>
+    <lastmod>2023-10-08T13:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/tag/life/</loc>
+    <lastmod>2023-09-20T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/category/life/</loc>
+    <lastmod>2023-09-20T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/tag/record/</loc>
+    <lastmod>2023-09-20T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/2023/09/20/category/%E5%A4%A7%E4%B8%89%E4%B8%8A-%E7%AC%AC%E5%9B%9B%E5%91%A8/</loc>
+    <lastmod>2023-09-20T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/2023/09/19/category/osproxy-intro/</loc>
+    <lastmod>2023-09-19T09:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/tag/interview/</loc>
+    <lastmod>2023-09-17T13:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/2023/09/17/category/interview-%E5%85%AB%E8%82%A1/</loc>
+    <lastmod>2023-09-17T13:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/tag/network/</loc>
+    <lastmod>2023-09-17T13:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/category/notes/</loc>
     <lastmod>2023-09-16T13:27:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -52,13 +199,6 @@
   
   <url>
     <loc>https://blog.yehaohui.com/zh-cn/tag/wiki/</loc>
-    <lastmod>2023-09-16T13:27:30+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yehaohui.com/zh-cn/</loc>
     <lastmod>2023-09-16T13:27:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -93,21 +233,28 @@
   </url>
   
   <url>
-    <loc>https://blog.yehaohui.com/zh-cn/tag/golang/</loc>
-    <lastmod>2023-09-13T13:27:30+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yehaohui.com/zh-cn/tag/interview/</loc>
-    <lastmod>2023-09-13T13:27:30+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.yehaohui.com/zh-cn/2023/09/13/category/interview-golang/</loc>
+    <lastmod>2023-09-13T13:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/tag/kafka/</loc>
+    <lastmod>2023-10-13T13:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/2023/09/13/category/kafka-day1/</loc>
+    <lastmod>2023-10-13T13:27:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yehaohui.com/zh-cn/2023/09/13/category/redis_basic/</loc>
     <lastmod>2023-09-13T13:27:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -150,28 +297,28 @@
   
   <url>
     <loc>https://blog.yehaohui.com/zh-cn/tag/algorithm/</loc>
-    <lastmod>2023-08-25T09:27:30+08:00</lastmod>
+    <lastmod>2023-10-10T09:27:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.yehaohui.com/zh-cn/tag/jobs/</loc>
-    <lastmod>2023-08-25T09:27:30+08:00</lastmod>
+    <lastmod>2023-10-10T09:27:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.yehaohui.com/zh-cn/tag/leetcode/</loc>
-    <lastmod>2023-08-25T09:27:30+08:00</lastmod>
+    <lastmod>2023-10-10T09:27:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.yehaohui.com/zh-cn/2023/08/25/category/leetcode_record2/</loc>
-    <lastmod>2023-08-25T09:27:30+08:00</lastmod>
+    <lastmod>2023-10-10T09:27:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -205,21 +352,7 @@
   </url>
   
   <url>
-    <loc>https://blog.yehaohui.com/zh-cn/2023/08/19/category/gee-intro/</loc>
-    <lastmod>2023-08-19T09:27:30+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.yehaohui.com/zh-cn/2023/08/19/category/golang-test/</loc>
-    <lastmod>2023-08-19T09:27:30+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yehaohui.com/zh-cn/tag/project/</loc>
     <lastmod>2023-08-19T09:27:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -270,20 +403,6 @@
   <url>
     <loc>https://blog.yehaohui.com/zh-cn/2023/08/13/category/leetcode_record1/</loc>
     <lastmod>2023-08-13T09:27:30+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yehaohui.com/zh-cn/tag/middleware/</loc>
-    <lastmod>2023-08-05T13:27:30+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yehaohui.com/zh-cn/tag/rocksdb/</loc>
-    <lastmod>2023-08-05T13:27:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -352,13 +471,6 @@
   </url>
   
   <url>
-    <loc>https://blog.yehaohui.com/zh-cn/tag/redis/</loc>
-    <lastmod>2023-07-08T13:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.yehaohui.com/zh-cn/2023/07/08/category/redis-note1/</loc>
     <lastmod>2023-07-08T13:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -380,22 +492,22 @@
   </url>
   
   <url>
-    <loc>https://blog.yehaohui.com/zh-cn/2023/06/19/category/net/http/</loc>
+    <loc>https://blog.yehaohui.com/zh-cn/2023/06/19/category/net/</loc>
     <lastmod>2023-06-19T09:20:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.yehaohui.com/zh-cn/tag/life/</loc>
-    <lastmod>2023-05-27T10:01:23+08:00</lastmod>
+    <loc>https://blog.yehaohui.com/zh-cn/tag/net/</loc>
+    <lastmod>2023-06-19T09:20:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.yehaohui.com/zh-cn/category/life/</loc>
-    <lastmod>2023-05-27T10:01:23+08:00</lastmod>
+    <loc>https://blog.yehaohui.com/zh-cn/2023/06/19/category/net/http/</loc>
+    <lastmod>2023-06-19T09:20:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -569,13 +681,6 @@
   </url>
   
   <url>
-    <loc>https://blog.yehaohui.com/zh-cn/tag/images/</loc>
-    <lastmod>2018-03-05T16:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.yehaohui.com/zh-cn/2018/03/05/category/%E6%A8%99%E9%A0%AD%E5%9C%96%E7%89%87/</loc>
     <lastmod>2018-03-05T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -585,12 +690,6 @@
   <url>
     <loc>https://blog.yehaohui.com/zh-cn/links/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yehaohui.com/zh-cn/1/01/01/category/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>

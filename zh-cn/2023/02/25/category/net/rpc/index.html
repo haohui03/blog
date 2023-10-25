@@ -28,7 +28,7 @@
 <meta itemprop="name" content="net/rpc">
 <meta itemprop="description" content="glance at net/rpc 简介: 远程过程调用 (Remote Procedure Call，RPC) 是一种计算机通信协议。允许运行在一台计算机的程序调用另一个地址空间的子程序（一般是开放网络中的"><meta itemprop="datePublished" content="2023-02-25T09:01:23+08:00" />
 <meta itemprop="dateModified" content="2023-02-25T09:20:30+08:00" />
-<meta itemprop="wordCount" content="174">
+<meta itemprop="wordCount" content="475">
 <meta itemprop="keywords" content="golang,language," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="net/rpc"/>
 <meta name="twitter:description" content="glance at net/rpc 简介: 远程过程调用 (Remote Procedure Call，RPC) 是一种计算机通信协议。允许运行在一台计算机的程序调用另一个地址空间的子程序（一般是开放网络中的"/>
@@ -137,12 +137,71 @@
   <h1 id="glance-at-netrpc">glance at net/rpc</h1>
 <h2 id="简介">简介:</h2>
 <p>远程过程调用 (Remote Procedure Call，RPC) 是一种计算机通信协议。允许运行在一台计算机的程序调用另一个地址空间的子程序（一般是开放网络中的一台计算机），而程序员就像调用调用本地程序一样，无需额外做交互编程。RPC 是一种 CS (Client-Server) 架构的模式，通过发送请求-接收响应的方式进行信息的交互<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。</p>
-<h2 id="heading"></h2>
+<h2 id="基本用法">基本用法</h2>
+<p>一般的的用法就是将定义好的符合要求的结构体在服务端注册上去，服务端监听一个socket来建立连接。</p>
+<p>客户端通过拨号的方式来建立连接，然后通过客户端的client来调用服务端的方法。</p>
+<p>定义结构和服务</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">server</span>
+</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Args</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">A</span><span class="p">,</span> <span class="nx">B</span> <span class="kt">int</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Quotient</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Quo</span><span class="p">,</span> <span class="nx">Rem</span> <span class="kt">int</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Arith</span> <span class="kt">int</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">t</span> <span class="o">*</span><span class="nx">Arith</span><span class="p">)</span> <span class="nf">Multiply</span><span class="p">(</span><span class="nx">args</span> <span class="o">*</span><span class="nx">Args</span><span class="p">,</span> <span class="nx">reply</span> <span class="o">*</span><span class="kt">int</span><span class="p">)</span> <span class="kt">error</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">*</span><span class="nx">reply</span> <span class="p">=</span> <span class="nx">args</span><span class="p">.</span><span class="nx">A</span> <span class="o">*</span> <span class="nx">args</span><span class="p">.</span><span class="nx">B</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">nil</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">t</span> <span class="o">*</span><span class="nx">Arith</span><span class="p">)</span> <span class="nf">Divide</span><span class="p">(</span><span class="nx">args</span> <span class="o">*</span><span class="nx">Args</span><span class="p">,</span> <span class="nx">quo</span> <span class="o">*</span><span class="nx">Quotient</span><span class="p">)</span> <span class="kt">error</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nx">args</span><span class="p">.</span><span class="nx">B</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">errors</span><span class="p">.</span><span class="nf">New</span><span class="p">(</span><span class="s">&#34;divide by zero&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">quo</span><span class="p">.</span><span class="nx">Quo</span> <span class="p">=</span> <span class="nx">args</span><span class="p">.</span><span class="nx">A</span> <span class="o">/</span> <span class="nx">args</span><span class="p">.</span><span class="nx">B</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">quo</span><span class="p">.</span><span class="nx">Rem</span> <span class="p">=</span> <span class="nx">args</span><span class="p">.</span><span class="nx">A</span> <span class="o">%</span> <span class="nx">args</span><span class="p">.</span><span class="nx">B</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">nil</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="服务端">服务端</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">arith</span> <span class="o">:=</span> <span class="nb">new</span><span class="p">(</span><span class="nx">Arith</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">rpc</span><span class="p">.</span><span class="nf">Register</span><span class="p">(</span><span class="nx">arith</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">rpc</span><span class="p">.</span><span class="nf">HandleHTTP</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nx">l</span><span class="p">,</span> <span class="nx">e</span> <span class="o">:=</span> <span class="nx">net</span><span class="p">.</span><span class="nf">Listen</span><span class="p">(</span><span class="s">&#34;tcp&#34;</span><span class="p">,</span> <span class="s">&#34;:1234&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">e</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">log</span><span class="p">.</span><span class="nf">Fatal</span><span class="p">(</span><span class="s">&#34;listen error:&#34;</span><span class="p">,</span> <span class="nx">e</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">go</span> <span class="nx">http</span><span class="p">.</span><span class="nf">Serve</span><span class="p">(</span><span class="nx">l</span><span class="p">,</span> <span class="kc">nil</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">select</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>客户端</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">client</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">rpc</span><span class="p">.</span><span class="nf">DialHTTP</span><span class="p">(</span><span class="s">&#34;tcp&#34;</span><span class="p">,</span> <span class="nx">serverAddress</span> <span class="o">+</span> <span class="s">&#34;:1234&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">log</span><span class="p">.</span><span class="nf">Fatal</span><span class="p">(</span><span class="s">&#34;dialing:&#34;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//同步
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">args</span> <span class="o">:=</span> <span class="o">&amp;</span><span class="nx">server</span><span class="p">.</span><span class="nx">Args</span><span class="p">{</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">reply</span> <span class="kt">int</span>
+</span></span><span class="line"><span class="cl"><span class="nx">err</span> <span class="p">=</span> <span class="nx">client</span><span class="p">.</span><span class="nf">Call</span><span class="p">(</span><span class="s">&#34;Arith.Multiply&#34;</span><span class="p">,</span> <span class="nx">args</span><span class="p">,</span> <span class="o">&amp;</span><span class="nx">reply</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">log</span><span class="p">.</span><span class="nf">Fatal</span><span class="p">(</span><span class="s">&#34;arith error:&#34;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Arith: %d*%d=%d&#34;</span><span class="p">,</span> <span class="nx">args</span><span class="p">.</span><span class="nx">A</span><span class="p">,</span> <span class="nx">args</span><span class="p">.</span><span class="nx">B</span><span class="p">,</span> <span class="nx">reply</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//异步
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">quotient</span> <span class="o">:=</span> <span class="nb">new</span><span class="p">(</span><span class="nx">Quotient</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">divCall</span> <span class="o">:=</span> <span class="nx">client</span><span class="p">.</span><span class="nf">Go</span><span class="p">(</span><span class="s">&#34;Arith.Divide&#34;</span><span class="p">,</span> <span class="nx">args</span><span class="p">,</span> <span class="nx">quotient</span><span class="p">,</span> <span class="kc">nil</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">replyCall</span> <span class="o">:=</span> <span class="o">&lt;-</span><span class="nx">divCall</span><span class="p">.</span><span class="nx">Done</span>    <span class="c1">// will be equal to divCall
+</span></span></span><span class="line"><span class="cl"><span class="c1">// check errors, print, etc.
+</span></span></span></code></pre></div><h2 id="mime">mime</h2>
+<p><a href="https://www.cnblogs.com/wanghui-garcia/p/10402796.html">go标准库的学习-mime/multipart</a></p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1">
-<p><a href="https://cloud.tencent.com/developer/article/1662215">Go net/rpc 包的深度解读和学习</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://cloud.tencent.com/developer/article/1662215">Go net/rpc 包的深度解读和学习</a>
+<a href="https://books.studygolang.com/go-rpc-programming-guide/">rpcx</a>
+<a href="https://www.bookstack.cn/read/go-rpc-programming-guide/part1-gorpc.md">rpc使用</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>

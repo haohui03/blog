@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>rocksdb源码分析（2） · Yehh</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="columnfamily memtable WAL 格式 创建: rocksdb::DB::Open(options, &amp;ldquo;./db/&amp;rdquo;, &amp;amp;db); db-&amp;gt;Flush(rocksdb::FlushOptions(), handles[1]); 在Write的时候检查WAl大小超过了max_total_wal_size的时候，会创建新的wal。 memtable 写入 slice.h Slice 主要" />
+  <meta name="description" content="memtable WAL 介绍 column family共享WAL文件 Life Cycle of a WAL 创建 只有两种情况会创建WAL文件 打开一个新DB Flush DB* db; std::vector&amp;lt;ColumnFamilyDescriptor&amp;gt; column_families; column_families.push_back(ColumnFamilyDescriptor( kDefaultColumnFamilyName, ColumnFamilyOptions())); column_families.push_back(ColumnFamilyDescriptor( &amp;#34;new_cf&amp;#34;, ColumnFamilyOptions())); std::vector&amp;lt;ColumnFamilyHandle*&amp;gt; handles; s = DB::Open(DBOptions(), kDBPath, column_families, &amp;amp;handles, &amp;amp;db); db-&amp;gt;Put(WriteOptions(), handles[1], Slice(&amp;#34;key1&amp;#34;), Slice(&amp;#34;value1&amp;#34;));" />
 
   <meta name="keywords" content="Hugo, theme, den" />
 
@@ -19,19 +19,19 @@
 
 
 <meta property="og:title" content="rocksdb源码分析（2）" />
-<meta property="og:description" content="columnfamily memtable WAL 格式 创建: rocksdb::DB::Open(options, &ldquo;./db/&rdquo;, &amp;db); db-&gt;Flush(rocksdb::FlushOptions(), handles[1]); 在Write的时候检查WAl大小超过了max_total_wal_size的时候，会创建新的wal。 memtable 写入 slice.h Slice 主要" />
+<meta property="og:description" content="memtable WAL 介绍 column family共享WAL文件 Life Cycle of a WAL 创建 只有两种情况会创建WAL文件 打开一个新DB Flush DB* db; std::vector&lt;ColumnFamilyDescriptor&gt; column_families; column_families.push_back(ColumnFamilyDescriptor( kDefaultColumnFamilyName, ColumnFamilyOptions())); column_families.push_back(ColumnFamilyDescriptor( &#34;new_cf&#34;, ColumnFamilyOptions())); std::vector&lt;ColumnFamilyHandle*&gt; handles; s = DB::Open(DBOptions(), kDBPath, column_families, &amp;handles, &amp;db); db-&gt;Put(WriteOptions(), handles[1], Slice(&#34;key1&#34;), Slice(&#34;value1&#34;));" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.yehaohui.com/zh-cn/2023/08/05/category/rocksdb2/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-08-05T13:01:23+08:00" />
 <meta property="article:modified_time" content="2023-08-05T13:27:30+08:00" />
 
 <meta itemprop="name" content="rocksdb源码分析（2）">
-<meta itemprop="description" content="columnfamily memtable WAL 格式 创建: rocksdb::DB::Open(options, &ldquo;./db/&rdquo;, &amp;db); db-&gt;Flush(rocksdb::FlushOptions(), handles[1]); 在Write的时候检查WAl大小超过了max_total_wal_size的时候，会创建新的wal。 memtable 写入 slice.h Slice 主要"><meta itemprop="datePublished" content="2023-08-05T13:01:23+08:00" />
+<meta itemprop="description" content="memtable WAL 介绍 column family共享WAL文件 Life Cycle of a WAL 创建 只有两种情况会创建WAL文件 打开一个新DB Flush DB* db; std::vector&lt;ColumnFamilyDescriptor&gt; column_families; column_families.push_back(ColumnFamilyDescriptor( kDefaultColumnFamilyName, ColumnFamilyOptions())); column_families.push_back(ColumnFamilyDescriptor( &#34;new_cf&#34;, ColumnFamilyOptions())); std::vector&lt;ColumnFamilyHandle*&gt; handles; s = DB::Open(DBOptions(), kDBPath, column_families, &amp;handles, &amp;db); db-&gt;Put(WriteOptions(), handles[1], Slice(&#34;key1&#34;), Slice(&#34;value1&#34;));"><meta itemprop="datePublished" content="2023-08-05T13:01:23+08:00" />
 <meta itemprop="dateModified" content="2023-08-05T13:27:30+08:00" />
-<meta itemprop="wordCount" content="268">
+<meta itemprop="wordCount" content="1391">
 <meta itemprop="keywords" content="rocksdb,Middleware,infra," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="rocksdb源码分析（2）"/>
-<meta name="twitter:description" content="columnfamily memtable WAL 格式 创建: rocksdb::DB::Open(options, &ldquo;./db/&rdquo;, &amp;db); db-&gt;Flush(rocksdb::FlushOptions(), handles[1]); 在Write的时候检查WAl大小超过了max_total_wal_size的时候，会创建新的wal。 memtable 写入 slice.h Slice 主要"/>
+<meta name="twitter:description" content="memtable WAL 介绍 column family共享WAL文件 Life Cycle of a WAL 创建 只有两种情况会创建WAL文件 打开一个新DB Flush DB* db; std::vector&lt;ColumnFamilyDescriptor&gt; column_families; column_families.push_back(ColumnFamilyDescriptor( kDefaultColumnFamilyName, ColumnFamilyOptions())); column_families.push_back(ColumnFamilyDescriptor( &#34;new_cf&#34;, ColumnFamilyOptions())); std::vector&lt;ColumnFamilyHandle*&gt; handles; s = DB::Open(DBOptions(), kDBPath, column_families, &amp;handles, &amp;db); db-&gt;Put(WriteOptions(), handles[1], Slice(&#34;key1&#34;), Slice(&#34;value1&#34;));"/>
 </head>
 <body>
   
@@ -135,11 +135,109 @@
   <main>
 <div class="container content">
   <article>
-  <p><a href="http://mysql.taobao.org/monthly/2018/06/09/#:~:text=Column%20Family%E4%B8%BB%E8%A6%81%E6%98%AF%E6%8F%90%E4%BE%9B,%E5%88%A0%E9%99%A4%E5%AF%B9%E5%BA%94%E7%9A%84Column%20Family.">columnfamily</a></p>
-<h2 id="memtable">memtable</h2>
+  <h2 id="memtable">memtable</h2>
 <h2 id="wal">WAL</h2>
-<h3 id="格式">格式</h3>
-<h3 id="创建">创建:</h3>
+<h3 id="介绍">介绍</h3>
+<p>column family共享WAL文件</p>
+<h4 id="life-cycle-of-a-wal">Life Cycle of a WAL</h4>
+<h5 id="创建">创建</h5>
+<p>只有两种情况会创建WAL文件</p>
+<ol>
+<li>打开一个新DB</li>
+<li>Flush</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">DB</span><span class="o">*</span> <span class="n">db</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">ColumnFamilyDescriptor</span><span class="o">&gt;</span> <span class="n">column_families</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">column_families</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">ColumnFamilyDescriptor</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">kDefaultColumnFamilyName</span><span class="p">,</span> <span class="n">ColumnFamilyOptions</span><span class="p">()));</span>
+</span></span><span class="line"><span class="cl"><span class="n">column_families</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">ColumnFamilyDescriptor</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;new_cf&#34;</span><span class="p">,</span> <span class="n">ColumnFamilyOptions</span><span class="p">()));</span>
+</span></span><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">ColumnFamilyHandle</span><span class="o">*&gt;</span> <span class="n">handles</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="n">DB</span><span class="o">::</span><span class="n">Open</span><span class="p">(</span><span class="n">DBOptions</span><span class="p">(),</span> <span class="n">kDBPath</span><span class="p">,</span> <span class="n">column_families</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">handles</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">db</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">db</span><span class="o">-&gt;</span><span class="n">Put</span><span class="p">(</span><span class="n">WriteOptions</span><span class="p">(),</span> <span class="n">handles</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">Slice</span><span class="p">(</span><span class="s">&#34;key1&#34;</span><span class="p">),</span> <span class="n">Slice</span><span class="p">(</span><span class="s">&#34;value1&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="n">db</span><span class="o">-&gt;</span><span class="n">Put</span><span class="p">(</span><span class="n">WriteOptions</span><span class="p">(),</span> <span class="n">handles</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">Slice</span><span class="p">(</span><span class="s">&#34;key2&#34;</span><span class="p">),</span> <span class="n">Slice</span><span class="p">(</span><span class="s">&#34;value2&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="n">db</span><span class="o">-&gt;</span><span class="n">Put</span><span class="p">(</span><span class="n">WriteOptions</span><span class="p">(),</span> <span class="n">handles</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">Slice</span><span class="p">(</span><span class="s">&#34;key3&#34;</span><span class="p">),</span> <span class="n">Slice</span><span class="p">(</span><span class="s">&#34;value3&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="n">db</span><span class="o">-&gt;</span><span class="n">Put</span><span class="p">(</span><span class="n">WriteOptions</span><span class="p">(),</span> <span class="n">handles</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">Slice</span><span class="p">(</span><span class="s">&#34;key4&#34;</span><span class="p">),</span> <span class="n">Slice</span><span class="p">(</span><span class="s">&#34;value4&#34;</span><span class="p">));</span>
+</span></span></code></pre></div><p>WAL文件此时只有一个，并保持open状态持续记录log，直到大小超过DBOptions::max_total_wal_size(DBImpl::PreprocessWrite里面会检查)。</p>
+<h5 id="flush和删除">Flush和删除</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">db</span><span class="o">-&gt;</span><span class="n">Flush</span><span class="p">(</span><span class="n">FlushOptions</span><span class="p">(),</span> <span class="n">handles</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// key5 and key6 will appear in a new WAL
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">db</span><span class="o">-&gt;</span><span class="n">Put</span><span class="p">(</span><span class="n">WriteOptions</span><span class="p">(),</span> <span class="n">handles</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">Slice</span><span class="p">(</span><span class="s">&#34;key5&#34;</span><span class="p">),</span> <span class="n">Slice</span><span class="p">(</span><span class="s">&#34;value5&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="n">db</span><span class="o">-&gt;</span><span class="n">Put</span><span class="p">(</span><span class="n">WriteOptions</span><span class="p">(),</span> <span class="n">handles</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">Slice</span><span class="p">(</span><span class="s">&#34;key6&#34;</span><span class="p">),</span> <span class="n">Slice</span><span class="p">(</span><span class="s">&#34;value6&#34;</span><span class="p">));</span>
+</span></span></code></pre></div><p>在<code>new_cf</code>Flush的时候会创建一个新的WAL文件，此时旧的WAL文件不会被删除，因为里面还保存默认cf里面的log。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">db</span><span class="o">-&gt;</span><span class="n">Flush</span><span class="p">(</span><span class="n">FlushOptions</span><span class="p">(),</span> <span class="n">handles</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// The older WAL will be archived and purged separately
+</span></span></span></code></pre></div><p>只有当<code>default_cf</code>Flush的时候，旧的WAL文件才会被删除。</p>
+<h3 id="wal-configuration">WAL configuration</h3>
+<ul>
+<li>DBOptions::wal_dir  WAL目录位置</li>
+<li>DBOptions::WAL_ttl_seconds, DBOptions::WAL_size_limit_MB  archive和purge的时间和大小限制</li>
+<li>DBOptions::max_total_wal_size 设置当前WAL的最大大小，超过就flush。这会让我们不必跟踪非常久远的WAL文件。</li>
+<li>WriteOptions::disableWAL 禁用WAL</li>
+</ul>
+<h3 id="dbimpllog_mutex">DBImpl::log_mutex</h3>
+<p>所有的cf共享WAL文件于是理所当然同步所需的锁应该由DBImpl来持有，实际上DBImpl使用了两个锁来实现复杂的同步机制。</p>
+<h4 id="1-dbimplmutex_-用来同步log相关的变量">1. DBImpl::mutex_ 用来同步log相关的变量</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl">  <span class="c1">// State below is protected by mutex_
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// With two_write_queues enabled, some of the variables that accessed during
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// WriteToWAL need different synchronization: log_empty_, alive_log_files_,
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// logs_, logfile_number_. Refer to the definition of each variable below for
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// more description.
+</span></span></span></code></pre></div><h4 id="2-dbimpllog_write_mutex_-用来同步log的写入">2. DBImpl::log_write_mutex_ 用来同步log的写入</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl">  <span class="c1">// In addition to mutex_, log_write_mutex_ protects writes to logs_ and
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// logfile_number_. With two_write_queues it also protects alive_log_files_,
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// and log_empty_. Refer to the definition of each variable below for more
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// details.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Note: to avoid deadlock, if needed to acquire both log_write_mutex_ and
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// mutex_, the order should be first mutex_ and then log_write_mutex_.
+</span></span></span></code></pre></div><p>具体对某个变量如何进行加锁和释放需要看具体的代码。</p>
+<h3 id="switchwal">SwitchWAL</h3>
+<p>对应上面说的切换WAL文件</p>
+<p>代码中主要对应得是DBImpl::SwitchWAL，这是一个重要的函数，接下来让我们看下</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Status</span> <span class="n">DBImpl</span><span class="o">::</span><span class="n">SwitchWAL</span><span class="p">(</span><span class="n">WriteContext</span><span class="o">*</span> <span class="n">write_context</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//首先确保mutex_是被持有的，DBImpl::mutex_是用来实现log的一些变量的同步的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="wal写入">WAL写入</h3>
+<p>在写入的时候（PUT）有两种情况：</p>
+<h4 id="leader">LEADER</h4>
+<p>LEADER在WriteImpl的时候首先会做一个preprocess</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl">    <span class="c1">//::WriteImpl
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//记录此次的log_Context
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">status</span> <span class="o">=</span> <span class="n">PreprocessWrite</span><span class="p">(</span><span class="n">write_options</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">log_context</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">write_context</span><span class="p">);</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl">    <span class="c1">//这个函数主要是在Leader写之前将比较大的memtable变成immutable和把WAL文件刷到磁盘上
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">Status</span> <span class="n">DBImpl</span><span class="o">::</span><span class="n">PreprocessWrite</span><span class="p">(</span><span class="k">const</span> <span class="n">WriteOptions</span><span class="o">&amp;</span> <span class="n">write_options</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                               <span class="n">LogContext</span><span class="o">*</span> <span class="n">log_context</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                               <span class="n">WriteContext</span><span class="o">*</span> <span class="n">write_context</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//主要是对各个情况进行分析
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">UNLIKELY</span><span class="p">(</span><span class="n">status</span><span class="p">.</span><span class="n">ok</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">total_log_size_</span> <span class="o">&gt;</span> <span class="n">GetMaxTotalWalSize</span><span class="p">()))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//WAL大小超过了max_total_wal_size，需要创建新的WAL文件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">assert</span><span class="p">(</span><span class="n">versions_</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">InstrumentedMutexLock</span> <span class="nf">l</span><span class="p">(</span><span class="o">&amp;</span><span class="n">mutex_</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//对column_family不熟悉的可以看源码解析第三章
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">const</span> <span class="n">ColumnFamilySet</span><span class="o">*</span> <span class="k">const</span> <span class="n">column_families</span> <span class="o">=</span>
+</span></span><span class="line"><span class="cl">                <span class="n">versions_</span><span class="o">-&gt;</span><span class="n">GetColumnFamilySet</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="n">assert</span><span class="p">(</span><span class="n">column_families</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">size_t</span> <span class="n">num_cfs</span> <span class="o">=</span> <span class="n">column_families</span><span class="o">-&gt;</span><span class="n">NumberOfColumnFamilies</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="n">assert</span><span class="p">(</span><span class="n">num_cfs</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">num_cfs</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">//说明这个WAL文件包含多个cf
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="c1">//WaitForFlushes会等待所有的写memtable完成，包括pipeline被设置时的Memtable_write队列和
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="c1">//要切换memtable的写
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">WaitForPendingWrites</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">//这个函数会创建新的WAL文件，详情看上面
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">status</span> <span class="o">=</span> <span class="n">SwitchWAL</span><span class="p">(</span><span class="n">write_context</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><h3 id="格式">格式</h3>
+<h3 id="创建-1">创建:</h3>
 <ol>
 <li>rocksdb::DB::Open(options, &ldquo;./db/&rdquo;, &amp;db);</li>
 <li>db-&gt;Flush(rocksdb::FlushOptions(), handles[1]);</li>
@@ -178,8 +276,9 @@
 <li>表示slice数组。</li>
 </ul>
 <p>参考:</p>
-<p><a href="https://zhuanlan.zhihu.com/p/343323703">Rocksdb WAL实现及源码详解</a></p>
-<p>参考:</p>
+<p><a href="https://zhuanlan.zhihu.com/p/343323703">Rocksdb WAL实现及源码详解</a>
+<a href="https://github.com/facebook/rocksdb/wiki/Write-Ahead-Log-%28WAL%29">official blog</a>
+<a href="http://mysql.taobao.org/monthly/2018/09/04/">数据库月报RocksDB · Memtable flush分析</a></p>
 
   </article>
 

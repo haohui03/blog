@@ -6,14 +6,59 @@
     <description>Recent content in code on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 16 Sep 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/category/code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Oct 2023 08:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/category/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>yehh-wiki</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/09/16/category/yehh-wiki/</link>
-      <pubDate>Sat, 16 Sep 2023 13:01:23 +0800</pubDate>
+      <title>osproxy-core</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/10/23/category/osproxy-core/</link>
+      <pubDate>Mon, 23 Oct 2023 08:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/09/16/category/yehh-wiki/</guid>
-      <description>这里记录一些有用的连接 设计一个软件(服务)的原则/最佳实践-12factors golang 有用的库 viper 配置库 fsnotify 跨平台的文件提醒(一般是文件修改的提醒吧)</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/10/23/category/osproxy-core/</guid>
+      <description>这篇文章介绍OSproxy的核心功能 首先要清楚的一点就是，osproxy的工作流程是： 上传：根据uid临时存在本地然后调用存储服务接口存储 下</description>
+    </item>
+    
+    <item>
+      <title>rocksdb原理</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/10/17/category/rocksdb-principal/</link>
+      <pubDate>Tue, 17 Oct 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/10/17/category/rocksdb-principal/</guid>
+      <description>基本概念 版本(Version)：这个是RocksDB内部概念。一个版本包含某个时间点的所有存活SST文件。一旦一个落盘或者压缩完成，由于存活</description>
+    </item>
+    
+    <item>
+      <title>docker-images</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/10/15/category/docker-images/</link>
+      <pubDate>Sun, 15 Oct 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/10/15/category/docker-images/</guid>
+      <description>介绍容器和镜像</description>
+    </item>
+    
+    <item>
+      <title>go-redis-note</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/10/08/category/go-redis-note/</link>
+      <pubDate>Sun, 08 Oct 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/10/08/category/go-redis-note/</guid>
+      <description>记录go-redis使用过程中的一些事项 分布式锁(一上来就是大菜) 最近在阅读两个项目的时候都发现了分布式锁： osproxy： 分片上传时抢锁 r</description>
+    </item>
+    
+    <item>
+      <title>osproxy-intro</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/09/19/category/osproxy-intro/</link>
+      <pubDate>Tue, 19 Sep 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/09/19/category/osproxy-intro/</guid>
+      <description>osproxy osproxy 这个算是第一个接触的比较正式的项目，期望从中学到 go框架: gin(其实之前就用过，这次算巩固), gorm , viper, zap, swagger&amp;hellip;&amp;hellip; docker 部署 开发的一些规范 设计一个软</description>
+    </item>
+    
+    <item>
+      <title>interview-八股</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/09/17/category/interview-%E5%85%AB%E8%82%A1/</link>
+      <pubDate>Sun, 17 Sep 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/09/17/category/interview-%E5%85%AB%E8%82%A1/</guid>
+      <description>network 工具： tcpdump Wireshark 具体一些没背八股前不清晰的问题： Cookie&amp;amp;session 你真的了解cookie和session吗 鉴权&amp;amp;Token 鉴权界的后起之秀：Token鉴</description>
     </item>
     
     <item>
@@ -32,6 +77,24 @@
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/09/13/category/interview-golang/</guid>
       <description>golang问题 init的执行顺序 Golang中变量的分配位置是堆or栈可以看看这个和刘丹冰的 GC[典藏版]Golang三色标记、混合写屏障</description>
+    </item>
+    
+    <item>
+      <title>kafka-day1</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/09/13/category/kafka-day1/</link>
+      <pubDate>Wed, 13 Sep 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/09/13/category/kafka-day1/</guid>
+      <description>Kafka入门 基本概念 Apache Kafka 核心组件和流程 控制器 控制器也叫leader broker,负责分区leader的选取,也就是负责选举partitio</description>
+    </item>
+    
+    <item>
+      <title>redis_basic</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/09/13/category/redis_basic/</link>
+      <pubDate>Wed, 13 Sep 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/09/13/category/redis_basic/</guid>
+      <description>pipeline Redis Pipeline介绍及应用 事务 Redis 中的原子操作：事务与 Lua 脚本</description>
     </item>
     
     <item>
@@ -89,15 +152,6 @@
     </item>
     
     <item>
-      <title>gee-intro</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/08/19/category/gee-intro/</link>
-      <pubDate>Sat, 19 Aug 2023 08:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/08/19/category/gee-intro/</guid>
-      <description>osproxy</description>
-    </item>
-    
-    <item>
       <title>golang test</title>
       <link>https://blog.yehaohui.com/zh-cn/2023/08/19/category/golang-test/</link>
       <pubDate>Sat, 19 Aug 2023 08:01:23 +0800</pubDate>
@@ -131,60 +185,6 @@
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/08/13/category/golang-detail/</guid>
       <description>空结构体 type EST stuct{ } func main(){ var b EST var c struct{}; fmt.Printf(&amp;#34;b address %P size %d\n&amp;#34;,&amp;amp;b,unsafe.size(b)) fmt.Printf(&amp;#34;c address %P size %d\n&amp;#34;,&amp;amp;c,unsafe.size(c)) //两者地址相同，空间占用都是0 } 自定义的和struct{}是等价 用法set可以用值为空</description>
-    </item>
-    
-    <item>
-      <title>leetcode_record1</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/08/13/category/leetcode_record1/</link>
-      <pubDate>Sun, 13 Aug 2023 08:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/08/13/category/leetcode_record1/</guid>
-      <description>剑指offer 剑指 Offer 12. 矩阵中的路径 一眼看出是回溯，其实还是挺简单的，但是要主要一开始遍历来找到起点。 剪绳子II 不能用动态规划，只能贪心，但是</description>
-    </item>
-    
-    <item>
-      <title>rocksdb源码分析（1）</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/08/05/category/rocksdb1/</link>
-      <pubDate>Sat, 05 Aug 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/08/05/category/rocksdb1/</guid>
-      <description>rocksdb源码解读(一) 本系列开始对rocksdb源码进行解读，主要是为了更好的理解rocksdb的设计思想，以及对rocksdb的使用</description>
-    </item>
-    
-    <item>
-      <title>rocksdb源码分析（2）</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/08/05/category/rocksdb2/</link>
-      <pubDate>Sat, 05 Aug 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/08/05/category/rocksdb2/</guid>
-      <description>columnfamily memtable WAL 格式 创建: rocksdb::DB::Open(options, &amp;ldquo;./db/&amp;rdquo;, &amp;amp;db); db-&amp;gt;Flush(rocksdb::FlushOptions(), handles[1]); 在Write的时候检查WAl大小超过了max_total_wal_size的时候，会创建新的wal。 memtable 写入 slice.h Slice 主要</description>
-    </item>
-    
-    <item>
-      <title>rocksdb源码分析（3）</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/08/05/category/rocksdb3/</link>
-      <pubDate>Sat, 05 Aug 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/08/05/category/rocksdb3/</guid>
-      <description>column family 介绍 是用来做逻辑隔离的，不同的column family可以有不同的配置，比如不同的compaction策略，不同的压缩策略等等。而且不同</description>
-    </item>
-    
-    <item>
-      <title>golang-interview-gmp</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/08/01/category/golang-interview-gmp/</link>
-      <pubDate>Tue, 01 Aug 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/08/01/category/golang-interview-gmp/</guid>
-      <description>golang 调度器的由来 如果把并发交给os来完成，首先是CPU的调度消耗，其次进程占用4GB(虚拟内存)，线程占用4MB这些都是比较高的内存占用。 协程</description>
-    </item>
-    
-    <item>
-      <title>context</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/07/11/category/net/http/</link>
-      <pubDate>Tue, 11 Jul 2023 09:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/07/11/category/net/http/</guid>
-      <description>Overview: Package context defines the Context type, which carries deadlines, cancellation signals, and other request-scoped values across API boundaries and between processes. Incoming requests to a server should create a Context, and outgoing calls to servers should accept a Context. The chain of function calls between them must propagate the Context, optionally replacing it with a derived Context created using WithCancel, WithDeadline, WithTimeout, or WithValue. When a Context is canceled,</description>
     </item>
     
   </channel>

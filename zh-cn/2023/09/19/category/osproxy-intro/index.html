@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-cn" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta name="generator" content="Hugo 0.101.0" />
+  <meta charset="utf-8">
+  <title>osproxy-intro · Yehh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="osproxy osproxy 这个算是第一个接触的比较正式的项目，期望从中学到 go框架: gin(其实之前就用过，这次算巩固), gorm , viper, zap, swagger&amp;hellip;&amp;hellip; docker 部署 开发的一些规范 设计一个软" />
+
+  <meta name="keywords" content="Hugo, theme, den" />
+
+<link rel="canonical" href="https://blog.yehaohui.com/zh-cn/2023/09/19/category/osproxy-intro/" />
+
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://blog.yehaohui.com/css/den.css">
+
+
+
+
+<meta property="og:title" content="osproxy-intro" />
+<meta property="og:description" content="osproxy osproxy 这个算是第一个接触的比较正式的项目，期望从中学到 go框架: gin(其实之前就用过，这次算巩固), gorm , viper, zap, swagger&hellip;&hellip; docker 部署 开发的一些规范 设计一个软" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.yehaohui.com/zh-cn/2023/09/19/category/osproxy-intro/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-19T08:01:23+08:00" />
+<meta property="article:modified_time" content="2023-09-19T09:27:30+08:00" />
+
+<meta itemprop="name" content="osproxy-intro">
+<meta itemprop="description" content="osproxy osproxy 这个算是第一个接触的比较正式的项目，期望从中学到 go框架: gin(其实之前就用过，这次算巩固), gorm , viper, zap, swagger&hellip;&hellip; docker 部署 开发的一些规范 设计一个软"><meta itemprop="datePublished" content="2023-09-19T08:01:23+08:00" />
+<meta itemprop="dateModified" content="2023-09-19T09:27:30+08:00" />
+<meta itemprop="wordCount" content="3152">
+<meta itemprop="keywords" content="golang,project,osproxy," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="osproxy-intro"/>
+<meta name="twitter:description" content="osproxy osproxy 这个算是第一个接触的比较正式的项目，期望从中学到 go框架: gin(其实之前就用过，这次算巩固), gorm , viper, zap, swagger&hellip;&hellip; docker 部署 开发的一些规范 设计一个软"/>
+</head>
+<body>
+  
+  <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://blog.yehaohui.com/images/background.jpg'); background-position: center; background-size: cover;">
+  <div class="container">
+  <nav class="header-nav navbar navbar-expand-md navbar-dark light-dark">
+    <div class="header-logo navbar-brand">
+      
+        <a class="float-left" href="https://blog.yehaohui.com/zh-cn/">
+      
+        
+        <img class="mr20 header-logo-image" src="https://blog.yehaohui.com/images/globe.svg" alt="logo">
+        
+        
+          Yehh
+         
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="nav-menu collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+          <li class="nav-item">
+            
+              
+                <a class="nav-link" href="https://blog.yehaohui.com/zh-cn/category/notes/">筆記</a>
+              
+            
+          </li>
+        
+          <li class="nav-item">
+            
+              
+                <a class="nav-link" href="https://blog.yehaohui.com/zh-cn/category/life/">生活</a>
+              
+            
+          </li>
+        
+          <li class="nav-item">
+            
+              
+                <a class="nav-link" href="https://blog.yehaohui.com/zh-cn/category/code/">编程</a>
+              
+            
+          </li>
+        
+          <li class="nav-item">
+            
+              <a class="nav-link" href="https://blog.yehaohui.com/zh-cn/about/">关于</a>
+            
+          </li>
+        
+        
+          
+            <li class="nav-item">
+              <a class="nav-link" href="https://blog.yehaohui.com/en/"><i class="fas fa-globe"></i> English</a>
+            </li>
+          
+          
+          
+          
+        
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="container header-wrapper">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="header-content">
+        <h1 class="header-title">osproxy-intro</h1>
+        <p class="header-date">作者：
+          叶浩辉 /
+        
+        2023-09-19
+          / 分类：
+          <a href="https://blog.yehaohui.com/zh-cn/category/code/">code</a>
+        </p>
+        
+        <div class="header-underline"></div>
+        
+          <div class="clearfix"></div>
+          <p class="float-right header-tags">
+              <i class="fas fa-tags" aria-hidden="true"></i>
+              <a href="https://blog.yehaohui.com/zh-cn/tag/golang/">golang</a>, 
+                <a href="https://blog.yehaohui.com/zh-cn/tag/osproxy/">osproxy</a>, 
+                <a href="https://blog.yehaohui.com/zh-cn/tag/project/">project</a>
+          </p>
+        
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <main>
+<div class="container content">
+  <article>
+  <h2 id="osproxy">osproxy</h2>
+<p><a href="https://juejin.cn/post/7242284648021131323">osproxy</a></p>
+<p>这个算是第一个接触的比较正式的项目，期望从中学到</p>
+<ol>
+<li>go框架: gin(其实之前就用过，这次算巩固), gorm , viper, zap, swagger&hellip;&hellip;</li>
+<li>docker 部署</li>
+<li>开发的一些规范 <a href="https://12factor.net/">设计一个软件(服务)的原则/最佳实践-12factors</a></li>
+</ol>
+<p>在学习过程中发现确实有这么一个规范：
+<a href="https://github.com/golang-standards/project-layout/blob/master/README_zh.md">Standard Go Project Layout</a></p>
+<h3 id="get-started">get-started</h3>
+<p>参考<a href="https://github.com/qinguoyi/osproxy/blob/main/README.md">官方Readme</a></p>
+<ol>
+<li>前期配置</li>
+</ol>
+<p>按照提示把redis，pg，，minio(分布式对象存储)这些起起来。</p>
+<ol start="2">
+<li>服务启动</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 设置goproxy</span>
+</span></span><span class="line"><span class="cl">Linux: go env -w <span class="nv">GOPROXY</span><span class="o">=</span>https://goproxy.cn,direct
+</span></span><span class="line"><span class="cl">Windows: <span class="nv">$env</span>:GOPROXY <span class="o">=</span> <span class="s2">&#34;https://goproxy.cn&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 拉取依赖</span>
+</span></span><span class="line"><span class="cl">go mod tidy
+</span></span><span class="line"><span class="cl">go install github.com/swaggo/swag/cmd/swag@v1.8.1
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 修改本地变量</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">app/pkg/utils/constant.go
+</span></span><span class="line"><span class="cl">LocalStore变量, 更新成本地可访问的目录
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 生成api文档</span>
+</span></span><span class="line"><span class="cl">swag fmt -g cmd/main.go -d ./
+</span></span><span class="line"><span class="cl">swag init -g cmd/main.go
+</span></span><span class="line"><span class="cl">http://127.0.0.1:8888/swagger/index.html#/
+</span></span></code></pre></div><p>然后看swagger里面的文档一步步学习如何使用</p>
+<h3 id="阅读项目">阅读项目</h3>
+<p>从入口开始一步步整理文档</p>
+<h4 id="配置日志和插件">配置，日志和插件</h4>
+<h5 id="配置">配置</h5>
+<p>项目一般都需要配置，把这些写在配置文件中是比较合理的选择，在程序的入口只需要提供配置文件的路径，然后读取配置文件，把配置文件的内容解析到结构体中，这样就可以在程序中使用了。</p>
+<p>在golang中，一般使用viper这个库来读取配置文件，viper支持多种配置文件格式，比如json，yaml，toml等，这里使用yaml格式的配置文件。</p>
+<p>viper 简单介绍：</p>
+<p>它支持</p>
+<ul>
+<li>explicit call to Set</li>
+<li>flag</li>
+<li>env</li>
+<li>config</li>
+<li>key/value store</li>
+<li>default</li>
+</ul>
+<p>这些配置方式，而且json，yaml(甚至java的配置文件)等不同类型的配置文件都可以无痛解析。命令行可以和同一个org的pflag和官方库的flag来一起使用。</p>
+<p>接下来看看这个项目读取配置文件的项目结构。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># config 文件夹 存放配置结构体</span>
+</span></span><span class="line"><span class="cl">config
+</span></span><span class="line"><span class="cl">├── app.go
+</span></span><span class="line"><span class="cl">├── config.go
+</span></span><span class="line"><span class="cl">├── log.go
+</span></span><span class="line"><span class="cl">├── plugins
+</span></span><span class="line"><span class="cl">│   ├── cos.go
+</span></span><span class="line"><span class="cl">│   ├── database.go
+</span></span><span class="line"><span class="cl">│   ├── local.go
+</span></span><span class="line"><span class="cl">│   ├── minio.go
+</span></span><span class="line"><span class="cl">│   ├── oss.go
+</span></span><span class="line"><span class="cl">│   └── redis.go
+</span></span><span class="line"><span class="cl">└── README.md
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># bootstrap 目录，读取配置文件，初始化日志，插件等</span>
+</span></span><span class="line"><span class="cl">bootstrap
+</span></span><span class="line"><span class="cl">├── config.go
+</span></span><span class="line"><span class="cl">├── log.go
+</span></span><span class="line"><span class="cl">├── plugins
+</span></span><span class="line"><span class="cl">│   ├── cos.go
+</span></span><span class="line"><span class="cl">│   ├── database.go
+</span></span><span class="line"><span class="cl">│   ├── local.go
+</span></span><span class="line"><span class="cl">│   ├── minio.go
+</span></span><span class="line"><span class="cl">│   ├── oss.go
+</span></span><span class="line"><span class="cl">│   ├── plugins.go
+</span></span><span class="line"><span class="cl">│   └── redis.go
+</span></span><span class="line"><span class="cl">└── README.md
+</span></span></code></pre></div><p>先来看看bootstrap目录下的config.go</p>
+<p>主要包含的结构和变量是</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">configPath</span>   <span class="kt">string</span>                     <span class="c1">//命令行接受的配置文件路径
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">rootPath</span>     <span class="p">=</span> <span class="s">&#34;&#34;</span> <span class="c1">// utils.RootPath()   //根目录
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">lgConfig</span>     <span class="p">=</span> <span class="nb">new</span><span class="p">(</span><span class="nx">LangGoConfig</span><span class="p">)</span>        <span class="c1">//全局配置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">confFilePath</span> <span class="p">=</span> <span class="s">&#34;conf/config.yaml&#34;</span>       <span class="c1">//默认配置文件路径
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">LangGoConfig</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">Conf</span> <span class="o">*</span><span class="nx">config</span><span class="p">.</span><span class="nx">Configuration</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">Once</span> <span class="o">*</span><span class="nx">sync</span><span class="p">.</span><span class="nx">Once</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">newLangGoConfig</span><span class="p">()</span> <span class="o">*</span><span class="nx">LangGoConfig</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="o">&amp;</span><span class="nx">LangGoConfig</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">Conf</span><span class="p">:</span> <span class="o">&amp;</span><span class="nx">config</span><span class="p">.</span><span class="nx">Configuration</span><span class="p">{},</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">Once</span><span class="p">:</span> <span class="o">&amp;</span><span class="nx">sync</span><span class="p">.</span><span class="nx">Once</span><span class="p">{},</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>conf 是配置文件的结构体，once是一个同步锁，用来保证只初始化一次，newLangGoConfig作为包内函数用来初始化。</p>
+<p>对外可见函数：</p>
+<p>NewConfig用来返回全局唯一配置，他会根据lgConfig是否存在来决定是否初始化，如果已经初始化过了，就直接返回，否则就初始化。初始化是调用once.do 来initConfig，initConfig会完成配置文件的读取和解析，以及监听配置文件的变化来更新配置结构体(OnConfigChange)。</p>
+<p>到这里配置文件就基本结束了。</p>
+<p>总结： <del>全局变量保存信息，once.do实现安全并发单例，奇怪的点既然只会在项目开始调用NewConfig，那为什么还要用once和判断是否已经被初始化(作用冗余？)。</del> 实际上是每次要用Config都会调用NewConfig而不是一个全局变量传来传去。</p>
+<h4 id="日志">日志</h4>
+<p>使用zap(uber开发)来导入结构化日志，其实从Go 1.21 开始go官方就提供了slog库，但是zap的性能目前还是比较好，市场占有率也很高，所以还是有学习的必要，而且slog也大部分借鉴了zap的设计。</p>
+<p><a href="https://betterstack.com/community/guides/logging/go/zap/">zap 的快速入门</a>(文章还挺新的，看完之后感觉特别不错)</p>
+<p>顺便在这边做一些总结</p>
+<h5 id="1">1</h5>
+<p>zap 提供两种logger类型：SugaredLogger 和 Logger，SugaredLogger是Logger的一个包装，提供了更多的方法，但是性能上会差一些,在同一个程序中同时使用两种Logger是可以的，并根据场景来进行切换。</p>
+<p>Logger 只接受结构化的K/V，SugaredLogger可以接受结构化的K/V，也可以接受printf风格的字符串(反射所以慢点)。</p>
+<p>SugaredLogger可以用以w结尾的log来实现 loosely typed key/value pairs，也就是可以用</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl">    <span class="nx">sugar</span><span class="p">.</span><span class="nf">Infow</span><span class="p">(</span><span class="s">&#34;User logged in&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;username&#34;</span><span class="p">,</span> <span class="s">&#34;johndoe&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;userid&#34;</span><span class="p">,</span> <span class="mi">123456</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">zap</span><span class="p">.</span><span class="nf">String</span><span class="p">(</span><span class="s">&#34;provider&#34;</span><span class="p">,</span> <span class="s">&#34;google&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span></code></pre></div><h5 id="2">2</h5>
+<p>从上到下逐渐变得严重，DebugLevel是最低的，FatalLevel是最高的，FatalLevel会在写完日志后调用os.Exit(1)来退出程序。DebugLevel可能会输出很多log，所以生产中最好不要有。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">const</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// DebugLevel logs are typically voluminous, and are usually disabled in
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="c1">// production.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">DebugLevel</span> <span class="p">=</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nx">DebugLevel</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// InfoLevel is the default logging priority.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">InfoLevel</span> <span class="p">=</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nx">InfoLevel</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// WarnLevel logs are more important than Info, but don&#39;t need individual
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="c1">// human review.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">WarnLevel</span> <span class="p">=</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nx">WarnLevel</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// ErrorLevel logs are high-priority. If an application is running smoothly,
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="c1">// it shouldn&#39;t generate any error-level logs.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">ErrorLevel</span> <span class="p">=</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nx">ErrorLevel</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// DPanicLevel logs are particularly important errors. In development the
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="c1">// logger panics after writing the message.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">DPanicLevel</span> <span class="p">=</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nx">DPanicLevel</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// PanicLevel logs a message, then panics.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">PanicLevel</span> <span class="p">=</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nx">PanicLevel</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// FatalLevel logs a message, then calls os.Exit(1).
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">FatalLevel</span> <span class="p">=</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nx">FatalLevel</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div><h5 id="3">3</h5>
+<p>配置自定义的日志格式有点麻烦，所以包提供了预设的几种 zap.NewExample(DebugLevel &amp; omits the timestamp and calling function) or zap.NewProduction(InfoLevel ), or zap.NewDevelopment(DebugLevel )</p>
+<h5 id="4">4</h5>
+<p>可以根据环境变量切换日志级别，比如在开发环境下，可以设置环境变量 LOG_LEVEL=debug，这样就可以输出debug级别的日志了。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">logger</span> <span class="o">:=</span> <span class="nx">zap</span><span class="p">.</span><span class="nf">Must</span><span class="p">(</span><span class="nx">zap</span><span class="p">.</span><span class="nf">NewProduction</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">os</span><span class="p">.</span><span class="nf">Getenv</span><span class="p">(</span><span class="s">&#34;APP_ENV&#34;</span><span class="p">)</span> <span class="o">==</span> <span class="s">&#34;development&#34;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">logger</span> <span class="p">=</span> <span class="nx">zap</span><span class="p">.</span><span class="nf">Must</span><span class="p">(</span><span class="nx">zap</span><span class="p">.</span><span class="nf">NewDevelopment</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h5 id="5">5</h5>
+<p>默认的全局日志器是空指针，但是可以用</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">zap</span><span class="p">.</span><span class="nf">ReplaceGlobals</span><span class="p">(</span><span class="nx">zap</span><span class="p">.</span><span class="nf">Must</span><span class="p">(</span><span class="nx">zap</span><span class="p">.</span><span class="nf">NewProduction</span><span class="p">()))</span>
+</span></span></code></pre></div><p>这来改变</p>
+<h5 id="6">6</h5>
+<p>自定义日志</p>
+<p>EncoderConfig是用来表示primitive key (level ，timestamp)这些key的key值，还有time这些的输出格式。</p>
+<p>Config</p>
+<blockquote>
+<p><strong>OutputPaths</strong> specifies one or more targets for the logging output (see Open for more details).</p>
+</blockquote>
+<blockquote>
+<p><strong>ErrorOutputPaths</strong> is similar to OutputPaths but is used for Zap&rsquo;s internal errors only, not those generated or logged by your application (such as the error from mismatched loosely-typed key/value pairs).</p>
+</blockquote>
+<blockquote>
+<p><strong>InitialFields</strong> specifies global contextual fields that should be included in every log entry produced by each logger created from the Config object. We&rsquo;re only including the process ID of the program here, but you can add other useful global metadata like the Go version running the program, git commit hash or application version, environment or deployment information, and more.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">createLogger</span><span class="p">()</span> <span class="o">*</span><span class="nx">zap</span><span class="p">.</span><span class="nx">Logger</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">encoderCfg</span> <span class="o">:=</span> <span class="nx">zap</span><span class="p">.</span><span class="nf">NewProductionEncoderConfig</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">encoderCfg</span><span class="p">.</span><span class="nx">TimeKey</span> <span class="p">=</span> <span class="s">&#34;timestamp&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">encoderCfg</span><span class="p">.</span><span class="nx">EncodeTime</span> <span class="p">=</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nx">ISO8601TimeEncoder</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">config</span> <span class="o">:=</span> <span class="nx">zap</span><span class="p">.</span><span class="nx">Config</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Level</span><span class="p">:</span>             <span class="nx">zap</span><span class="p">.</span><span class="nf">NewAtomicLevelAt</span><span class="p">(</span><span class="nx">zap</span><span class="p">.</span><span class="nx">InfoLevel</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Development</span><span class="p">:</span>       <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">DisableCaller</span><span class="p">:</span>     <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">DisableStacktrace</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Sampling</span><span class="p">:</span>          <span class="kc">nil</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Encoding</span><span class="p">:</span>          <span class="s">&#34;json&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">EncoderConfig</span><span class="p">:</span>     <span class="nx">encoderCfg</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">OutputPaths</span><span class="p">:</span> <span class="p">[]</span><span class="kt">string</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s">&#34;stderr&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">ErrorOutputPaths</span><span class="p">:</span> <span class="p">[]</span><span class="kt">string</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s">&#34;stderr&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">InitialFields</span><span class="p">:</span> <span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="kd">interface</span><span class="p">{}{</span>
+</span></span><span class="line"><span class="cl">            <span class="s">&#34;pid&#34;</span><span class="p">:</span> <span class="nx">os</span><span class="p">.</span><span class="nf">Getpid</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">zap</span><span class="p">.</span><span class="nf">Must</span><span class="p">(</span><span class="nx">config</span><span class="p">.</span><span class="nf">Build</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>回到osproxy的日志初始化来</p>
+<p>创建和调用基本类似config的实现，总的来说也没什么特别的操作。
+基本上就是生成core的一些配置</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">getZapCore</span><span class="p">(</span><span class="nx">conf</span> <span class="o">*</span><span class="nx">config</span><span class="p">.</span><span class="nx">Configuration</span><span class="p">)</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nx">Core</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">var</span> <span class="nx">encoder</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nx">Encoder</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// 调整编码器默认配置 输出内容
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">encoderConfig</span> <span class="o">:=</span> <span class="nx">zap</span><span class="p">.</span><span class="nf">NewProductionEncoderConfig</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">encoderConfig</span><span class="p">.</span><span class="nx">EncodeTime</span> <span class="p">=</span> <span class="kd">func</span><span class="p">(</span><span class="nx">time</span> <span class="nx">time</span><span class="p">.</span><span class="nx">Time</span><span class="p">,</span> <span class="nx">encoder</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nx">PrimitiveArrayEncoder</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">encoder</span><span class="p">.</span><span class="nf">AppendString</span><span class="p">(</span><span class="nx">time</span><span class="p">.</span><span class="nf">Format</span><span class="p">(</span><span class="s">&#34;[&#34;</span> <span class="o">+</span> <span class="s">&#34;2006-01-02 15:04:05.000&#34;</span> <span class="o">+</span> <span class="s">&#34;]&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">encoderConfig</span><span class="p">.</span><span class="nx">EncodeLevel</span> <span class="p">=</span> <span class="kd">func</span><span class="p">(</span><span class="nx">l</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nx">Level</span><span class="p">,</span> <span class="nx">encoder</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nx">PrimitiveArrayEncoder</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">encoder</span><span class="p">.</span><span class="nf">AppendString</span><span class="p">(</span><span class="nx">conf</span><span class="p">.</span><span class="nx">App</span><span class="p">.</span><span class="nx">Env</span> <span class="o">+</span> <span class="s">&#34;.&#34;</span> <span class="o">+</span> <span class="nx">l</span><span class="p">.</span><span class="nf">String</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// 设置编码器，日志的输出格式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="k">if</span> <span class="nx">conf</span><span class="p">.</span><span class="nx">Log</span><span class="p">.</span><span class="nx">Format</span> <span class="o">==</span> <span class="s">&#34;json&#34;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">encoder</span> <span class="p">=</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nf">NewJSONEncoder</span><span class="p">(</span><span class="nx">encoderConfig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">encoder</span> <span class="p">=</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nf">NewConsoleEncoder</span><span class="p">(</span><span class="nx">encoderConfig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// 同时输出到控制台和文件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kd">var</span> <span class="nx">multiWS</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nx">WriteSyncer</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="nx">conf</span><span class="p">.</span><span class="nx">Log</span><span class="p">.</span><span class="nx">EnableFile</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">multiWS</span> <span class="p">=</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nf">NewMultiWriteSyncer</span><span class="p">(</span><span class="nf">getLogWriter</span><span class="p">(</span><span class="nx">conf</span><span class="p">),</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nf">AddSync</span><span class="p">(</span><span class="nx">os</span><span class="p">.</span><span class="nx">Stdout</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">multiWS</span> <span class="p">=</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nf">AddSync</span><span class="p">(</span><span class="nx">os</span><span class="p">.</span><span class="nx">Stdout</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nf">NewCore</span><span class="p">(</span><span class="nx">encoder</span><span class="p">,</span> <span class="nx">multiWS</span><span class="p">,</span> <span class="nx">level</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 使用 lumberjack 作为日志写入器
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">func</span> <span class="nf">getLogWriter</span><span class="p">(</span><span class="nx">conf</span> <span class="o">*</span><span class="nx">config</span><span class="p">.</span><span class="nx">Configuration</span><span class="p">)</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nx">WriteSyncer</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">file</span> <span class="o">:=</span> <span class="o">&amp;</span><span class="nx">lumberjack</span><span class="p">.</span><span class="nx">Logger</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">Filename</span><span class="p">:</span>   <span class="nx">conf</span><span class="p">.</span><span class="nx">Log</span><span class="p">.</span><span class="nx">RootDir</span> <span class="o">+</span> <span class="s">&#34;/&#34;</span> <span class="o">+</span> <span class="nx">conf</span><span class="p">.</span><span class="nx">Log</span><span class="p">.</span><span class="nx">Filename</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">MaxSize</span><span class="p">:</span>    <span class="nx">conf</span><span class="p">.</span><span class="nx">Log</span><span class="p">.</span><span class="nx">MaxSize</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">MaxBackups</span><span class="p">:</span> <span class="nx">conf</span><span class="p">.</span><span class="nx">Log</span><span class="p">.</span><span class="nx">MaxBackups</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">MaxAge</span><span class="p">:</span>     <span class="nx">conf</span><span class="p">.</span><span class="nx">Log</span><span class="p">.</span><span class="nx">MaxAge</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">Compress</span><span class="p">:</span>   <span class="nx">conf</span><span class="p">.</span><span class="nx">Log</span><span class="p">.</span><span class="nx">Compress</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="nx">zapcore</span><span class="p">.</span><span class="nf">AddSync</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h4 id="plugin">plugin</h4>
+<p>搞了个插件接口</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">bootstrap/plugins
+</span></span><span class="line"><span class="cl">├── cos.go
+</span></span><span class="line"><span class="cl">├── database.go
+</span></span><span class="line"><span class="cl">├── local.go
+</span></span><span class="line"><span class="cl">├── minio.go
+</span></span><span class="line"><span class="cl">├── oss.go
+</span></span><span class="line"><span class="cl">├── plugins.go
+</span></span><span class="line"><span class="cl">└── redis.go
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// Plugin 插件接口
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">type</span> <span class="nx">Plugin</span> <span class="kd">interface</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Flag 是否启动
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nf">Flag</span><span class="p">()</span> <span class="kt">bool</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Name 插件名称
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nf">Name</span><span class="p">()</span> <span class="kt">string</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// New 初始化插件资源
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nf">New</span><span class="p">()</span> <span class="kd">interface</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Health 插件健康检查
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nf">Health</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Close 释放插件资源
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nf">Close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>然后各个服务实现这些个接口,并且在每个实现里面都有init函数将自己注册到全局Plugin里面，但是细看了下发现其实蛮怪的。
+比如redis plugin，它是在init函数里面注册的，但是注册的方式是</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">init</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">p</span> <span class="o">:=</span> <span class="o">&amp;</span><span class="nx">LangGoRedis</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">RegisteredPlugin</span><span class="p">(</span><span class="nx">p</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>然后在plugin的Newplugin()，</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">NewPlugins</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">p</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">Plugins</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="p">!</span><span class="nx">p</span><span class="p">.</span><span class="nf">Flag</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="k">continue</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">bootstrap</span><span class="p">.</span><span class="nf">NewLogger</span><span class="p">().</span><span class="nx">Logger</span><span class="p">.</span><span class="nf">Info</span><span class="p">(</span><span class="nx">fmt</span><span class="p">.</span><span class="nf">Sprintf</span><span class="p">(</span><span class="s">&#34;%s Init ... &#34;</span><span class="p">,</span> <span class="nx">p</span><span class="p">.</span><span class="nf">Name</span><span class="p">()))</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">p</span><span class="p">.</span><span class="nf">New</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">bootstrap</span><span class="p">.</span><span class="nf">NewLogger</span><span class="p">().</span><span class="nx">Logger</span><span class="p">.</span><span class="nf">Info</span><span class="p">(</span><span class="nx">fmt</span><span class="p">.</span><span class="nf">Sprintf</span><span class="p">(</span><span class="s">&#34;%s HealthCheck ... &#34;</span><span class="p">,</span> <span class="nx">p</span><span class="p">.</span><span class="nf">Name</span><span class="p">()))</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">p</span><span class="p">.</span><span class="nf">Health</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">bootstrap</span><span class="p">.</span><span class="nf">NewLogger</span><span class="p">().</span><span class="nx">Logger</span><span class="p">.</span><span class="nf">Info</span><span class="p">(</span><span class="nx">fmt</span><span class="p">.</span><span class="nf">Sprintf</span><span class="p">(</span><span class="s">&#34;%s Success Init. &#34;</span><span class="p">,</span> <span class="nx">p</span><span class="p">.</span><span class="nf">Name</span><span class="p">()))</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>redis是必须要用的，所以这里的flag是直接返回true，别的类似oss服务就是通过配置来返回的。</p>
+<p>但是这里的new，又是初始化全局redis变量,在项目别的地方调用又是
+<code>var lgRedis = new(plugins.LangGoRedis).NewRedis()</code></p>
+<p>总之感觉很不make sense</p>
+<p>后面发现其实这里NewPlugin是用来初始化并检测插件，后面<code>new(plugins.LangGoRedis).NewRedis()</code>就是直接调用之前初始化的全局变量了。</p>
+<h4 id="snowflake-雪花算法">snowflake 雪花算法</h4>
+<p><img src="https://pic4.zhimg.com/80/v2-0ca4a4125b1cbda69cfa972b1e568ffb_720w.webp" alt=""></p>
+<p>1.第一位 占用1bit，其值始终是0，没有实际作用。 2.时间戳 占用41bit，精确到毫秒，总共可以容纳约69年的时间。 3.工作机器id 占用10bit，其中高位5bit是数据中心ID，低位5bit是工作节点ID，做多可以容纳1024个节点。 4.序列号 占用12bit，每个节点每毫秒0开始不断累加，最多可以累加到4095，一共可以产生4096个ID。</p>
+<blockquote>
+<p>SnowFlake算法在同一毫秒内最多可以生成多少个全局唯一ID呢：： 同一毫秒的ID数量 = 1024 X 4096 = 4194304</p>
+</blockquote>
+<h4 id="cmdmain">cmd/main</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// @title        ObjectStorageProxy
+</span></span></span><span class="line"><span class="cl"><span class="c1">// @version    1.0
+</span></span></span><span class="line"><span class="cl"><span class="c1">// @description
+</span></span></span><span class="line"><span class="cl"><span class="c1">// @contact.name    qinguoyi
+</span></span></span><span class="line"><span class="cl"><span class="c1">// @host                127.0.0.1:8888
+</span></span></span><span class="line"><span class="cl"><span class="c1">// @BasePath          /
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// config log
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">lgConfig</span> <span class="o">:=</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nf">NewConfig</span><span class="p">(</span><span class="s">&#34;conf/config.yaml&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">lgLogger</span> <span class="o">:=</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nf">NewLogger</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// plugins DB Redis Minio
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">plugins</span><span class="p">.</span><span class="nf">NewPlugins</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">	<span class="k">defer</span> <span class="nx">plugins</span><span class="p">.</span><span class="nf">ClosePlugins</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// init Snowflake
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">base</span><span class="p">.</span><span class="nf">InitSnowFlake</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// init storage
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">storage</span><span class="p">.</span><span class="nf">InitStorage</span><span class="p">(</span><span class="nx">lgConfig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// router
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">engine</span> <span class="o">:=</span> <span class="nx">api</span><span class="p">.</span><span class="nf">NewRouter</span><span class="p">(</span><span class="nx">lgConfig</span><span class="p">,</span> <span class="nx">lgLogger</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">server</span> <span class="o">:=</span> <span class="nx">app</span><span class="p">.</span><span class="nf">NewHttpServer</span><span class="p">(</span><span class="nx">lgConfig</span><span class="p">,</span> <span class="nx">engine</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// app run-server
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">application</span> <span class="o">:=</span> <span class="nx">app</span><span class="p">.</span><span class="nf">NewApp</span><span class="p">(</span><span class="nx">lgConfig</span><span class="p">,</span> <span class="nx">lgLogger</span><span class="p">.</span><span class="nx">Logger</span><span class="p">,</span> <span class="nx">server</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">application</span><span class="p">.</span><span class="nf">RunServer</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>目前配置部分差不多完成，接下来的路由和存储服务请见osproxy-core</p>
+<h3 id="总结">总结</h3>
+<p>OSproxy的配置差不多到这里.</p>
+
+  </article>
+
+  
+  
+    
+    <div class="author-card">
+    <div class="underline"></div>
+    <div class="author-box">
+      <div class="author-image"><a href="/zh-cn/zh-cn/about/"><img src="/images/yehh.png" alt="叶浩辉" /></a></div>
+      <div class="author-content">
+      <p class="author-title">作者</p>
+      <p class="author-name">叶浩辉</p>
+      <p class="author-desc">一起分享与进步吧。</p>
+      </div>
+    </div>
+  </div>
+    
+  
+  
+
+
+</div>
+
+  </main><div class="footer gradient-2">
+  <div class="container footer-container ">
+    <div class="row">
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        <div class="footer-title">网站地图</div>
+        <ul class="list-unstyled">
+            
+              
+                <li><a href="https://blog.yehaohui.com/zh-cn/tags/">标签</a></li>
+              
+              
+                <li><a href="https://blog.yehaohui.com/zh-cn/categories/">分类</a></li>
+              
+            
+            
+            
+            <li><a rel="alternate" type="application/rss&#43;xml" href="https://blog.yehaohui.com/zh-cn/index.xml"><i class="fas fa-rss-square"></i> RSS订阅</a></li>
+            
+            
+            
+        </ul>
+      </div>
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        
+        <div class="footer-title">社群</div>
+        <ul class="list-unstyled">
+          
+          <li><a href="https://github.com/haohui03" rel="noopener" target="_blank">GitHub</a></li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        
+        <div class="footer-title">友链</div>
+        <ul class="list-unstyled">
+          
+          <li><a href="https://www.yehaohui.com/" rel="noopener" target="_blank">关于我</a></li>
+          
+        </ul>
+        
+      </div> 
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <p class="pull-right text-right">
+          <small><em>Proudly powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a></em></small><br/>
+          <small><em>Theme - <a href="https://github.com/shaform/hugo-theme-den" rel="noopener" target="_blank">Den</a></em></small><br/>
+          <small>
+            &copy; 
+            yehh
+            
+              2017 -
+            2023
+          </small>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -6,7 +6,25 @@
     <description>Recent content in Redis on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 08 Jul 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/redis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Oct 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/redis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>go-redis-note</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/10/08/category/go-redis-note/</link>
+      <pubDate>Sun, 08 Oct 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/10/08/category/go-redis-note/</guid>
+      <description>记录go-redis使用过程中的一些事项 分布式锁(一上来就是大菜) 最近在阅读两个项目的时候都发现了分布式锁： osproxy： 分片上传时抢锁 r</description>
+    </item>
+    
+    <item>
+      <title>redis_basic</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/09/13/category/redis_basic/</link>
+      <pubDate>Wed, 13 Sep 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/09/13/category/redis_basic/</guid>
+      <description>pipeline Redis Pipeline介绍及应用 事务 Redis 中的原子操作：事务与 Lua 脚本</description>
+    </item>
+    
     <item>
       <title>redis-note1</title>
       <link>https://blog.yehaohui.com/zh-cn/2023/07/08/category/redis-note1/</link>

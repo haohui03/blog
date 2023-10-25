@@ -6,7 +6,16 @@
     <description>Recent content in rocksdb on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 05 Aug 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/rocksdb/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Oct 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/rocksdb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>rocksdb原理</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/10/17/category/rocksdb-principal/</link>
+      <pubDate>Tue, 17 Oct 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/10/17/category/rocksdb-principal/</guid>
+      <description>基本概念 版本(Version)：这个是RocksDB内部概念。一个版本包含某个时间点的所有存活SST文件。一旦一个落盘或者压缩完成，由于存活</description>
+    </item>
+    
     <item>
       <title>rocksdb源码分析（1）</title>
       <link>https://blog.yehaohui.com/zh-cn/2023/08/05/category/rocksdb1/</link>
@@ -22,7 +31,7 @@
       <pubDate>Sat, 05 Aug 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/08/05/category/rocksdb2/</guid>
-      <description>columnfamily memtable WAL 格式 创建: rocksdb::DB::Open(options, &amp;ldquo;./db/&amp;rdquo;, &amp;amp;db); db-&amp;gt;Flush(rocksdb::FlushOptions(), handles[1]); 在Write的时候检查WAl大小超过了max_total_wal_size的时候，会创建新的wal。 memtable 写入 slice.h Slice 主要</description>
+      <description>memtable WAL 介绍 column family共享WAL文件 Life Cycle of a WAL 创建 只有两种情况会创建WAL文件 打开一个新DB Flush DB* db; std::vector&amp;lt;ColumnFamilyDescriptor&amp;gt; column_families; column_families.push_back(ColumnFamilyDescriptor( kDefaultColumnFamilyName, ColumnFamilyOptions())); column_families.push_back(ColumnFamilyDescriptor( &amp;#34;new_cf&amp;#34;, ColumnFamilyOptions())); std::vector&amp;lt;ColumnFamilyHandle*&amp;gt; handles; s = DB::Open(DBOptions(), kDBPath, column_families, &amp;amp;handles, &amp;amp;db); db-&amp;gt;Put(WriteOptions(), handles[1], Slice(&amp;#34;key1&amp;#34;), Slice(&amp;#34;value1&amp;#34;));</description>
     </item>
     
     <item>
