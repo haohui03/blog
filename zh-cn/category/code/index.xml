@@ -6,14 +6,149 @@
     <description>Recent content in code on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 23 Oct 2023 08:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/category/code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Dec 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/category/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>osproxy-core</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/10/23/category/osproxy-core/</link>
-      <pubDate>Mon, 23 Oct 2023 08:01:23 +0800</pubDate>
+      <title>golang-gc-optimization</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/12/12/category/golang-gc-optimization/</link>
+      <pubDate>Tue, 12 Dec 2023 13:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/2023/10/23/category/osproxy-core/</guid>
-      <description>这篇文章介绍OSproxy的核心功能 首先要清楚的一点就是，osproxy的工作流程是： 上传：根据uid临时存在本地然后调用存储服务接口存储 下</description>
+      <guid>https://blog.yehaohui.com/zh-cn/2023/12/12/category/golang-gc-optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang-map</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/11/23/category/golang-map/</link>
+      <pubDate>Thu, 23 Nov 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/11/23/category/golang-map/</guid>
+      <description>map map是一个很重要的数据结构，本篇文章记录学习golang中map源码的过程。 图多取自别人的博客，非原创请注意 基本的概念不在赘述了 以下分析</description>
+    </item>
+    
+    <item>
+      <title>grpc-advanced</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/11/20/category/grpc-advanced/</link>
+      <pubDate>Mon, 20 Nov 2023 09:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/11/20/category/grpc-advanced/</guid>
+      <description>grpc-tsl server side TLS 有关TLS的知识结合这个看体验更佳 mutual TLS 参考 grpc进阶</description>
+    </item>
+    
+    <item>
+      <title>go-zero goctl</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/11/19/category/go-zero-goctl/</link>
+      <pubDate>Sun, 19 Nov 2023 09:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/11/19/category/go-zero-goctl/</guid>
+      <description>goctl </description>
+    </item>
+    
+    <item>
+      <title>grpc-intro</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/11/19/category/grpc-intro/</link>
+      <pubDate>Sun, 19 Nov 2023 09:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/11/19/category/grpc-intro/</guid>
+      <description>grpc 简单使用 这次这次实践的目录 . ├── client │ └── hello-client │ └── client.go ├── go.mod ├── go.sum ├── proto │ └── hello │ ├── hello_grpc.pb.go │ ├── hello.pb.go │ └── hello.proto └── server └── hello-server └</description>
+    </item>
+    
+    <item>
+      <title>protobuf-intro</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/11/19/category/protobuf-intro/</link>
+      <pubDate>Sun, 19 Nov 2023 09:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/11/19/category/protobuf-intro/</guid>
+      <description>本篇文章记录学习protobuf的过程 定义消息 syntax = &amp;#34;proto3&amp;#34;; message name { body } syntax = &amp;#34;proto3&amp;#34;; message SearchRequest { string query = 1; int32 page_number = 2; int32 result_per_page = 3; } 通常把message定义在一个单独的文件</description>
+    </item>
+    
+    <item>
+      <title>plan9&#43;go-assembler</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/11/16/category/plan9-go-assembler/</link>
+      <pubDate>Thu, 16 Nov 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/11/16/category/plan9-go-assembler/</guid>
+      <description>plan9 本文记录plan9汇编的学习过程，sorry全是抄的，只能说抄一遍印象深一点而且好复盘。 基本指令 栈调整 SUBQ $0x18, SP // 对 SP 做减法，为函数分配函数栈</description>
+    </item>
+    
+    <item>
+      <title>redis-single</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/11/16/category/redis-single/</link>
+      <pubDate>Thu, 16 Nov 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/11/16/category/redis-single/</guid>
+      <description>本文记录分布式redis的学习过程 replication(主从) 命令 一般是从节点向主节点发起复制请求 &amp;gt; REPLICAOF host port 原理 Redis的复制主要包括同步</description>
+    </item>
+    
+    <item>
+      <title>redis-single</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/11/16/category/redis-single/</link>
+      <pubDate>Thu, 16 Nov 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/11/16/category/redis-single/</guid>
+      <description>redis单机数据库的实现 数据库 服务端有一个结构体 struct redisServer { char *configfile; // 配置文件的绝对路径 int hz; // serverCron() 每秒调用的次数 redisDb *db; // 数据库 }; 命令 切换数据库SELEC</description>
+    </item>
+    
+    <item>
+      <title>《Golang 编译器代码浅析》阅读</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/11/13/category/golang-%E7%BC%96%E8%AF%91%E5%99%A8%E4%BB%A3%E7%A0%81%E6%B5%85%E6%9E%90%E9%98%85%E8%AF%BB/</link>
+      <pubDate>Mon, 13 Nov 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/11/13/category/golang-%E7%BC%96%E8%AF%91%E5%99%A8%E4%BB%A3%E7%A0%81%E6%B5%85%E6%9E%90%E9%98%85%E8%AF%BB/</guid>
+      <description>Golang 编译器代码浅析</description>
+    </item>
+    
+    <item>
+      <title>golang-base-structure</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/11/09/category/golang-base-structure/</link>
+      <pubDate>Thu, 09 Nov 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/11/09/category/golang-base-structure/</guid>
+      <description>记录golang中的底层数据结构 slice 基础的东西比如len，cap，ptr这些东西就不说了 从slice中获取内存地址和从内存中构造slice 从s</description>
+    </item>
+    
+    <item>
+      <title>golang-pprof</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/11/09/category/golang-pprof/</link>
+      <pubDate>Thu, 09 Nov 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/11/09/category/golang-pprof/</guid>
+      <description>简单介绍 是什么 pprof 是用于可视化和分析性能分析数据的工具 pprof 以 profile.proto 读取分析样本的集合，并生成报告以可视化并帮助分析数据（支持文本和图形报告） profile.proto 是一个</description>
+    </item>
+    
+    <item>
+      <title>golang-snowflake</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/11/09/category/golang-snowflake/</link>
+      <pubDate>Thu, 09 Nov 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/11/09/category/golang-snowflake/</guid>
+      <description>雪花算法 1.第一位 占用1bit，其值始终是0，没有实际作用。 2.时间戳 占用41bit，精确到毫秒，总共可以容纳约69年的时间。 3.工作机器i</description>
+    </item>
+    
+    <item>
+      <title>golang-unsafe</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/11/09/category/golang-unsafe/</link>
+      <pubDate>Thu, 09 Nov 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/11/09/category/golang-unsafe/</guid>
+      <description>unsafe包介绍 首先，unsafe正如其名是不安全的。 来自go语言官方文档的警告 unsafe包的文档是这么说的： 导入unsafe的软件包可</description>
+    </item>
+    
+    <item>
+      <title>redis bloom-filter</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/11/08/category/bloom-filter/</link>
+      <pubDate>Wed, 08 Nov 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/11/08/category/bloom-filter/</guid>
+      <description>原理 参考 布隆过滤器如何实现?</description>
+    </item>
+    
+    <item>
+      <title>leetcode_record3&#43;顶级线段树</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/10/31/category/leetcode_record3/</link>
+      <pubDate>Tue, 31 Oct 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/10/31/category/leetcode_record3/</guid>
+      <description>2003. 每棵子树内缺失的最小基因值 这题只给了parent数组，不像以往的题目给了根节点，以及对应的树结构。所以首先就是要建树，后面才好后序遍历。 然</description>
     </item>
     
     <item>
@@ -44,147 +179,12 @@
     </item>
     
     <item>
-      <title>osproxy-intro</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/09/19/category/osproxy-intro/</link>
-      <pubDate>Tue, 19 Sep 2023 08:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/09/19/category/osproxy-intro/</guid>
-      <description>osproxy osproxy 这个算是第一个接触的比较正式的项目，期望从中学到 go框架: gin(其实之前就用过，这次算巩固), gorm , viper, zap, swagger&amp;hellip;&amp;hellip; docker 部署 开发的一些规范 设计一个软</description>
-    </item>
-    
-    <item>
       <title>interview-八股</title>
       <link>https://blog.yehaohui.com/zh-cn/2023/09/17/category/interview-%E5%85%AB%E8%82%A1/</link>
       <pubDate>Sun, 17 Sep 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/09/17/category/interview-%E5%85%AB%E8%82%A1/</guid>
-      <description>network 工具： tcpdump Wireshark 具体一些没背八股前不清晰的问题： Cookie&amp;amp;session 你真的了解cookie和session吗 鉴权&amp;amp;Token 鉴权界的后起之秀：Token鉴</description>
-    </item>
-    
-    <item>
-      <title>DDIA-note</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/09/14/category/ddia-note/</link>
-      <pubDate>Thu, 14 Sep 2023 08:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/09/14/category/ddia-note/</guid>
-      <description>Reference DDIA chinese</description>
-    </item>
-    
-    <item>
-      <title>interview-golang</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/09/13/category/interview-golang/</link>
-      <pubDate>Wed, 13 Sep 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/09/13/category/interview-golang/</guid>
-      <description>golang问题 init的执行顺序 Golang中变量的分配位置是堆or栈可以看看这个和刘丹冰的 GC[典藏版]Golang三色标记、混合写屏障</description>
-    </item>
-    
-    <item>
-      <title>kafka-day1</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/09/13/category/kafka-day1/</link>
-      <pubDate>Wed, 13 Sep 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/09/13/category/kafka-day1/</guid>
-      <description>Kafka入门 基本概念 Apache Kafka 核心组件和流程 控制器 控制器也叫leader broker,负责分区leader的选取,也就是负责选举partitio</description>
-    </item>
-    
-    <item>
-      <title>redis_basic</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/09/13/category/redis_basic/</link>
-      <pubDate>Wed, 13 Sep 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/09/13/category/redis_basic/</guid>
-      <description>pipeline Redis Pipeline介绍及应用 事务 Redis 中的原子操作：事务与 Lua 脚本</description>
-    </item>
-    
-    <item>
-      <title>高性能Mysql-ch1、2</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/09/12/category/high_perfermance_mysql_ch1_2/</link>
-      <pubDate>Tue, 12 Sep 2023 08:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/09/12/category/high_perfermance_mysql_ch1_2/</guid>
-      <description>高性能Mysql 该系列主要是记录阅读高性能Mysql的一些笔记。 Mysql架构 架构的逻辑视图 连接管理和安全 每个客户端连接都会有一个线程，连接</description>
-    </item>
-    
-    <item>
-      <title>istio-day1</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/08/27/category/istio-day1/</link>
-      <pubDate>Sun, 27 Aug 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/08/27/category/istio-day1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>leetcode_record2</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/08/25/category/leetcode_record2/</link>
-      <pubDate>Fri, 25 Aug 2023 08:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/08/25/category/leetcode_record2/</guid>
-      <description>力扣记录2 剑指 Offer 51. 数组中的逆序对 我对这题的评价是逆天 class Solution { public: int mergeSort(vector&amp;lt;int&amp;gt;&amp;amp; nums, vector&amp;lt;int&amp;gt;&amp;amp; tmp, int l, int r) { if (l &amp;gt;= r) { return 0; } int mid = (l + r) / 2; int inv_count = mergeSort(nums, tmp, l, mid) + mergeSort(nums, tmp, mid + 1, r);</description>
-    </item>
-    
-    <item>
-      <title>containerd-intro</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/08/23/category/containerd-intro/</link>
-      <pubDate>Wed, 23 Aug 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/08/23/category/containerd-intro/</guid>
-      <description>Reference 容器运行时 containerd 学习笔记</description>
-    </item>
-    
-    <item>
-      <title>《Go 语言高性能编程》阅读</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/08/19/category/go-%E8%AF%AD%E8%A8%80%E9%AB%98%E6%80%A7%E8%83%BD%E7%BC%96%E7%A8%8B%E9%98%85%E8%AF%BB/</link>
-      <pubDate>Sat, 19 Aug 2023 08:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/08/19/category/go-%E8%AF%AD%E8%A8%80%E9%AB%98%E6%80%A7%E8%83%BD%E7%BC%96%E7%A8%8B%E9%98%85%E8%AF%BB/</guid>
-      <description>这个系列是记录阅读《Go 语言高性能编程》这本书的一些笔记 第一章：Go 语言性能分析 在学生时期，测试很难被重视起来，但是写好测试是程序员的进阶之</description>
-    </item>
-    
-    <item>
-      <title>gee-intro</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/08/19/category/gee-intro/</link>
-      <pubDate>Sat, 19 Aug 2023 08:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/08/19/category/gee-intro/</guid>
-      <description>gee 本项目模仿极客兔兔的7天项目进行学习 gee-web 简介 这是一个简单的web框架，实现了路由、中间件、静态文件服务、模板渲染等功能。主要是模仿gin框架</description>
-    </item>
-    
-    <item>
-      <title>golang test</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/08/19/category/golang-test/</link>
-      <pubDate>Sat, 19 Aug 2023 08:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/08/19/category/golang-test/</guid>
-      <description>标准库 testing 标准测试使用go test 来编译运行测试*_test.go文件，这些文件不是go build命令编译的对象。 *_test.go 中，有三种测试 功能测试 每一个测试</description>
-    </item>
-    
-    <item>
-      <title>go-package-overview</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/08/16/category/net/http/</link>
-      <pubDate>Wed, 16 Aug 2023 09:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/08/16/category/net/http/</guid>
-      <description>i/o io constants const ( SeekStart = 0 // seek relative to the origin of the file SeekCurrent = 1 // seek relative to the current offset SeekEnd = 2 // seek relative to the end ) 和c++的seekg一样，有三种相对寻找方式 variables 几种错误 //要注意E</description>
-    </item>
-    
-    <item>
-      <title>zero-copy</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/08/16/category/zero-copy/</link>
-      <pubDate>Wed, 16 Aug 2023 09:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/08/16/category/zero-copy/</guid>
-      <description>linux i/o &amp;amp;&amp;amp; zero-copy reference: Linux I/O 原理和 Zero-copy 技术全面揭秘 深入剖析Linux IO原理和几种零拷贝机制的实现</description>
-    </item>
-    
-    <item>
-      <title>golang-detail</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/08/13/category/golang-detail/</link>
-      <pubDate>Sun, 13 Aug 2023 08:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/08/13/category/golang-detail/</guid>
-      <description>空结构体 type EST stuct{ } func main(){ var b EST var c struct{}; fmt.Printf(&amp;#34;b address %P size %d\n&amp;#34;,&amp;amp;b,unsafe.size(b)) fmt.Printf(&amp;#34;c address %P size %d\n&amp;#34;,&amp;amp;c,unsafe.size(c)) //两者地址相同，空间占用都是0 } 自定义的和struct{}是等价 用法set可以用值为空</description>
+      <description>汇总 很多 必看 这个很也顶 network 工具： tcpdump Wireshark 具体一些没背八股前不清晰的问题： Cookie&amp;amp;session 你真的了解cookie和session吗 鉴权&amp;amp;Token 鉴权界的</description>
     </item>
     
   </channel>

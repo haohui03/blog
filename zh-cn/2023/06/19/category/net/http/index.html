@@ -28,7 +28,7 @@
 <meta itemprop="name" content="net/http">
 <meta itemprop="description" content="learn http 前置知识: HTTP 1.1 / 2 基于TCP ， HTTP/3 可以基于TCP UDP 和QUIC. HTTP HTTP 报文的常见格式: GET / HTTP/1.1 User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT) Host: draveness.me Accept-Language: en-us Accept-Encoding: gzip, deflate Content-Type: text/html; charset=UTF-8 Content-Length: 138 Connection: Keep-Alive &lt;html&gt; ... &lt;/html&gt; TCP 粘"><meta itemprop="datePublished" content="2023-06-19T09:01:23+08:00" />
 <meta itemprop="dateModified" content="2023-06-19T09:20:30+08:00" />
-<meta itemprop="wordCount" content="614">
+<meta itemprop="wordCount" content="857">
 <meta itemprop="keywords" content="golang,language,net," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="net/http"/>
 <meta name="twitter:description" content="learn http 前置知识: HTTP 1.1 / 2 基于TCP ， HTTP/3 可以基于TCP UDP 和QUIC. HTTP HTTP 报文的常见格式: GET / HTTP/1.1 User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT) Host: draveness.me Accept-Language: en-us Accept-Encoding: gzip, deflate Content-Type: text/html; charset=UTF-8 Content-Length: 138 Connection: Keep-Alive &lt;html&gt; ... &lt;/html&gt; TCP 粘"/>
@@ -186,12 +186,22 @@
 </span></span><span class="line"><span class="cl">	<span class="nf">Write</span><span class="p">([]</span><span class="kt">byte</span><span class="p">)</span> <span class="p">(</span><span class="kt">int</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">	<span class="nf">WriteHeader</span><span class="p">(</span><span class="nx">statusCode</span> <span class="kt">int</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>客户端和服务端面对的都是双向的 HTTP 请求与响应，客户端构建请求并等待响应，服务端处理请求并返回响应。HTTP 请求和响应在标准库中不止有一种实现，它们都包含了层级结构，标准库中的 <code>net/http.RoundTripper</code> 包含如下所示的层级结构：
-<img src="https://img.draveness.me/2020-05-18-15897352888419-golang-roundtripper.png" alt=""></p>
+</span></span></code></pre></div><p>客户端和服务端面对的都是双向的 HTTP 请求与响应，客户端构建请求并等待响应，服务端处理请求并返回响应。HTTP 请求和响应在标准库中不止有一种实现，它们都包含了层级结构，标准库中的 <code>net/http.RoundTripper</code> 包含如下所示的层级结构：</p>
 <p>标准库也为net/http.handler提供了多种实现</p>
 <h3 id="客户端">客户端</h3>
+<p>HTTP 的客户端中包含几个比较重要的结构体，</p>
+<ul>
+<li>http.Client：HTTP 客户端，它的默认值是使用 net/http.DefaultTransport 的 HTTP 客户端</li>
+<li>http.Transport：是 http.RoundTripper 接口的实现，主要作用就是支持 HTTP/HTTPS 请求和 HTTP 代理</li>
+<li>http.persistConn：封装了一个 TCP 的持久连接，是与远程交换消息的句柄（Handle）</li>
+</ul>
+<p>客户端 http.Client 是级别较高的抽象，提供了 HTTP 的一些细节，包括 Cookies 和重定向；而 http.Transport 会处理 HTTP/HTTPS 协议的底层实现细节，其中会包含连接重用、构建请求以及发送请求等功能。</p>
+<p>RoundTripper的接口实现都是一个对远程发起请求的过程
+<img src="https://img.draveness.me/2020-05-18-15897352888419-golang-roundtripper.png" alt=""></p>
+<h4 id="httpclient">http.Client</h4>
 <p><a href="https://draveness.me/golang/"> Go 语言设计与实现</a></p>
 <p><a href="https://pandaychen.github.io/2020/10/01/GOLANG-NETHTTP-ANALYSIS/">Golang 标准库：net/http 分析（一）</a></p>
+<p><a href="https://www.cnblogs.com/harrypotterjackson/p/15977660.html">QUIC</a></p>
 
   </article>
 

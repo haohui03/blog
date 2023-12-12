@@ -28,7 +28,7 @@
 <meta itemprop="name" content="redis-note1">
 <meta itemprop="description" content="Redis笔记1 What is redis Redis: REmote Dictionary Server tools redis-benchmark:性能测试工具。 redis-check-aof：修复有问题的AOF文件 redi"><meta itemprop="datePublished" content="2023-07-08T13:01:23+08:00" />
 <meta itemprop="dateModified" content="2023-07-08T13:01:23+08:00" />
-<meta itemprop="wordCount" content="527">
+<meta itemprop="wordCount" content="1215">
 <meta itemprop="keywords" content="Redis,Middleware,infra," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="redis-note1"/>
 <meta name="twitter:description" content="Redis笔记1 What is redis Redis: REmote Dictionary Server tools redis-benchmark:性能测试工具。 redis-check-aof：修复有问题的AOF文件 redi"/>
@@ -136,7 +136,7 @@
 <div class="container content">
   <article>
   <h1 id="redis笔记1">Redis笔记1</h1>
-<h3 id="what-is-redis">What is redis</h3>
+<h2 id="what-is-redis">What is redis</h2>
 <p>Redis: <strong>RE</strong>mote <strong>D</strong>ictionary <strong>S</strong>erver</p>
 <h3 id="tools">tools</h3>
 <ul>
@@ -189,6 +189,111 @@
 </ol>
 <h3 id="conf">conf</h3>
 <p>依赖redis.conf来进行配置</p>
+<h2 id="10types">10types</h2>
+<h3 id="string">string</h3>
+<h4 id="operation">operation</h4>
+<ol>
+<li>SET GET</li>
+<li>MSET MGET</li>
+<li>getrange setrange</li>
+<li>(INCR key)只有数字才能加减，INCRBY key number。DECR同理</li>
+<li>STRLEN， APPEND key value</li>
+<li>getset</li>
+</ol>
+<h3 id="list">list</h3>
+<p>底层是双端队列，容量是2的32次-1用在栈队列等场景。</p>
+<p>应用：微信公众号的订阅，作者一发布文章就lpush到每个订阅用户的list里面，然后显示就lrange</p>
+<h4 id="operation-1">operation</h4>
+<ol>
+<li>lpush rpush lrange(从左向右遍历)</li>
+<li>lpop rpop</li>
+<li>lindex</li>
+<li>llen</li>
+<li>lrem key n v1 (删除n个值为v1的元素)</li>
+<li>ltrim startindex endindex (截取指定范围的值后再赋值给key)</li>
+<li>rpoplpush list1 list2</li>
+<li>lset key index value 下标设置</li>
+</ol>
+<h3 id="hash">hash</h3>
+<p>应用：
+购物车
+hset cart:uid goodsid number&hellip;</p>
+<h4 id="operarion">operarion</h4>
+<ol>
+<li>hset key field value, hget key field</li>
+<li>hmset,hmget(和hset，hget差不多)</li>
+<li>hgetall， hdel key field， hlen</li>
+<li>hexists key field</li>
+<li>hkeys, hvals</li>
+<li>hincrby key filed number (hincrbyfloat)</li>
+</ol>
+<h3 id="set">set</h3>
+<p>应用:</p>
+<ol>
+<li>共同好友</li>
+<li>抽奖</li>
+<li>朋友圈点赞</li>
+</ol>
+<h4 id="operation-2">operation</h4>
+<ol>
+<li>sadd key member</li>
+<li>smembers key(遍历)</li>
+<li>sismember key member(判断是否在其中)</li>
+<li>srem (删除)</li>
+<li>scard (获取元素个数)</li>
+<li>srandmember key number(随机获取元素)</li>
+<li>spop key(随机获取并删除)</li>
+<li>smove key1 key2 member(从key1移动到key2)</li>
+<li>sdiff key1 key2(差集)</li>
+<li>sinter key1 key2(交集)</li>
+<li>sunion key1 key2(并集)</li>
+<li>sintercard numkeys key1 key2(交集个数)</li>
+</ol>
+<h3 id="zset">zset</h3>
+<p>在set的基础上每个value绑定一个double值，数据量小的时候用ziplist，大的时候用skiplist。
+应用：
+有序列表的使用，比如淘宝商品的显示，根据销量来显示。</p>
+<h4 id="operation-3">operation</h4>
+<ol>
+<li>zadd key score member</li>
+<li>zrange key start stop</li>
+<li>zrevrange</li>
+<li>zrangebyscore key min max [withscore]（min max的括号表示不包含）</li>
+<li>zscore key value 获取元素的分数</li>
+<li>zcard 获取集合中元素的数量</li>
+<li>zrem key value 删除</li>
+<li>zincrby key number value</li>
+<li>zcount key min max</li>
+<li>ZMPOP numkeys key [key &hellip;] &lt;MIN | MAX&gt; [COUNT count]</li>
+<li>zrank key values 获取下标</li>
+<li>zrevrank key values 逆序</li>
+</ol>
+<h4 id="跳表的实现">跳表的实现</h4>
+<p><a href="https://zhuanlan.zhihu.com/p/56941754">非常精美</a></p>
+<h3 id="bitmap">bitmap</h3>
+<p>应用：签到打卡</p>
+<h4 id="operation-4">operation</h4>
+<ol>
+<li>setbit key offset value</li>
+<li>getbit</li>
+<li>strlen 是字节的长度</li>
+<li>bitcount 1的个数</li>
+<li>bitop 比特运算</li>
+</ol>
+<h3 id="hyperloglog">HyperLoglog</h3>
+<h4 id="operation-5">operation</h4>
+<ol>
+<li>pfadd key member</li>
+<li>pfcount key</li>
+<li>pfcount hll1 hll2</li>
+</ol>
+<h3 id="geo">geo</h3>
+<p>乱码可以使用<code>redis-cli --raw</code></p>
+<h4 id="operation-6">operation</h4>
+<ol>
+<li>geoadd key longtitude latitude member</li>
+<li>geopos key  member</li>
+</ol>
 
   </article>
 

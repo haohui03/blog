@@ -6,7 +6,34 @@
     <description>Recent content in Redis on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 08 Oct 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/redis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Nov 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/redis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>redis-single</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/11/16/category/redis-single/</link>
+      <pubDate>Thu, 16 Nov 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/11/16/category/redis-single/</guid>
+      <description>本文记录分布式redis的学习过程 replication(主从) 命令 一般是从节点向主节点发起复制请求 &amp;gt; REPLICAOF host port 原理 Redis的复制主要包括同步</description>
+    </item>
+    
+    <item>
+      <title>redis-single</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/11/16/category/redis-single/</link>
+      <pubDate>Thu, 16 Nov 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/11/16/category/redis-single/</guid>
+      <description>redis单机数据库的实现 数据库 服务端有一个结构体 struct redisServer { char *configfile; // 配置文件的绝对路径 int hz; // serverCron() 每秒调用的次数 redisDb *db; // 数据库 }; 命令 切换数据库SELEC</description>
+    </item>
+    
+    <item>
+      <title>redis bloom-filter</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/11/08/category/bloom-filter/</link>
+      <pubDate>Wed, 08 Nov 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/11/08/category/bloom-filter/</guid>
+      <description>原理 参考 布隆过滤器如何实现?</description>
+    </item>
+    
     <item>
       <title>go-redis-note</title>
       <link>https://blog.yehaohui.com/zh-cn/2023/10/08/category/go-redis-note/</link>
@@ -22,7 +49,7 @@
       <pubDate>Wed, 13 Sep 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/09/13/category/redis_basic/</guid>
-      <description>pipeline Redis Pipeline介绍及应用 事务 Redis 中的原子操作：事务与 Lua 脚本</description>
+      <description>pipeline Redis Pipeline介绍及应用 事务 Redis 中的原子操作：事务与 Lua 脚本 面试 大key问题 是什么是大key 主要是对应的Value很大（比如用户喜欢的音乐</description>
     </item>
     
     <item>
@@ -32,15 +59,6 @@
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/07/08/category/redis-note1/</guid>
       <description>Redis笔记1 What is redis Redis: REmote Dictionary Server tools redis-benchmark:性能测试工具。 redis-check-aof：修复有问题的AOF文件 redi</description>
-    </item>
-    
-    <item>
-      <title>redis-note2</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/07/08/category/redis-note2/</link>
-      <pubDate>Sat, 08 Jul 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/07/08/category/redis-note2/</guid>
-      <description>operarion unlink 10types string operation SET GET MSET MGET getrange setrange (INCR key)只有数字才能加减，INCRBY key number。DECR同理 STRLEN， APPEND key value getset list 底层是双端队列，容量是2的</description>
     </item>
     
   </channel>

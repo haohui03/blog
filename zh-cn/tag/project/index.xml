@@ -6,25 +6,7 @@
     <description>Recent content in project on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 23 Oct 2023 08:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/project/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>osproxy-core</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/10/23/category/osproxy-core/</link>
-      <pubDate>Mon, 23 Oct 2023 08:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/10/23/category/osproxy-core/</guid>
-      <description>这篇文章介绍OSproxy的核心功能 首先要清楚的一点就是，osproxy的工作流程是： 上传：根据uid临时存在本地然后调用存储服务接口存储 下</description>
-    </item>
-    
-    <item>
-      <title>osproxy-intro</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/09/19/category/osproxy-intro/</link>
-      <pubDate>Tue, 19 Sep 2023 08:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/09/19/category/osproxy-intro/</guid>
-      <description>osproxy osproxy 这个算是第一个接触的比较正式的项目，期望从中学到 go框架: gin(其实之前就用过，这次算巩固), gorm , viper, zap, swagger&amp;hellip;&amp;hellip; docker 部署 开发的一些规范 设计一个软</description>
-    </item>
-    
+    <lastBuildDate>Sat, 19 Aug 2023 08:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>gee-intro</title>
       <link>https://blog.yehaohui.com/zh-cn/2023/08/19/category/gee-intro/</link>

@@ -22,7 +22,7 @@
       <pubDate>Sat, 08 Jul 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/07/08/category/interview-linux/</guid>
-      <description>Linux面试题 io多路复用 epoll poll select 为什么要使用io多路复用 既能阻塞等待不占用cpu，又能在同一时刻监听多个IO请求。 几个概念 流：流是一个抽象</description>
+      <description>Linux面试题 io多路复用 epoll poll select 这个讲的很详细非常好 为什么要使用io多路复用 既能阻塞等待不占用cpu，又能在同一时刻监听多个IO请求。 几个</description>
     </item>
     
     <item>

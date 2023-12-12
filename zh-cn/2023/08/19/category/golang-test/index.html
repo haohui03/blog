@@ -28,7 +28,7 @@
 <meta itemprop="name" content="golang test">
 <meta itemprop="description" content="标准库 testing 标准测试使用go test 来编译运行测试*_test.go文件，这些文件不是go build命令编译的对象。 *_test.go 中，有三种测试 功能测试 每一个测试"><meta itemprop="datePublished" content="2023-08-19T08:01:23+08:00" />
 <meta itemprop="dateModified" content="2023-08-19T09:27:30+08:00" />
-<meta itemprop="wordCount" content="138">
+<meta itemprop="wordCount" content="509">
 <meta itemprop="keywords" content="golang,test," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="golang test"/>
 <meta name="twitter:description" content="标准库 testing 标准测试使用go test 来编译运行测试*_test.go文件，这些文件不是go build命令编译的对象。 *_test.go 中，有三种测试 功能测试 每一个测试"/>
@@ -138,24 +138,52 @@
 <p>testing</p>
 <p>标准测试使用go test 来编译运行测试*_test.go文件，这些文件不是go build命令编译的对象。</p>
 <p>*_test.go 中，有三种测试</p>
-<ol>
-<li>
-<p>功能测试</p>
+<h3 id="功能测试">功能测试</h3>
 <p>每一个测试文件必须导入testing包，并且函数的签名为：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">//以Test开头，后面的名称首字母大写
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">func</span> <span class="nf">TestName</span><span class="p">(</span><span class="nx">t</span> <span class="o">*</span><span class="nx">testing</span><span class="p">.</span><span class="nx">T</span><span class="p">){</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div></li>
-<li>
-<p>基准测试</p>
+</span></span></code></pre></div><h4 id="命令">命令</h4>
+<p>go test</p>
+<ul>
+<li>-v 打印详情</li>
+<li>-run=&ldquo;xxx&rdquo; xxx是正则表达式可以匹配函数名</li>
+<li>-cover 允许代码分析覆盖率</li>
+<li>-covermode 代码分析模式（set：是否执行；count：执行次数；atomic：次数，并发执行）</li>
+<li>-coverprofile 输出结果文件</li>
+<li>-race 测试竞态</li>
+</ul>
+<p>go tool cover -func=cover.out 可以查看具体函数的测试覆盖率</p>
+<h4 id="table-driven-test">Table-Driven Test</h4>
+<p>通常情况下我们会希望待测函数针对一系列输入都能给出正确的输出，需要验证各个场景，而不是简单的测试单个case就结束。这个时候我们就可以把测试的 input 和 output 成对组装起来，给出一个数组。然后用一次 for 循环依次执行，校验输出是否符合预期。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">TestIntMinTableDriven</span><span class="p">(</span><span class="nx">t</span> <span class="o">*</span><span class="nx">testing</span><span class="p">.</span><span class="nx">T</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">tests</span> <span class="p">=</span> <span class="p">[]</span><span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span> <span class="kt">int</span> <span class="c1">// 输入
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">want</span> <span class="kt">int</span> <span class="c1">// 输出
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}{</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">tt</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">tests</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">testname</span> <span class="o">:=</span> <span class="nx">fmt</span><span class="p">.</span><span class="nf">Sprintf</span><span class="p">(</span><span class="s">&#34;%d,%d&#34;</span><span class="p">,</span> <span class="nx">tt</span><span class="p">.</span><span class="nx">a</span><span class="p">,</span> <span class="nx">tt</span><span class="p">.</span><span class="nx">b</span><span class="p">)</span> <span class="c1">// 测试case名称
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">t</span><span class="p">.</span><span class="nf">Run</span><span class="p">(</span><span class="nx">testname</span><span class="p">,</span> <span class="kd">func</span><span class="p">(</span><span class="nx">t</span> <span class="o">*</span><span class="nx">testing</span><span class="p">.</span><span class="nx">T</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">ans</span> <span class="o">:=</span> <span class="nf">IntMin</span><span class="p">(</span><span class="nx">tt</span><span class="p">.</span><span class="nx">a</span><span class="p">,</span> <span class="nx">tt</span><span class="p">.</span><span class="nx">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="nx">ans</span> <span class="o">!=</span> <span class="nx">tt</span><span class="p">.</span><span class="nx">want</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">t</span><span class="p">.</span><span class="nf">Errorf</span><span class="p">(</span><span class="s">&#34;got %d, want %d&#34;</span><span class="p">,</span> <span class="nx">ans</span><span class="p">,</span> <span class="nx">tt</span><span class="p">.</span><span class="nx">want</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>如果测试文件中包含函数 TestMain，那么生成的测试将调用 TestMain(m)，而不是直接运行测试。</p>
+<h3 id="基准测试">基准测试</h3>
 <p>函数签名为</p>
-<p>调用时: <code>go test -bench</code></p>
-</li>
-<li>
-<p>示例函数</p>
-</li>
-</ol>
+<p>调用时: <code>go test -bench=.</code> 运行所有的benchmarks</p>
+<h3 id="示例函数">示例函数</h3>
 
   </article>
 

@@ -6,38 +6,74 @@
     <description>Recent content in Tags on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 23 Oct 2023 08:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Dec 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>basic</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/basic/</link>
+      <pubDate>Tue, 12 Dec 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/tag/basic/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>golang</title>
       <link>https://blog.yehaohui.com/zh-cn/tag/golang/</link>
-      <pubDate>Mon, 23 Oct 2023 08:01:23 +0800</pubDate>
+      <pubDate>Tue, 12 Dec 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/tag/golang/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>osproxy</title>
-      <link>https://blog.yehaohui.com/zh-cn/tag/osproxy/</link>
-      <pubDate>Mon, 23 Oct 2023 08:01:23 +0800</pubDate>
+      <title>language</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/language/</link>
+      <pubDate>Tue, 12 Dec 2023 13:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/tag/osproxy/</guid>
+      <guid>https://blog.yehaohui.com/zh-cn/tag/language/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>project</title>
-      <link>https://blog.yehaohui.com/zh-cn/tag/project/</link>
-      <pubDate>Mon, 23 Oct 2023 08:01:23 +0800</pubDate>
+      <title>grpc</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/grpc/</link>
+      <pubDate>Mon, 20 Nov 2023 09:01:23 +0800</pubDate>
       
-      <guid>https://blog.yehaohui.com/zh-cn/tag/project/</guid>
+      <guid>https://blog.yehaohui.com/zh-cn/tag/grpc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go-zero</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/go-zero/</link>
+      <pubDate>Sun, 19 Nov 2023 09:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/tag/go-zero/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>protobuf</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/protobuf/</link>
+      <pubDate>Sun, 19 Nov 2023 09:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/tag/protobuf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>assembly</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/assembly/</link>
+      <pubDate>Thu, 16 Nov 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/tag/assembly/</guid>
       <description></description>
     </item>
     
     <item>
       <title>infra</title>
       <link>https://blog.yehaohui.com/zh-cn/tag/infra/</link>
-      <pubDate>Tue, 17 Oct 2023 13:01:23 +0800</pubDate>
+      <pubDate>Thu, 16 Nov 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/tag/infra/</guid>
       <description></description>
@@ -46,9 +82,45 @@
     <item>
       <title>Middleware</title>
       <link>https://blog.yehaohui.com/zh-cn/tag/middleware/</link>
-      <pubDate>Tue, 17 Oct 2023 13:01:23 +0800</pubDate>
+      <pubDate>Thu, 16 Nov 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/tag/middleware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redis</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/redis/</link>
+      <pubDate>Thu, 16 Nov 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/tag/redis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>algorithm</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/algorithm/</link>
+      <pubDate>Mon, 13 Nov 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/tag/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jobs</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/jobs/</link>
+      <pubDate>Mon, 13 Nov 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/tag/jobs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>leetcode</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/leetcode/</link>
+      <pubDate>Mon, 13 Nov 2023 08:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/tag/leetcode/</guid>
       <description></description>
     </item>
     
@@ -76,15 +148,6 @@
       <pubDate>Sun, 15 Oct 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/tag/images/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Redis</title>
-      <link>https://blog.yehaohui.com/zh-cn/tag/redis/</link>
-      <pubDate>Sun, 08 Oct 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/tag/redis/</guid>
       <description></description>
     </item>
     
@@ -121,69 +184,6 @@
       <pubDate>Sun, 17 Sep 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/tag/network/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>wiki</title>
-      <link>https://blog.yehaohui.com/zh-cn/tag/wiki/</link>
-      <pubDate>Sat, 16 Sep 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/tag/wiki/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>books</title>
-      <link>https://blog.yehaohui.com/zh-cn/tag/books/</link>
-      <pubDate>Thu, 14 Sep 2023 08:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/tag/books/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>reading</title>
-      <link>https://blog.yehaohui.com/zh-cn/tag/reading/</link>
-      <pubDate>Thu, 14 Sep 2023 08:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/tag/reading/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kafka</title>
-      <link>https://blog.yehaohui.com/zh-cn/tag/kafka/</link>
-      <pubDate>Wed, 13 Sep 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/tag/kafka/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mysql</title>
-      <link>https://blog.yehaohui.com/zh-cn/tag/mysql/</link>
-      <pubDate>Tue, 12 Sep 2023 08:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/tag/mysql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>istio</title>
-      <link>https://blog.yehaohui.com/zh-cn/tag/istio/</link>
-      <pubDate>Sun, 27 Aug 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/tag/istio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>K8s</title>
-      <link>https://blog.yehaohui.com/zh-cn/tag/k8s/</link>
-      <pubDate>Sun, 27 Aug 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/tag/k8s/</guid>
       <description></description>
     </item>
     
