@@ -13,7 +13,7 @@
       <pubDate>Mon, 20 Nov 2023 09:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/11/20/category/grpc-advanced/</guid>
-      <description>grpc-tsl server side TLS 有关TLS的知识结合这个看体验更佳 mutual TLS 参考 grpc进阶</description>
+      <description>grpc-tsl server side TLS 有关TLS的知识结合这个看体验更佳 Interceptor 有4种拦截器 type UnaryClientInterceptor func(ctx context.Context, method string, req, reply interface{}, cc *ClientConn, invoker UnaryInvoker, opts ...CallOption) error type UnaryServerInterceptor func(ctx context.Context, req interface{}, info *UnaryServerInfo, handler UnaryHandler) (resp interface{}, err error) type StreamClientInterceptor func(ctx context.Context, desc *StreamDesc, cc *ClientConn, method string, streamer Streamer,</description>
     </item>
     
     <item>

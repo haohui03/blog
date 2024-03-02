@@ -169,5 +169,14 @@
       <description>23-02-05 刷题记录 基本是跟着代码随想录刷的，day1刷了二分查找，滑窗还有双指针。记录一下当时的思路。 二分查找 二分查找突出的是一个熟练，针对已有的两</description>
     </item>
     
+    <item>
+      <title>leetcode_record4-随机算法</title>
+      <link>https://blog.yehaohui.com/zh-cn/1/01/01/category/leetcode_record4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/1/01/01/category/leetcode_record4/</guid>
+      <description>记几个网站： 1 2 随机算法 打乱（Shuffle） Fisher–Yates shuffle -- To shuffle an array a of n elements (indices 0..n-1): for i from n−1 downto 1 do j ← random integer such that 0 ≤ j ≤ i exchange a[j] and</description>
+    </item>
+    
   </channel>
 </rss>

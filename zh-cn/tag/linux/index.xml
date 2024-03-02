@@ -6,14 +6,23 @@
     <description>Recent content in linux on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 16 Aug 2023 09:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Jan 2024 09:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>quic协议</title>
+      <link>https://blog.yehaohui.com/zh-cn/2024/01/17/category/quic%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Wed, 17 Jan 2024 09:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2024/01/17/category/quic%E5%8D%8F%E8%AE%AE/</guid>
+      <description>QUIC QUIC在用户空间实现，tcp/udp在内核空间 优势 减少了 TCP 三次握手及 TLS 握手时间。 改进的拥塞控制。 避免队头阻塞的多路复用。 连接迁移。 前向安</description>
+    </item>
+    
     <item>
       <title>zero-copy</title>
       <link>https://blog.yehaohui.com/zh-cn/2023/08/16/category/zero-copy/</link>
       <pubDate>Wed, 16 Aug 2023 09:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/08/16/category/zero-copy/</guid>
-      <description>linux i/o &amp;amp;&amp;amp; zero-copy reference: Linux I/O 原理和 Zero-copy 技术全面揭秘 深入剖析Linux IO原理和几种零拷贝机制的实现</description>
+      <description>零拷贝 广义上来说有三种实现思路： 用户态直接 I/O：应用程序可以直接访问硬件存储，操作系统内核只是辅助数据传输。这种方式依旧存在用户空间和内核</description>
     </item>
     
     <item>
@@ -31,7 +40,16 @@
       <pubDate>Sat, 08 Jul 2023 08:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/07/08/category/linux_setting/</guid>
-      <description>Linux设置 apt-get 设置代理 修改环境变量 export http_proxy=http://127.0.0.1:7890 sudo apt-get update</description>
+      <description>Linux设置 apt-get 设置代理 修改环境变量 export http_proxy=http://127.0.0.1:7890 sudo apt-get update Systemd 配置 Unit Service unit：系统服务 Target unit：多个 Unit 构成的一个组 Device Unit：硬件设备 Mount Unit：文件</description>
+    </item>
+    
+    <item>
+      <title>linux-io</title>
+      <link>https://blog.yehaohui.com/zh-cn/1/01/01/category/linux-io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/1/01/01/category/linux-io/</guid>
+      <description>如何从磁盘读到内存 主要就是三个步骤： cache page cache和buffer cache Mem：表示物理内存统计。 total：表示物理内存总量(total = used + f</description>
     </item>
     
   </channel>

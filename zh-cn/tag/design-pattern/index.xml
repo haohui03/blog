@@ -13,7 +13,7 @@
       <pubDate>Wed, 13 Sep 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/09/13/category/desgin-pattern-go/</guid>
-      <description>设计模式的golang实现 参考 go-design-pattern</description>
+      <description>设计原则 设计模式的golang实现 单例模式 饿汉模式 就是应用开始的时候就初始化 懒汉模式 这个是带双重检查的，不用每次都调用once的那个，我看o</description>
     </item>
     
   </channel>

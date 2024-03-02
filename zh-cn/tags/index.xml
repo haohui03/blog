@@ -6,11 +6,65 @@
     <description>Recent content in Tags on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 12 Dec 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Jan 2024 09:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>internet</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/internet/</link>
+      <pubDate>Wed, 17 Jan 2024 09:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/tag/internet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/linux/</link>
+      <pubDate>Wed, 17 Jan 2024 09:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/tag/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quic</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/quic/</link>
+      <pubDate>Wed, 17 Jan 2024 09:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/tag/quic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>infra</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/infra/</link>
+      <pubDate>Mon, 08 Jan 2024 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/tag/infra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>K8s</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/k8s/</link>
+      <pubDate>Mon, 08 Jan 2024 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/tag/k8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Middleware</title>
+      <link>https://blog.yehaohui.com/zh-cn/tag/middleware/</link>
+      <pubDate>Mon, 08 Jan 2024 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/tag/middleware/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>basic</title>
       <link>https://blog.yehaohui.com/zh-cn/tag/basic/</link>
-      <pubDate>Tue, 12 Dec 2023 13:01:23 +0800</pubDate>
+      <pubDate>Mon, 01 Jan 2024 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/tag/basic/</guid>
       <description></description>
@@ -19,7 +73,7 @@
     <item>
       <title>golang</title>
       <link>https://blog.yehaohui.com/zh-cn/tag/golang/</link>
-      <pubDate>Tue, 12 Dec 2023 13:01:23 +0800</pubDate>
+      <pubDate>Mon, 01 Jan 2024 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/tag/golang/</guid>
       <description></description>
@@ -28,7 +82,7 @@
     <item>
       <title>language</title>
       <link>https://blog.yehaohui.com/zh-cn/tag/language/</link>
-      <pubDate>Tue, 12 Dec 2023 13:01:23 +0800</pubDate>
+      <pubDate>Mon, 01 Jan 2024 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/tag/language/</guid>
       <description></description>
@@ -67,24 +121,6 @@
       <pubDate>Thu, 16 Nov 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/tag/assembly/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>infra</title>
-      <link>https://blog.yehaohui.com/zh-cn/tag/infra/</link>
-      <pubDate>Thu, 16 Nov 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/tag/infra/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Middleware</title>
-      <link>https://blog.yehaohui.com/zh-cn/tag/middleware/</link>
-      <pubDate>Thu, 16 Nov 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/tag/middleware/</guid>
       <description></description>
     </item>
     
@@ -148,42 +184,6 @@
       <pubDate>Sun, 15 Oct 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/tag/images/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>life</title>
-      <link>https://blog.yehaohui.com/zh-cn/tag/life/</link>
-      <pubDate>Wed, 20 Sep 2023 16:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/tag/life/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>record</title>
-      <link>https://blog.yehaohui.com/zh-cn/tag/record/</link>
-      <pubDate>Wed, 20 Sep 2023 16:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/tag/record/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>interview</title>
-      <link>https://blog.yehaohui.com/zh-cn/tag/interview/</link>
-      <pubDate>Sun, 17 Sep 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/tag/interview/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>network</title>
-      <link>https://blog.yehaohui.com/zh-cn/tag/network/</link>
-      <pubDate>Sun, 17 Sep 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/tag/network/</guid>
       <description></description>
     </item>
     

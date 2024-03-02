@@ -6,14 +6,59 @@
     <description>Recent content in code on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 12 Dec 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/category/code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Jan 2024 09:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/category/code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>quic协议</title>
+      <link>https://blog.yehaohui.com/zh-cn/2024/01/17/category/quic%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Wed, 17 Jan 2024 09:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2024/01/17/category/quic%E5%8D%8F%E8%AE%AE/</guid>
+      <description>QUIC QUIC在用户空间实现，tcp/udp在内核空间 优势 减少了 TCP 三次握手及 TLS 握手时间。 改进的拥塞控制。 避免队头阻塞的多路复用。 连接迁移。 前向安</description>
+    </item>
+    
+    <item>
+      <title>k8s-day2</title>
+      <link>https://blog.yehaohui.com/zh-cn/2024/01/08/category/k8s-day2/</link>
+      <pubDate>Mon, 08 Jan 2024 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2024/01/08/category/k8s-day2/</guid>
+      <description>RBAC 参考 Kubernetes（k8s）权限管理RBAC详解 网络 参考 写得非常好</description>
+    </item>
+    
+    <item>
+      <title>golang-lock</title>
+      <link>https://blog.yehaohui.com/zh-cn/2024/01/01/category/golang-lock/</link>
+      <pubDate>Mon, 01 Jan 2024 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2024/01/01/category/golang-lock/</guid>
+      <description>基本概念 互斥锁会将操作串行化，可以保证操作完全有序，适合资源只能由一个协程进行操作的情况，并发能力弱； 读写锁适合读多写少的情况，并发能有比较</description>
+    </item>
+    
+    <item>
+      <title>golang-tcmalloc</title>
+      <link>https://blog.yehaohui.com/zh-cn/2024/01/01/category/golang-tcmalloc/</link>
+      <pubDate>Mon, 01 Jan 2024 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2024/01/01/category/golang-tcmalloc/</guid>
+      <description>TCmalloc 为了解决中大对象的内存申请，TCmalloc有一个全局共享内存堆 Page 每个 Page 默认是 8KB。这里的page就像是虚拟内存的page Span Span是包</description>
+    </item>
+    
+    <item>
+      <title>chan</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/12/12/category/chan/</link>
+      <pubDate>Tue, 12 Dec 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/12/12/category/chan/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>golang-gc-optimization</title>
       <link>https://blog.yehaohui.com/zh-cn/2023/12/12/category/golang-gc-optimization/</link>
       <pubDate>Tue, 12 Dec 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/12/12/category/golang-gc-optimization/</guid>
-      <description></description>
+      <description>golang 是如何运行起来的</description>
     </item>
     
     <item>
@@ -31,7 +76,7 @@
       <pubDate>Mon, 20 Nov 2023 09:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/11/20/category/grpc-advanced/</guid>
-      <description>grpc-tsl server side TLS 有关TLS的知识结合这个看体验更佳 mutual TLS 参考 grpc进阶</description>
+      <description>grpc-tsl server side TLS 有关TLS的知识结合这个看体验更佳 Interceptor 有4种拦截器 type UnaryClientInterceptor func(ctx context.Context, method string, req, reply interface{}, cc *ClientConn, invoker UnaryInvoker, opts ...CallOption) error type UnaryServerInterceptor func(ctx context.Context, req interface{}, info *UnaryServerInfo, handler UnaryHandler) (resp interface{}, err error) type StreamClientInterceptor func(ctx context.Context, desc *StreamDesc, cc *ClientConn, method string, streamer Streamer,</description>
     </item>
     
     <item>
@@ -140,51 +185,6 @@
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/11/08/category/bloom-filter/</guid>
       <description>原理 参考 布隆过滤器如何实现?</description>
-    </item>
-    
-    <item>
-      <title>leetcode_record3&#43;顶级线段树</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/10/31/category/leetcode_record3/</link>
-      <pubDate>Tue, 31 Oct 2023 08:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/10/31/category/leetcode_record3/</guid>
-      <description>2003. 每棵子树内缺失的最小基因值 这题只给了parent数组，不像以往的题目给了根节点，以及对应的树结构。所以首先就是要建树，后面才好后序遍历。 然</description>
-    </item>
-    
-    <item>
-      <title>rocksdb原理</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/10/17/category/rocksdb-principal/</link>
-      <pubDate>Tue, 17 Oct 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/10/17/category/rocksdb-principal/</guid>
-      <description>基本概念 版本(Version)：这个是RocksDB内部概念。一个版本包含某个时间点的所有存活SST文件。一旦一个落盘或者压缩完成，由于存活</description>
-    </item>
-    
-    <item>
-      <title>docker-images</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/10/15/category/docker-images/</link>
-      <pubDate>Sun, 15 Oct 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/10/15/category/docker-images/</guid>
-      <description>介绍容器和镜像</description>
-    </item>
-    
-    <item>
-      <title>go-redis-note</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/10/08/category/go-redis-note/</link>
-      <pubDate>Sun, 08 Oct 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/10/08/category/go-redis-note/</guid>
-      <description>记录go-redis使用过程中的一些事项 分布式锁(一上来就是大菜) 最近在阅读两个项目的时候都发现了分布式锁： osproxy： 分片上传时抢锁 r</description>
-    </item>
-    
-    <item>
-      <title>interview-八股</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/09/17/category/interview-%E5%85%AB%E8%82%A1/</link>
-      <pubDate>Sun, 17 Sep 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/09/17/category/interview-%E5%85%AB%E8%82%A1/</guid>
-      <description>汇总 很多 必看 这个很也顶 network 工具： tcpdump Wireshark 具体一些没背八股前不清晰的问题： Cookie&amp;amp;session 你真的了解cookie和session吗 鉴权&amp;amp;Token 鉴权界的</description>
     </item>
     
   </channel>

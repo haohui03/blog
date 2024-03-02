@@ -28,7 +28,7 @@
 <meta itemprop="name" content="leetcode_record3&#43;顶级线段树">
 <meta itemprop="description" content="2003. 每棵子树内缺失的最小基因值 这题只给了parent数组，不像以往的题目给了根节点，以及对应的树结构。所以首先就是要建树，后面才好后序遍历。 然"><meta itemprop="datePublished" content="2023-10-31T08:01:23+08:00" />
 <meta itemprop="dateModified" content="2023-11-07T09:27:30+08:00" />
-<meta itemprop="wordCount" content="4087">
+<meta itemprop="wordCount" content="4160">
 <meta itemprop="keywords" content="leetcode,jobs,algorithm," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="leetcode_record3&#43;顶级线段树"/>
 <meta name="twitter:description" content="2003. 每棵子树内缺失的最小基因值 这题只给了parent数组，不像以往的题目给了根节点，以及对应的树结构。所以首先就是要建树，后面才好后序遍历。 然"/>
@@ -532,6 +532,7 @@ sumRange(0, 2) -&gt; 8</p>
 <h5 id="差分数组">差分数组</h5>
 <p>上面的两个都是单点更新，区间查询。但是有时候我们需要区间更新，单点查询。这时候就需要差分数组了。</p>
 <p>其实原理很简单，更新的区间就是在开始和结尾记录一下，然后查单点的话就是一次遍历就能获取所有点的值。</p>
+<p>这个也常要用到离散化，可以用map记录index，val，然后把index存到一个slice，然后排序。查询的时候查比要查的id小的sum就可以。</p>
 <h4 id="lru和lfu">LRU和LFU</h4>
 <p>其实这两个之前都写过</p>
 <p>LRU：双向列表加map</p>
@@ -695,7 +696,7 @@ sumRange(0, 2) -&gt; 8</p>
             yehh
             
               2017 -
-            2023
+            2024
           </small>
           
         </p>

@@ -6,7 +6,16 @@
     <description>Recent content in Middleware on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 16 Nov 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/middleware/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Jan 2024 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/middleware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>k8s-day2</title>
+      <link>https://blog.yehaohui.com/zh-cn/2024/01/08/category/k8s-day2/</link>
+      <pubDate>Mon, 08 Jan 2024 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2024/01/08/category/k8s-day2/</guid>
+      <description>RBAC 参考 Kubernetes（k8s）权限管理RBAC详解 网络 参考 写得非常好</description>
+    </item>
+    
     <item>
       <title>redis-single</title>
       <link>https://blog.yehaohui.com/zh-cn/2023/11/16/category/redis-single/</link>
@@ -103,7 +112,7 @@
       <pubDate>Sat, 08 Jul 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/07/08/category/k8s-day1/</guid>
-      <description>学习k8s 配置 通过读取KUBECONFIG环境变量来获取kubeconfig文件的路径，如果没有设置该环境变量，则默认使用~/.kube/c</description>
+      <description>学习k8s 概念 Master Master 负责管理集群, master 协调集群中的所有活动，例如调度应用程序、维护应用程序的所需状态、扩展应用程序和滚动更新。 节点是 Kubernetes 集群中的工</description>
     </item>
     
     <item>
@@ -113,6 +122,15 @@
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/07/08/category/redis-note1/</guid>
       <description>Redis笔记1 What is redis Redis: REmote Dictionary Server tools redis-benchmark:性能测试工具。 redis-check-aof：修复有问题的AOF文件 redi</description>
+    </item>
+    
+    <item>
+      <title>kafka-interview</title>
+      <link>https://blog.yehaohui.com/zh-cn/1/01/01/category/kafka-interview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/1/01/01/category/kafka-interview/</guid>
+      <description>ISR机制 ISR： 是指同步副本集，我们可以理解为和 leader 保持同步的所有副本的集合。 AR： 一个分区的所有副本集合叫做 AR（ Assigned Repllicas ） OSR：与 leader-replica 未能保</description>
     </item>
     
   </channel>

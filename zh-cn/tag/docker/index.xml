@@ -13,7 +13,16 @@
       <pubDate>Sun, 15 Oct 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/10/15/category/docker-images/</guid>
-      <description>介绍容器和镜像</description>
+      <description>几个概念 rootfs 在linux的视角下，这是指第一个挂载的文件系统，这个文件系统是基于内存的，而且其包括了/Sbin /etc等重要目录,在挂载后其会</description>
+    </item>
+    
+    <item>
+      <title>docker-dockerfile</title>
+      <link>https://blog.yehaohui.com/zh-cn/1/01/01/category/docker-dockerfile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/1/01/01/category/docker-dockerfile/</guid>
+      <description>Dockerfile 最佳实践 分段构建 FROM golang AS build-env ADD . /go/src/app WORKDIR /go/src/app RUN go get -u -v github.com/kardianos/govendor RUN govendor sync RUN GOOS=linux GOARCH=386 go build -v -o /go/src/app/app-server FROM alpine RUN apk add -U tzdata RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime COPY --from=build-env /go/src/app/app-server /usr/local/bin/app-server EXPOSE 8080 CMD [ &amp;#34;app-server&amp;#34; ]</description>
     </item>
     
   </channel>

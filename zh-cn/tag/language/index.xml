@@ -6,14 +6,41 @@
     <description>Recent content in language on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 12 Dec 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/language/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 2024 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/language/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>golang-lock</title>
+      <link>https://blog.yehaohui.com/zh-cn/2024/01/01/category/golang-lock/</link>
+      <pubDate>Mon, 01 Jan 2024 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2024/01/01/category/golang-lock/</guid>
+      <description>基本概念 互斥锁会将操作串行化，可以保证操作完全有序，适合资源只能由一个协程进行操作的情况，并发能力弱； 读写锁适合读多写少的情况，并发能有比较</description>
+    </item>
+    
+    <item>
+      <title>golang-tcmalloc</title>
+      <link>https://blog.yehaohui.com/zh-cn/2024/01/01/category/golang-tcmalloc/</link>
+      <pubDate>Mon, 01 Jan 2024 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2024/01/01/category/golang-tcmalloc/</guid>
+      <description>TCmalloc 为了解决中大对象的内存申请，TCmalloc有一个全局共享内存堆 Page 每个 Page 默认是 8KB。这里的page就像是虚拟内存的page Span Span是包</description>
+    </item>
+    
+    <item>
+      <title>chan</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/12/12/category/chan/</link>
+      <pubDate>Tue, 12 Dec 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/12/12/category/chan/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>golang-gc-optimization</title>
       <link>https://blog.yehaohui.com/zh-cn/2023/12/12/category/golang-gc-optimization/</link>
       <pubDate>Tue, 12 Dec 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/12/12/category/golang-gc-optimization/</guid>
-      <description></description>
+      <description>golang 是如何运行起来的</description>
     </item>
     
     <item>
@@ -122,6 +149,15 @@
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/02/17/category/golang-blog/</guid>
       <description>阅读golang的官方blog做的一些笔记 pipeline fan-in fan-out Multiple functions can read from the same channel until that channel is closed; this is called fan-out. This provides a way to distribute work amongst a group of workers to parallelize CPU use and I/O. A function can read from multiple inputs and proceed until all</description>
+    </item>
+    
+    <item>
+      <title>golang-panic-recover</title>
+      <link>https://blog.yehaohui.com/zh-cn/1/01/01/category/golang-panic-recover/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/1/01/01/category/golang-panic-recover/</guid>
+      <description>panic和recover 问题来源于一个面试问题： 父协程能否recover子协程的panic 经过实验：是不能的 而且子协程的panic如果没有</description>
     </item>
     
   </channel>

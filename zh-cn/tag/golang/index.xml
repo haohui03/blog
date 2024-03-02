@@ -6,14 +6,41 @@
     <description>Recent content in golang on Yehh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 12 Dec 2023 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 2024 13:01:23 +0800</lastBuildDate><atom:link href="https://blog.yehaohui.com/zh-cn/tag/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>golang-lock</title>
+      <link>https://blog.yehaohui.com/zh-cn/2024/01/01/category/golang-lock/</link>
+      <pubDate>Mon, 01 Jan 2024 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2024/01/01/category/golang-lock/</guid>
+      <description>基本概念 互斥锁会将操作串行化，可以保证操作完全有序，适合资源只能由一个协程进行操作的情况，并发能力弱； 读写锁适合读多写少的情况，并发能有比较</description>
+    </item>
+    
+    <item>
+      <title>golang-tcmalloc</title>
+      <link>https://blog.yehaohui.com/zh-cn/2024/01/01/category/golang-tcmalloc/</link>
+      <pubDate>Mon, 01 Jan 2024 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2024/01/01/category/golang-tcmalloc/</guid>
+      <description>TCmalloc 为了解决中大对象的内存申请，TCmalloc有一个全局共享内存堆 Page 每个 Page 默认是 8KB。这里的page就像是虚拟内存的page Span Span是包</description>
+    </item>
+    
+    <item>
+      <title>chan</title>
+      <link>https://blog.yehaohui.com/zh-cn/2023/12/12/category/chan/</link>
+      <pubDate>Tue, 12 Dec 2023 13:01:23 +0800</pubDate>
+      
+      <guid>https://blog.yehaohui.com/zh-cn/2023/12/12/category/chan/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>golang-gc-optimization</title>
       <link>https://blog.yehaohui.com/zh-cn/2023/12/12/category/golang-gc-optimization/</link>
       <pubDate>Tue, 12 Dec 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/12/12/category/golang-gc-optimization/</guid>
-      <description></description>
+      <description>golang 是如何运行起来的</description>
     </item>
     
     <item>
@@ -31,7 +58,7 @@
       <pubDate>Mon, 20 Nov 2023 09:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/11/20/category/grpc-advanced/</guid>
-      <description>grpc-tsl server side TLS 有关TLS的知识结合这个看体验更佳 mutual TLS 参考 grpc进阶</description>
+      <description>grpc-tsl server side TLS 有关TLS的知识结合这个看体验更佳 Interceptor 有4种拦截器 type UnaryClientInterceptor func(ctx context.Context, method string, req, reply interface{}, cc *ClientConn, invoker UnaryInvoker, opts ...CallOption) error type UnaryServerInterceptor func(ctx context.Context, req interface{}, info *UnaryServerInfo, handler UnaryHandler) (resp interface{}, err error) type StreamClientInterceptor func(ctx context.Context, desc *StreamDesc, cc *ClientConn, method string, streamer Streamer,</description>
     </item>
     
     <item>
@@ -112,7 +139,7 @@
       <pubDate>Wed, 13 Sep 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/09/13/category/desgin-pattern-go/</guid>
-      <description>设计模式的golang实现 参考 go-design-pattern</description>
+      <description>设计原则 设计模式的golang实现 单例模式 饿汉模式 就是应用开始的时候就初始化 懒汉模式 这个是带双重检查的，不用每次都调用once的那个，我看o</description>
     </item>
     
     <item>
@@ -158,33 +185,6 @@
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/08/13/category/golang-detail/</guid>
       <description>空结构体 type EST stuct{ } func main(){ var b EST var c struct{}; fmt.Printf(&amp;#34;b address %P size %d\n&amp;#34;,&amp;amp;b,unsafe.size(b)) fmt.Printf(&amp;#34;c address %P size %d\n&amp;#34;,&amp;amp;c,unsafe.size(c)) //两者地址相同，空间占用都是0 } 自定义的和struct{}是等价 用法set可以用值为空</description>
-    </item>
-    
-    <item>
-      <title>golang-interview-gmp</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/08/01/category/golang-interview-gmp/</link>
-      <pubDate>Tue, 01 Aug 2023 13:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/08/01/category/golang-interview-gmp/</guid>
-      <description>golang 调度器的由来 如果把并发交给os来完成，首先是CPU的调度消耗，其次进程占用4GB(虚拟内存)，线程占用4MB这些都是比较高的内存占用。 协程</description>
-    </item>
-    
-    <item>
-      <title>context</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/07/11/category/net/http/</link>
-      <pubDate>Tue, 11 Jul 2023 09:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/07/11/category/net/http/</guid>
-      <description>Overview: Package context defines the Context type, which carries deadlines, cancellation signals, and other request-scoped values across API boundaries and between processes. Incoming requests to a server should create a Context, and outgoing calls to servers should accept a Context. The chain of function calls between them must propagate the Context, optionally replacing it with a derived Context created using WithCancel, WithDeadline, WithTimeout, or WithValue. When a Context is canceled,</description>
-    </item>
-    
-    <item>
-      <title>go net package</title>
-      <link>https://blog.yehaohui.com/zh-cn/2023/06/19/category/net/</link>
-      <pubDate>Mon, 19 Jun 2023 09:01:23 +0800</pubDate>
-      
-      <guid>https://blog.yehaohui.com/zh-cn/2023/06/19/category/net/</guid>
-      <description>Reference 源码分析go</description>
     </item>
     
   </channel>

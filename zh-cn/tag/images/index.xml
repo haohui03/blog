@@ -13,7 +13,7 @@
       <pubDate>Sun, 15 Oct 2023 13:01:23 +0800</pubDate>
       
       <guid>https://blog.yehaohui.com/zh-cn/2023/10/15/category/docker-images/</guid>
-      <description>介绍容器和镜像</description>
+      <description>几个概念 rootfs 在linux的视角下，这是指第一个挂载的文件系统，这个文件系统是基于内存的，而且其包括了/Sbin /etc等重要目录,在挂载后其会</description>
     </item>
     
     <item>
